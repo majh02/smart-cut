@@ -27,14 +27,14 @@
   * 회원가입
   * 샵 / 디자이너 페이지
   * 예약 / 채팅 서비스
-  <img src="/uploads/ec6befe5d2f02ac95f58d33d69baec12/serviceflow.png" width="700" />
+  <img src="https://user-images.githubusercontent.com/39057282/211226521-0ea427fc-1f59-493b-b385-1503bb56edb3.png" width="700" />
 
 ## Model Architecture
 
 `2-TIER`
 
   <p align="left">
-    <img src="/uploads/49403a059cc3d0c8b82197f9c41cad1f/architecture.png" width="700" />
+    <img src="https://user-images.githubusercontent.com/39057282/211226536-612b19ce-4ef3-4ae2-9158-622bf5c25d7e.png" width="700" />
   </p>
 
 ## UI/UX
