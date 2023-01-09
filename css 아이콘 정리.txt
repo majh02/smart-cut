@@ -47,18 +47,6 @@ plus		<i class="fa-solid fa-plus"></i>
 
 find . | grep -E "(__pycache__|\.pyc|\.pyo$)" | xargs rm -rf
 
-
-
-[top, left]
-이미지 height: 68%; position: fixed;
-start 페이지 top: 65%;
-skip : top: 90%;  left: 42%; #EFEFEF
-페이지바 : top: 70%;  left: 35%;
-제목: top: 73%;  left: 15%;
-설명: top: 80%;  left: 25%;
-
-seonil.kwon@kt.com
-
 @media screen and (max-width: 900px)
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scaleable=no, maximum-scale=1">
