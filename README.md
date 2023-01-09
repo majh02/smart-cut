@@ -39,50 +39,49 @@
 
 ## UI/UX
  `[UI/UX]`  
-https://www.figma.com/file/xI1FL8C4iymrSNvYi1LuMG/Smart-Cut?node-id=0%3A8239&t=oONe8M7kks2O6PRG-1
  
   <p align="left">
-   <img src="/uploads/ce819c9e59bc48d1538ab9f682861e38/logo.JPG" width="200" />
+   <img src="https://user-images.githubusercontent.com/39057282/211226696-2dbc8bca-16f8-472c-b5bc-c9057aee194e.JPG" width="200" />
   </p>
  
   <p align="left">
-   <img src="/uploads/2bcc577a99351aa7e89bcb07c3325c8c/serviceexp.JPG" width="700" />
+   <img src="https://user-images.githubusercontent.com/39057282/211226708-a1d7fee4-f8f6-4f29-9908-ff19fdb4a0ba.JPG" width="700" />
   </p>
 
   <p align="left">
-   <img src="/uploads/c6f5db1bd68b4f5e9ad69344c5393b87/login_page.JPG" width="450" />
+   <img src="https://user-images.githubusercontent.com/39057282/211226713-5d5d3712-7f26-4aa3-80cd-fca22c5987fb.JPG" width="450" />
   </p>
 
   <p align="left">
-   <img src="/uploads/168afe8d2296d89ac19ac03985eee8e3/join_page.JPG" width="450" />
+   <img src="https://user-images.githubusercontent.com/39057282/211226715-eea858f5-9aeb-43c8-bb16-e06af0f374e5.JPG" width="450" />
   </p>
 
   <p align="left">
-   <img src="/uploads/82977ad835cb4879bf1253bb2b8a7eb8/mail.jpg" width="700" />
+   <img src="https://user-images.githubusercontent.com/39057282/211226666-6013cd93-615f-4b75-88aa-ff4ba6f297c8.jpg" width="700" />
   </p>
 
   <p align="left">
-   <img src="/uploads/911cd420ccce39eafaa42aef4d526a98/changepw.JPG" width="700" />
+   <img src="https://user-images.githubusercontent.com/39057282/211226669-3e08fdba-088c-43b4-98d1-9cab4c318269.JPG" width="700" />
   </p>
 
   <p align="left">
-   <img src="/uploads/0b7dc830e75ddcb6edf2f5a101edd384/salondetail.JPG" width="700" />
+   <img src="https://user-images.githubusercontent.com/39057282/211226670-e3bed515-5283-4d2b-a155-f8ef08c41a09.JPG" width="700" />
   </p>  
 
   <p align="left">
-   <img src="/uploads/fd5042acc091721dd10642c1ffbc66d2/Review.JPG" width="700" />
+   <img src="https://user-images.githubusercontent.com/39057282/211226674-6976ba58-881c-48f2-8ce0-4676fe49a22c.JPG" width="700" />
   </p>
 
   <p align="left">
-   <img src="/uploads/e89ae4717fa44534e8b82717e5c74706/chatroom.JPG" width="450" />
+   <img src="https://user-images.githubusercontent.com/39057282/211226734-34513f32-1db9-4108-ae72-b87e9777b0e5.JPG" width="450" />
   </p>
 
   <p align="left">
-   <img src="/uploads/220e05960dc04c56a87a2565d8c399cc/reservation.JPG" width="700" />
+   <img src="https://user-images.githubusercontent.com/39057282/211226735-5aec8fed-a70d-44a1-9343-4e81ed9fc759.JPG" width="700" />
   </p>
 
   <p align="left">
-   <img src="/uploads/f01b232a136de6320adb6899c9057d60/profile.JPG" width="700" />
+   <img src="https://user-images.githubusercontent.com/39057282/211226737-537bc948-5d3a-47d0-a109-44d29254a0b1.JPG" width="700" />
   </p>
 
   
