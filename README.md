@@ -84,55 +84,56 @@
    <img src="https://user-images.githubusercontent.com/39057282/211226737-537bc948-5d3a-47d0-a109-44d29254a0b1.JPG" width="700" />
   </p>
 
-  
+
 
 ## DataBase
   * ERD
    
-   <img src="/uploads/89a713009d9ed8996b585c1902f21f7a/ERD.jpg" width="1000" />
+   <img src="https://user-images.githubusercontent.com/39057282/211226907-c74cf4d4-fc63-48e7-9bbe-55e0f9772ce7.jpg" width="1000" />
    
    
 ## 모델 사용절차
  * 남성 사용자 화면  
 
   <p align="left">
-   <img src="/uploads/623868e4c43bfc2cc8cb62d37fbe0e4d/mainman.JPG" width="700" />
+   <img src="https://user-images.githubusercontent.com/39057282/211226923-2818a8f1-1cb3-4134-862b-d092cfc62a28.JPG" width="700" />
   </p>
 
   <p align="left">
-   <img src="/uploads/d4b86e825ac9156fabc8d75c564d9d08/AIman.JPG" width="700" />
+   <img src="https://user-images.githubusercontent.com/39057282/211226925-def6ab8e-b6be-4f83-94f8-dd85e57636a5.JPG" width="700" />
   </p>
 
   <p align="left">
-   <img src="/uploads/02323c70272b107e6e705e97bd6bf981/resultman.JPG" width="950" />
+   <img src="https://user-images.githubusercontent.com/39057282/211226928-f00a808d-ddab-4040-b35b-6ad643409c59.JPG" width="950" />
   </p>
 
   <p align="left">
-   <img src="/uploads/d8ecfa036bd6bc26c91e4ce8301a8ef5/resultmain.JPG" width="700" />
+   <img src="https://user-images.githubusercontent.com/39057282/211226931-b358db1b-32b8-4c7c-8479-e07f48838369.JPG" width="700" />
   </p>
 
 * 여성 사용자 화면
 
   <p align="left">
-   <img src="/uploads/6a82d3a2a50635a17023de5303d479d8/mainwoman.JPG" width="450" />
+   <img src="https://user-images.githubusercontent.com/39057282/211226990-ea4b24ca-49a1-4ea5-9a73-45e6217f0d19.JPG" width="450" />
   </p>
 
   <p align="left">
-   <img src="/uploads/4dafa36633d10ea3397355dea429a547/aiwoman.JPG" width="700" />
+   <img src="https://user-images.githubusercontent.com/39057282/211226995-d00ce99e-3baf-4f86-8fca-4b2c6d2ac871.JPG" width="700" />
   </p>
 
   <p align="left">
-   <img src="/uploads/7110bf7ef4de68d9c26920253f085dbd/resultwoman.JPG" width="950" />
+   <img src="https://user-images.githubusercontent.com/39057282/211227000-cb80e22c-3dcb-48a7-b4ea-01951a3811c7.JPG" width="950" />
   </p>
 
   <p align="left">
-   <img src="/uploads/220f511bf6692b5b893a51372cefd623/resultmain.JPG" width="700" />
+   <img src="https://user-images.githubusercontent.com/39057282/211227002-d99638e6-70b6-4a5e-9bfa-5d12fcc73c8a.JPG" width="700" />
   </p>
 
   
 
  
 ## SMART CUT 실행방법
+(!! pretrained model은 용량 초과로 업로드하지 않았습니다)
 
  ### 사전 준비
  
