@@ -27,113 +27,113 @@
   * 회원가입
   * 샵 / 디자이너 페이지
   * 예약 / 채팅 서비스
-  <img src="/uploads/ec6befe5d2f02ac95f58d33d69baec12/serviceflow.png" width="700" />
+  <img src="https://user-images.githubusercontent.com/39057282/211226521-0ea427fc-1f59-493b-b385-1503bb56edb3.png" width="700" />
 
 ## Model Architecture
 
 `2-TIER`
 
   <p align="left">
-    <img src="/uploads/49403a059cc3d0c8b82197f9c41cad1f/architecture.png" width="700" />
+    <img src="https://user-images.githubusercontent.com/39057282/211226536-612b19ce-4ef3-4ae2-9158-622bf5c25d7e.png" width="700" />
   </p>
 
 ## UI/UX
  `[UI/UX]`  
-https://www.figma.com/file/xI1FL8C4iymrSNvYi1LuMG/Smart-Cut?node-id=0%3A8239&t=oONe8M7kks2O6PRG-1
  
   <p align="left">
-   <img src="/uploads/ce819c9e59bc48d1538ab9f682861e38/logo.JPG" width="200" />
+   <img src="https://user-images.githubusercontent.com/39057282/211226696-2dbc8bca-16f8-472c-b5bc-c9057aee194e.JPG" width="200" />
   </p>
  
   <p align="left">
-   <img src="/uploads/2bcc577a99351aa7e89bcb07c3325c8c/serviceexp.JPG" width="700" />
+   <img src="https://user-images.githubusercontent.com/39057282/211226708-a1d7fee4-f8f6-4f29-9908-ff19fdb4a0ba.JPG" width="700" />
   </p>
 
   <p align="left">
-   <img src="/uploads/c6f5db1bd68b4f5e9ad69344c5393b87/login_page.JPG" width="450" />
+   <img src="https://user-images.githubusercontent.com/39057282/211226713-5d5d3712-7f26-4aa3-80cd-fca22c5987fb.JPG" width="450" />
   </p>
 
   <p align="left">
-   <img src="/uploads/168afe8d2296d89ac19ac03985eee8e3/join_page.JPG" width="450" />
+   <img src="https://user-images.githubusercontent.com/39057282/211226715-eea858f5-9aeb-43c8-bb16-e06af0f374e5.JPG" width="450" />
   </p>
 
   <p align="left">
-   <img src="/uploads/82977ad835cb4879bf1253bb2b8a7eb8/mail.jpg" width="700" />
+   <img src="https://user-images.githubusercontent.com/39057282/211226666-6013cd93-615f-4b75-88aa-ff4ba6f297c8.jpg" width="700" />
   </p>
 
   <p align="left">
-   <img src="/uploads/911cd420ccce39eafaa42aef4d526a98/changepw.JPG" width="700" />
+   <img src="https://user-images.githubusercontent.com/39057282/211226669-3e08fdba-088c-43b4-98d1-9cab4c318269.JPG" width="700" />
   </p>
 
   <p align="left">
-   <img src="/uploads/0b7dc830e75ddcb6edf2f5a101edd384/salondetail.JPG" width="700" />
+   <img src="https://user-images.githubusercontent.com/39057282/211226670-e3bed515-5283-4d2b-a155-f8ef08c41a09.JPG" width="700" />
   </p>  
 
   <p align="left">
-   <img src="/uploads/fd5042acc091721dd10642c1ffbc66d2/Review.JPG" width="700" />
+   <img src="https://user-images.githubusercontent.com/39057282/211226674-6976ba58-881c-48f2-8ce0-4676fe49a22c.JPG" width="700" />
   </p>
 
   <p align="left">
-   <img src="/uploads/e89ae4717fa44534e8b82717e5c74706/chatroom.JPG" width="450" />
+   <img src="https://user-images.githubusercontent.com/39057282/211226734-34513f32-1db9-4108-ae72-b87e9777b0e5.JPG" width="450" />
   </p>
 
   <p align="left">
-   <img src="/uploads/220e05960dc04c56a87a2565d8c399cc/reservation.JPG" width="700" />
+   <img src="https://user-images.githubusercontent.com/39057282/211226735-5aec8fed-a70d-44a1-9343-4e81ed9fc759.JPG" width="700" />
   </p>
 
   <p align="left">
-   <img src="/uploads/f01b232a136de6320adb6899c9057d60/profile.JPG" width="700" />
+   <img src="https://user-images.githubusercontent.com/39057282/211226737-537bc948-5d3a-47d0-a109-44d29254a0b1.JPG" width="700" />
   </p>
 
-  
+
 
 ## DataBase
   * ERD
    
-   <img src="/uploads/89a713009d9ed8996b585c1902f21f7a/ERD.jpg" width="1000" />
+   <img src="https://user-images.githubusercontent.com/39057282/211226907-c74cf4d4-fc63-48e7-9bbe-55e0f9772ce7.jpg" width="1000" />
    
    
 ## 모델 사용절차
  * 남성 사용자 화면  
 
   <p align="left">
-   <img src="/uploads/623868e4c43bfc2cc8cb62d37fbe0e4d/mainman.JPG" width="700" />
+   <img src="https://user-images.githubusercontent.com/39057282/211226923-2818a8f1-1cb3-4134-862b-d092cfc62a28.JPG" width="700" />
   </p>
 
   <p align="left">
-   <img src="/uploads/d4b86e825ac9156fabc8d75c564d9d08/AIman.JPG" width="700" />
+   <img src="https://user-images.githubusercontent.com/39057282/211226925-def6ab8e-b6be-4f83-94f8-dd85e57636a5.JPG" width="700" />
   </p>
 
   <p align="left">
-   <img src="/uploads/02323c70272b107e6e705e97bd6bf981/resultman.JPG" width="950" />
+   <img src="https://user-images.githubusercontent.com/39057282/211226928-f00a808d-ddab-4040-b35b-6ad643409c59.JPG" width="950" />
   </p>
 
   <p align="left">
-   <img src="/uploads/d8ecfa036bd6bc26c91e4ce8301a8ef5/resultmain.JPG" width="700" />
+   <img src="https://user-images.githubusercontent.com/39057282/211226931-b358db1b-32b8-4c7c-8479-e07f48838369.JPG" width="700" />
   </p>
 
 * 여성 사용자 화면
 
   <p align="left">
-   <img src="/uploads/6a82d3a2a50635a17023de5303d479d8/mainwoman.JPG" width="450" />
+   <img src="https://user-images.githubusercontent.com/39057282/211226990-ea4b24ca-49a1-4ea5-9a73-45e6217f0d19.JPG" width="450" />
   </p>
 
   <p align="left">
-   <img src="/uploads/4dafa36633d10ea3397355dea429a547/aiwoman.JPG" width="700" />
+   <img src="https://user-images.githubusercontent.com/39057282/211226995-d00ce99e-3baf-4f86-8fca-4b2c6d2ac871.JPG" width="700" />
   </p>
 
   <p align="left">
-   <img src="/uploads/7110bf7ef4de68d9c26920253f085dbd/resultwoman.JPG" width="950" />
+   <img src="https://user-images.githubusercontent.com/39057282/211227000-cb80e22c-3dcb-48a7-b4ea-01951a3811c7.JPG" width="950" />
   </p>
 
   <p align="left">
-   <img src="/uploads/220f511bf6692b5b893a51372cefd623/resultmain.JPG" width="700" />
+   <img src="https://user-images.githubusercontent.com/39057282/211227002-d99638e6-70b6-4a5e-9bfa-5d12fcc73c8a.JPG" width="700" />
   </p>
 
   
 
  
 ## SMART CUT 실행방법
+(!! pretrained model은 용량 초과로 업로드하지 않았습니다)
 
  ### 사전 준비
  
