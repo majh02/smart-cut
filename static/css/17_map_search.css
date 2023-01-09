@@ -1,0 +1,1318 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-size: 14px;
+  }
+  .v0_8969 {
+    width: 375px;
+    height: 812px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .v0_8970 {
+    width: 823px;
+    height: 812px;
+    background: url("../images/v0_8970.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 1px;
+    overflow: hidden;
+  }
+  .v168_7435 {
+    width: 823px;
+    height: 758px;
+    background: url("../images/v168_7435.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .v0_8972 {
+    width: 375px;
+    height: 85px;
+    background: linear-gradient(rgba(255,255,255,1), rgba(255,255,255,0.00009999999747378752));
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border: 0px solid rgba(150,150,150,1);
+    overflow: hidden;
+  }
+  .v0_8973 {
+    width: 41px;
+    height: 45px;
+    background: url("../images/v0_8973.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 413px;
+    left: 232px;
+    overflow: hidden;
+  }
+  .v0_8974 {
+    width: 41px;
+    height: 45px;
+    background: url("../images/v0_8974.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .v0_8975 {
+    width: 41px;
+    height: 45px;
+    background: rgba(0,0,0,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  .v0_8976 {
+    width: 41px;
+    height: 45px;
+    background: rgba(255,126,0,1);
+    opacity: 1;
+    position: absolute;
+    top: 1px;
+    left: 0px;
+  }
+  .v0_8977 {
+    width: 19px;
+    height: 23px;
+    background: rgba(161,79,0,1);
+    opacity: 1;
+    position: absolute;
+    top: 9px;
+    left: 12px;
+  }
+  .name {
+    color: #fff;
+  }
+  .v0_8982 {
+    width: 41px;
+    height: 45px;
+    background: url("../images/v0_8982.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 149px;
+    left: 333px;
+    overflow: hidden;
+  }
+  .v0_8983 {
+    width: 41px;
+    height: 45px;
+    background: url("../images/v0_8983.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .v0_8984 {
+    width: 41px;
+    height: 45px;
+    background: rgba(0,0,0,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  .v0_8985 {
+    width: 41px;
+    height: 45px;
+    background: rgba(255,126,0,1);
+    opacity: 1;
+    position: absolute;
+    top: 1px;
+    left: 0px;
+  }
+  .v0_8986 {
+    width: 19px;
+    height: 23px;
+    background: rgba(161,79,0,1);
+    opacity: 1;
+    position: absolute;
+    top: 9px;
+    left: 12px;
+  }
+  .name {
+    color: #fff;
+  }
+  .v0_8991 {
+    width: 41px;
+    height: 45px;
+    background: url("../images/v0_8991.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 81px;
+    left: 7px;
+    overflow: hidden;
+  }
+  .v0_8992 {
+    width: 41px;
+    height: 45px;
+    background: url("../images/v0_8992.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .v0_8993 {
+    width: 41px;
+    height: 45px;
+    background: rgba(0,0,0,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  .v0_8994 {
+    width: 41px;
+    height: 45px;
+    background: rgba(255,126,0,1);
+    opacity: 1;
+    position: absolute;
+    top: 1px;
+    left: 0px;
+  }
+  .v0_8995 {
+    width: 19px;
+    height: 23px;
+    background: rgba(161,79,0,1);
+    opacity: 1;
+    position: absolute;
+    top: 9px;
+    left: 12px;
+  }
+  .name {
+    color: #fff;
+  }
+  .v0_9000 {
+    width: 209px;
+    height: 209px;
+    background: url("../images/v0_9000.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 186px;
+    left: 77px;
+    overflow: hidden;
+  }
+  .v0_9001 {
+    width: 209px;
+    height: 209px;
+    background: rgba(255,126,0,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  .v0_9002 {
+    width: 89px;
+    height: 89px;
+    background: rgba(255,126,0,1);
+    opacity: 1;
+    position: absolute;
+    top: 60px;
+    left: 60px;
+  }
+  .v0_9003 {
+    width: 59px;
+    height: 59px;
+    background: rgba(255,126,0,1);
+    opacity: 1;
+    position: absolute;
+    top: 75px;
+    left: 75px;
+  }
+  .v0_9004 {
+    width: 35px;
+    height: 35px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 87px;
+    left: 87px;
+    border: 0px solid rgba(150,150,150,1);
+  }
+  .v0_9005 {
+    width: 31px;
+    height: 31px;
+    background: url("../images/v0_9005.png");
+    opacity: 1;
+    position: absolute;
+    top: 89px;
+    left: 89px;
+    border: 0px solid rgba(150,150,150,1);
+  }
+  .v0_9006 {
+    width: 375px;
+    height: 812px;
+    background: rgba(39,40,71,1);
+    opacity: 0.5960286259651184;
+    position: absolute;
+    top: 0px;
+    left: 1px;
+    overflow: hidden;
+  }
+  .v0_9007 {
+    width: 345px;
+    height: 731px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 81px;
+    left: 15px;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  .v0_9008 {
+    width: 345px;
+    height: 731px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border: 0px solid rgba(150,150,150,1);
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0.5471892952919006, 0.5316726565361023, 0.6861979365348816, 0.07025786489248276);
+    overflow: hidden;
+  }
+
+  /* 미용실 목록 */
+  .v0_9009 {
+    width: 345px;
+    height: 608px;
+    background: rgba(244,244,244,1);
+    opacity: 1;
+    position: absolute;
+    top: 123px;
+    left: 0px;
+    overflow: scroll;
+    border-radius: 20px;
+  }
+  .v0_9010 {
+    width: 194px;
+    height: 19px;
+    background: url("../images/v0_9010.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 28px;
+    left: 15px;
+    overflow: hidden;
+  }
+  .v0_9011 {
+    width: 170px;
+    color: rgba(46,58,89,1);
+    position: absolute;
+    top: 0px;
+    left: 24px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .name {
+    color: #fff;
+  }
+  .v0_9013 {
+    width: 315px;
+    height: 44px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 64px;
+    left: 15px;
+    overflow: hidden;
+  }
+  .v0_9014 {
+    width: 315px;
+    height: 44px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    /* border: 1px solid rgba(239,239,239,1); */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    overflow: hidden;
+  }
+  .v0_9015 {
+    width: 315px;
+    height: 44px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .v0_9016 {
+    width: 42px;
+    color: rgba(34,43,69,1);
+    position: absolute;
+    top: 3px;
+    left: 0px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .searchBox {
+    width: 315px;
+    height: 40px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border: 1px solid rgba(239,239,239,1);
+    border-radius: 8px;
+    overflow: hidden;
+    color: rgba(197,206,224,1);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  } 
+  .searchBox:hover{
+    box-shadow: 0px 4px 10px #C5CEE0;
+  }
+  .v0_9019 {
+    width: 36px;
+    height: 4px;
+    background: rgba(215,215,215,1);
+    opacity: 1;
+    position: absolute;
+    top: 11px;
+    left: 155px;
+    border: 4.5px solid rgba(217,217,217,1);
+    border-radius: 10px;
+  }
+  .v0_9019:hover{
+    box-shadow: 0px 1px 1px #C5CEE0;
+  }
+  .v0_9020 {
+    width: 315px;
+    height: 75px;
+    background: rgba(244,244,244,1);
+    opacity: 1;
+    position: absolute;
+    top: 515px;
+    left: 18px;
+    overflow: hidden;
+  }
+  .v0_9020:hover{
+    box-shadow: 0px 2px 5px #C5CEE0;
+  }
+  .v0_9021 {
+    width: 87px;
+    height: 67px;
+    background: url("/static/img/tuesday.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border: 0px solid rgba(150,150,150,1);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    overflow: hidden;
+  }
+  .v0_9022 {
+    width: 201px;
+    color: rgba(46,58,89,1);
+    position: absolute;
+    top: 30px;
+    left: 119px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    opacity: 0.564267098903656;
+    text-align: left;
+  }
+  .v0_9023 {
+    width: 218px;
+    color: rgba(46,58,89,1);
+    position: absolute;
+    top: 0px;
+    left: 97px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v0_9024 {
+    width: 19px;
+    color: rgba(46,58,89,1);
+    position: absolute;
+    top: 52px;
+    left: 103px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    opacity: 1;
+    text-align: right;
+  }
+  .v0_9025 {
+    width: 49px;
+    color: rgba(46,58,89,1);
+    position: absolute;
+    top: 52px;
+    left: 161px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    opacity: 1;
+    text-align: left;
+  }
+  .name {
+    color: #fff;
+  }
+  .v0_9027 {
+    width: 5px;
+    height: 5px;
+    background: rgba(227,232,242,1);
+    opacity: 1;
+    position: absolute;
+    top: 56px;
+    left: 146px;
+    border: 0px solid rgba(150,150,150,1);
+  }
+  .name {
+    color: #fff;
+  }
+  .v0_9029 {
+    width: 315px;
+    height: 75px;
+    background: rgba(244,244,244,1);
+    opacity: 1;
+    position: absolute;
+    top: 430px;
+    left: 15px;
+    overflow: hidden;
+  }
+  .v0_9029:hover{
+    box-shadow: 0px 2px 5px #C5CEE0;
+  }
+  .v0_9030 {
+    width: 87px;
+    height: 67px;
+    background: url("/static/img/hwameeju.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border: 0px solid rgba(150,150,150,1);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    overflow: hidden;
+  }
+  .v0_9031 {
+    width: 201px;
+    color: rgba(46,58,89,1);
+    position: absolute;
+    top: 30px;
+    left: 119px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    opacity: 0.564267098903656;
+    text-align: left;
+  }
+  .v0_9032 {
+    width: 218px;
+    color: rgba(46,58,89,1);
+    position: absolute;
+    top: 0px;
+    left: 97px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v0_9033 {
+    width: 19px;
+    color: rgba(46,58,89,1);
+    position: absolute;
+    top: 52px;
+    left: 103px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    opacity: 1;
+    text-align: right;
+  }
+  .v0_9034 {
+    width: 49px;
+    color: rgba(46,58,89,1);
+    position: absolute;
+    top: 52px;
+    left: 161px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    opacity: 1;
+    text-align: left;
+  }
+  .name {
+    color: #fff;
+  }
+  .v0_9036 {
+    width: 5px;
+    height: 5px;
+    background: rgba(197,206,224,1);
+    opacity: 1;
+    position: absolute;
+    top: 56px;
+    left: 146px;
+    border: 0px solid rgba(150,150,150,1);
+  }
+  .name {
+    color: #fff;
+  }
+  .v0_9038 {
+    width: 315px;
+    height: 75px;
+    background: rgba(244,244,244,1);
+    opacity: 1;
+    position: absolute;
+    top: 345px;
+    left: 15px;
+    overflow: hidden;
+  }
+  .v0_9038:hover{
+    box-shadow: 0px 2px 5px #C5CEE0;
+  }
+  .v0_9039 {
+    width: 87px;
+    height: 67px;
+    background: url("/static/img/hans.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border: 0px solid rgba(150,150,150,1);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    overflow: hidden;
+  }
+  .v0_9040 {
+    width: 201px;
+    color: rgba(46,58,89,1);
+    position: absolute;
+    top: 30px;
+    left: 119px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    opacity: 0.564267098903656;
+    text-align: left;
+  }
+  .v0_9041 {
+    width: 218px;
+    color: rgba(46,58,89,1);
+    position: absolute;
+    top: 0px;
+    left: 97px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v0_9042 {
+    width: 19px;
+    color: rgba(46,58,89,1);
+    position: absolute;
+    top: 52px;
+    left: 103px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    opacity: 1;
+    text-align: right;
+  }
+  .v0_9043 {
+    width: 49px;
+    color: rgba(46,58,89,1);
+    position: absolute;
+    top: 52px;
+    left: 161px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    opacity: 1;
+    text-align: left;
+  }
+  .name {
+    color: #fff;
+  }
+  .v0_9045 {
+    width: 5px;
+    height: 5px;
+    background: rgba(197,206,224,1);
+    opacity: 1;
+    position: absolute;
+    top: 56px;
+    left: 146px;
+    border: 0px solid rgba(150,150,150,1);
+  }
+  .name {
+    color: #fff;
+  }
+  .v0_9047 {
+    width: 315px;
+    height: 75px;
+    background: rgba(244,244,244,1);
+    opacity: 1;
+    position: absolute;
+    top: 260px;
+    left: 15px;
+    overflow: hidden;
+  }
+  .v0_9047:hover{
+    box-shadow: 0px 2px 5px #C5CEE0;
+  }
+  .v0_9048 {
+    width: 87px;
+    height: 67px;
+    background: url("/static/img/chohee.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border: 0px solid rgba(150,150,150,1);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    overflow: hidden;
+  }
+  .v0_9049 {
+    width: 201px;
+    color: rgba(46,58,89,1);
+    position: absolute;
+    top: 30px;
+    left: 119px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    opacity: 0.564267098903656;
+    text-align: left;
+  }
+  .v0_9050 {
+    width: 218px;
+    color: rgba(46,58,89,1);
+    position: absolute;
+    top: 0px;
+    left: 97px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v0_9051 {
+    width: 19px;
+    color: rgba(46,58,89,1);
+    position: absolute;
+    top: 52px;
+    left: 103px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    opacity: 1;
+    text-align: right;
+  }
+  .v0_9052 {
+    width: 49px;
+    color: rgba(46,58,89,1);
+    position: absolute;
+    top: 52px;
+    left: 161px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    opacity: 1;
+    text-align: left;
+  }
+  .name {
+    color: #fff;
+  }
+  .v0_9054 {
+    width: 5px;
+    height: 5px;
+    background: rgba(197,206,224,1);
+    opacity: 1;
+    position: absolute;
+    top: 56px;
+    left: 146px;
+    border: 0px solid rgba(150,150,150,1);
+  }
+  .name {
+    color: #fff;
+  }
+  .v0_9056 {
+    width: 315px;
+    height: 75px;
+    background: rgba(244,244,244,1);
+    opacity: 1;
+    position: absolute;
+    top: 175px;
+    left: 15px;
+    overflow: hidden;
+  }
+  .v0_9056:hover{
+    box-shadow: 0px 2px 5px #C5CEE0;
+  }
+  .v0_9057 {
+    width: 87px;
+    height: 67px;
+    background: url("/static/img/haircastle.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border: 0px solid rgba(150,150,150,1);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    overflow: hidden;
+  }
+  .v0_9058 {
+    width: 201px;
+    color: rgba(46,58,89,1);
+    position: absolute;
+    top: 30px;
+    left: 119px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    opacity: 0.564267098903656;
+    text-align: left;
+  }
+  .v0_9059 {
+    width: 218px;
+    color: rgba(46,58,89,1);
+    position: absolute;
+    top: 0px;
+    left: 97px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v0_9060 {
+    width: 19px;
+    color: rgba(46,58,89,1);
+    position: absolute;
+    top: 52px;
+    left: 103px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    opacity: 1;
+    text-align: right;
+  }
+  .v0_9061 {
+    width: 49px;
+    color: rgba(46,58,89,1);
+    position: absolute;
+    top: 52px;
+    left: 161px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    opacity: 1;
+    text-align: left;
+  }
+  .name {
+    color: #fff;
+  }
+  .v0_9063 {
+    width: 5px;
+    height: 5px;
+    background: rgba(197,206,224,1);
+    opacity: 1;
+    position: absolute;
+    top: 56px;
+    left: 146px;
+    border: 0px solid rgba(150,150,150,1);
+  }
+  .name {
+    color: #fff;
+  }
+  .v0_9065 {
+    width: 315px;
+    height: 75px;
+    background: rgba(244,244,244,1);
+    opacity: 1;
+    position: absolute;
+    top: 95px;
+    left: 15px;
+    overflow: hidden;
+  }
+  .v0_9065:hover{
+    box-shadow: 0px 2px 5px #C5CEE0;
+  }
+  .v0_9066 {
+    width: 87px;
+    height: 67px;
+    background: url("/static/img/2gaja.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border: 0px solid rgba(150,150,150,1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .v0_9067 {
+    width: 201px;
+    color: rgba(46,58,89,1);
+    position: absolute;
+    top: 30px;
+    left: 119px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    opacity: 0.564267098903656;
+    text-align: left;
+  }
+  .v0_9068 {
+    width: 218px;
+    color: rgba(46,58,89,1);
+    position: absolute;
+    top: 5px;
+    left: 103px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v0_9069 {
+    width: 19px;
+    color: rgba(46,58,89,1);
+    position: absolute;
+    top: 52px;
+    left: 103px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    opacity: 1;
+    text-align: right;
+  }
+  .v0_9070 {
+    width: 49px;
+    color: rgba(46,58,89,1);
+    position: absolute;
+    top: 52px;
+    left: 161px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    opacity: 1;
+    text-align: left;
+  }
+  .name {
+    color: #fff;
+  }
+  .v0_9072 {
+    width: 5px;
+    height: 5px;
+    background: rgba(197,206,224,1);
+    opacity: 1;
+    position: absolute;
+    top: 56px;
+    left: 146px;
+    border: 0px solid rgba(150,150,150,1);
+  }
+  .name {
+    color: #fff;
+  }
+  .v0_9074 {
+    width: 315px;
+    height: 75px;
+    background: rgba(244,244,244,1);
+    opacity: 1;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    overflow: hidden;
+  }
+  .v0_9074:hover{
+    box-shadow: 0px 2px 5px #C5CEE0;
+  }
+  .v0_9075 {
+    width: 87px;
+    height: 67px;
+    background: url("/static/img/leechul.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border: 0px solid rgba(150,150,150,1);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    overflow: hidden;
+  }
+
+  .v0_9076 {
+    width: 201px;
+    color: rgba(46,58,89,1);
+    position: absolute;
+    top: 30px;
+    left: 119px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    opacity: 0.564267098903656;
+    text-align: left;
+  }
+  .v0_9077 {
+    width: 218px;
+    color: rgba(46,58,89,1);
+    position: absolute;
+    top: 5px;
+    left: 103px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v0_9078 {
+    width: 19px;
+    color: rgba(46,58,89,1);
+    position: absolute;
+    top: 52px;
+    left: 103px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    opacity: 1;
+    text-align: right;
+  }
+  #star_icon{
+    font-size: 13px;
+    position: absolute;
+    top: 55px;
+    left: 123px;
+    color: #FF7E00;
+  }
+  .v0_9079 {
+    width: 49px;
+    color: rgba(46,58,89,1);
+    position: absolute;
+    top: 52px;
+    left: 166px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    opacity: 1;
+    text-align: left;
+  }
+  .name {
+    color: #fff;
+  }
+  .v0_9081 {
+    width: 5px;
+    height: 5px;
+    background: rgba(197,206,224,1);
+    opacity: 1;
+    position: absolute;
+    top: 56px;
+    left: 146px;
+    border: 0px solid rgba(150,150,150,1);
+  }
+  .name {
+    color: #fff;
+  }
+  .name {
+    color: #fff;
+  }
+  .name {
+    color: #fff;
+  }
+
+/* menuBar */
+.menuBar {
+  width: 375px;
+  height: 68px;
+  background: rgb(255, 255, 255);
+  opacity: 1;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.vI0_9961_0_8175 {
+  width: 375px;
+  height: 68px;
+  background: rgb(255, 255, 255);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.101343967);
+}
+
+.name {
+  color: #fff;
+}
+
+/* 메인화면 */
+.main {
+  width: 75px;
+  height: 68px;
+  background: rgb(255, 255, 255);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  border: none;
+  color: #C5CEE0;
+}
+#icon1 {
+  width: 38px;
+  height: 38px;
+  font-size: 32px;
+  position: absolute;
+  top: 10px;
+  left: 18px;
+  padding: 0px 0px;
+}
+.icon1_name {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: absolute;
+  top: 50px;
+  left: 18px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+}
+.main:hover{
+  color: #FF7E00;
+}
+
+/* 내 주변 */
+.location {
+  width: 75px;
+  height: 68px;
+  background: rgb(255, 255, 255);
+  color: #FF7E00;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 75px;
+  overflow: hidden;
+  border: none;
+}
+#icon2 {
+  width: 38px;
+  height: 38px;
+  font-size: 32px;
+  position: absolute;
+  top: 10px;
+  left: 18px;
+  padding: 0px 0px;
+}
+.icon2_name {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: absolute;
+  top: 50px;
+  left: 21px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+}
+.location:hover{
+  color: #FF7E00;
+}
+.location:hover > #icon2{
+  font-size: 35px;
+}
+
+/* 예약내역 */
+.reservation {
+  width: 75px;
+  height: 68px;
+  background: rgb(255, 255, 255);
+  color: #C5CEE0;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 150px;
+  overflow: hidden;
+  border: none;
+}
+#icon3 {
+  width: 38px;
+  height: 38px;
+  font-size: 32px;
+  position: absolute;
+  top: 10px;
+  left: 18px;
+  padding: 0px 0px;
+}
+.icon3_name {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: absolute;
+  top: 50px;
+  left: 18px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+}
+.reservation:hover{
+  color: #FF7E00;
+}
+
+/* 채팅 */
+.chatting {
+  width: 75px;
+  height: 68px;
+  background: rgb(255, 255, 255);
+  color: #C5CEE0;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 225px;
+  overflow: hidden;
+  border: none;
+}
+#icon4 {
+  width: 38px;
+  height: 38px;
+  font-size: 32px;
+  position: absolute;
+  top: 10px;
+  left: 18px;
+  padding: 0px 0px;
+}
+.icon4_name {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: absolute;
+  top: 50px;
+  left: 25px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+}
+.chatting:hover{
+  color: #FF7E00;
+}
+
+/* 프로필 */
+.profile {
+  width: 75px;
+  height: 68px;
+  background: rgb(255, 255, 255);
+  color: #C5CEE0;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 300px;
+  overflow: hidden;
+  border: none;
+}
+#icon5 {
+  width: 38px;
+  height: 38px;
+  font-size: 32px;
+  position: absolute;
+  top: 10px;
+  left: 18px;
+  padding: 0px 0px;
+}
+.icon5_name {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: absolute;
+  top: 50px;
+  left: 23px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+}
+.profile:hover{
+  color: #FF7E00;
+}

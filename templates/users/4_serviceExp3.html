@@ -1,0 +1,18 @@
+{% extends 'users/serviceExp_base.html' %}
+{% load static %}
+{% block img %}
+<img src="{% static 'img/bitmap3_.png' %}">
+{% endblock img %}
+
+{% block tabBar %}
+<input class="tap1" type="submit" value="" onclick="location.href='{% url 'users:serviceExp1' %}'">
+<input class="tap2" type="submit" value="" onclick="location.href='{% url 'users:serviceExp2' %}'">
+<input id="colored_tab" class="tap3" type="submit" value="" onclick="location.href='{% url 'users:serviceExp3' %}'">
+{% endblock tabBar %}
+
+{% block title %}전문 디자이너와 채팅을 해보세요{% endblock title %}
+{% block exp %}헤어디자이너와의 채팅을 통해<br>원하는 헤어스타일을 상담해보세요!{% endblock exp %}
+
+{% block skip_btn %}
+<input class="getStarted_btn" type="submit" value="Get Started" onclick="location.href='{% url 'users:login' %}'">
+{% endblock skip_btn %}

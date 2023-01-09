@@ -1,0 +1,219 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.79.0">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+
+    <!-- BootStrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- modal -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- Axios -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'css/7_selfCertification.css' %}">
+</head>
+    
+    <body>
+        <div class="v0_10431">
+            <div class="v0_10432"></div>
+            <div class="v0_10433">
+                <div class="v0_10434"></div>
+                <div class="name"></div>
+            </div>
+
+            <div class="container_div">
+                <div class="title_div">
+                    <span class="v0_10513">이메일 본인인증</span>
+                </div>
+
+                <div class="exp_div">
+                    <span class="v0_10512">이메일로 보내드린 OTP코드를 입력해주세요.</span>
+                </div>
+
+                <div class="container">
+                    <div class="AuthNum_div">
+                        <input id='AuthNum1' class="AuthNum" type="number" min="0" max="9" maxlength='1' onchange="colorChange('AuthNum1')">
+                    </div>
+                    <div class="AuthNum_div">
+                        <input id='AuthNum2' class="AuthNum" type="number" min="0" max="9" maxlength='1' onchange="colorChange('AuthNum2')">
+                    </div>
+                    <div class="AuthNum_div">
+                        <input id='AuthNum3' class="AuthNum" type="number" min="0" max="9" maxlength='1' onchange="colorChange('AuthNum3')">
+                    </div>
+                    <div class="AuthNum_div">
+                        <input id='AuthNum4' class="AuthNum" type="number" min="0" max="9" maxlength='1' onchange="colorChange('AuthNum4')">
+                    </div>
+                    <div class="AuthNum_div">
+                        <input id='AuthNum5' class="AuthNum" type="number" min="0" max="9" maxlength='1' onchange="colorChange('AuthNum5')">
+                    </div>
+                </div>
+
+                <div class="v0_10500">
+                    <input class="v0_10501" type="submit" value="확인" onclick="verifyOtp()"></div>
+                </div>
+                  
+                <input id="Timer" class="Remaining_time" type="text" value="" readonly disabled/>
+            
+            </div>
+        </div>
+    </body>
+</html>
+
+<script>
+    let otp1 = document.getElementById('AuthNum1');
+    let otp2 = document.getElementById('AuthNum2');
+    let otp3 = document.getElementById('AuthNum3');
+    let otp4 = document.getElementById('AuthNum4');
+    let otp5 = document.getElementById('AuthNum5');
+
+    otp1.onkeydown = function(event) {
+        if (event.keyCode != 8) {
+            if (otp1.value.length > 0){
+                otp2.focus();
+            }
+        }
+    }
+    otp2.onkeydown = function(event) {
+        if (event.keyCode != 8) {
+            if (otp2.value.length > 0){
+                otp3.focus();
+            }
+        } else {
+            if (otp2.value.length == 0){
+                otp1.focus();
+                otp1.value = '';
+            }
+        }
+    }
+    otp3.onkeydown = function(event) {
+        if (event.keyCode != 8) {
+            if (otp3.value.length > 0){
+                otp4.focus();
+            }
+        } else {
+            if (otp3.value.length == 0){
+                otp2.focus();
+                otp2.value = '';
+            }
+        }
+    }
+    otp4.onkeydown = function(event) {
+        if (event.keyCode != 8) {
+            if (otp4.value.length > 0){
+                otp5.focus();
+            }
+        } else {
+            if (otp4.value.length == 0){
+                otp3.focus();
+                otp3.value = '';
+            }
+        }
+    }
+    otp5.onkeydown = function(event) {
+        if (event.keyCode == 8) {
+            if (otp5.value.length == 0){
+                otp4.focus();
+                otp4.value = '';
+            }
+        }
+    }
+</script>
+
+<script>
+    axios.defaults.xsrfCookieName = 'csrftoken';
+    axios.defaults.xsrfHeaderName = 'X-CSRFTOKEN';
+    function verifyOtp(event){
+
+        let token1 = document.getElementById('AuthNum1').value
+        let token2 = document.getElementById('AuthNum2').value
+        let token3 = document.getElementById('AuthNum3').value
+        let token4 = document.getElementById('AuthNum4').value
+        let token5 = document.getElementById('AuthNum5').value
+        let otp = token1 + token2 + token3 + token4 + token5
+    
+        axios({
+            method: "POST",
+            url: 'http://' + window.location.host + '/users/verifyOtp/',
+            data : {
+                otp: otp
+              
+            }
+            }).then(res => {
+    
+                
+                swal({
+                    title: "인증 완료하였습니다.",
+                    text: "확인 버튼을 누른 후 비밀번호를 변경하세요.",
+                    icon: "success",
+                    button: "확인",
+                }).then((value) => {
+                    document.cookie = "email=" + res.data.email + "; path=/users/changePW/; expires=3600;"
+                    location.replace('/users/changePW/');
+                })    
+            }).catch(err=> {
+                console.log("FETCH MAILACCESS ERR.RESPONSE", err.response);
+                alert(err.response.data.message)
+            })
+    }
+
+    function colorChange(id){
+        var inputVal = document.getElementById(id)
+
+        if(inputVal.value.length==0){
+            inputVal.style.borderBottom = '2px solid gray';
+        }
+        else{
+            inputVal.style.borderBottom = '2px solid rgba(255,126,0,1)';
+        }
+    }
+
+    const Timer=document.getElementById('Timer'); //스코어 기록창-분
+    let time= 180000;
+    let min=3;
+    let sec=60;
+
+
+    Timer.value=min+":"+'00'; 
+
+    function TIMER(){
+        PlAYTIME=setInterval(function(){
+            time=time-1000; //1초씩 줄어듦
+            min=time/(60*1000); //초를 분으로 나눠준다.
+
+        if(sec>0){ //sec=60 에서 1씩 빼서 출력해준다.
+                sec=sec-1;
+                Timer.value=Math.floor(min)+':'+sec; //실수로 계산되기 때문에 소숫점 아래를 버리고 출력해준다.
+            
+            }
+            if(sec===0){
+                // 0에서 -1을 하면 -59가 출력된다.
+                // 그래서 0이 되면 바로 sec을 60으로 돌려주고 value에는 0을 출력하도록 해준다.
+                sec=60;
+                Timer.value=Math.floor(min)+':'+'00'
+            }     
+        
+        },1000); //1초마다 
+    }
+
+
+    TIMER();
+    setTimeout(function(){
+        clearInterval(PlAYTIME);
+
+    },180000)
+
+    //3분이 되면 타이머를 삭제한다.
+</script>

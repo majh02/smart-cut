@@ -1,0 +1,481 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-size: 14px;
+  }
+  .v0_10092 {
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  .v0_10093 {
+    width: 100%;
+    height: 100px;
+    background: rgba(255,126,0,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .v0_10094 {
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .v0_10095 {
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border: 0px solid rgba(150,150,150,1);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    overflow: hidden;
+  }
+  .name {
+    color: #fff;
+  }
+  .v0_10216 {
+    width: 70%;
+    height: 44px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 450px;
+    left: 15%;
+  }
+  .v0_10216:hover input{
+    font-weight: 700;
+  }
+  .v0_10216_2 {
+    width: 70%;
+    height: 44px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 467px;
+    left: 15%;
+  }
+  .v0_10216_2:hover input{
+    font-weight: 700;
+  }
+  .v0_10217 {
+    width: 100%;
+    height: 44px;
+    background: rgba(255,126,0,1);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border: none;
+    border-radius: 8px;
+    color: rgba(255,255,255,1);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+  }
+  #ok{
+    background-color: white;
+    border: 1px solid #FF7E00;
+    color: #FF7E00;
+  }
+  #ok:hover{
+    background-color: #FF7E00;
+    color: white;
+  }
+  .v0_10219 {
+    width: 80%;
+    height: 55px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 343px;
+    left: 0%;
+    margin: 0px 10%;
+  }
+  .v0_10220 {
+    width: fit-content;
+    color: rgba(143,155,179,1);
+    position: absolute;
+    top: 0px;
+    left: 5%;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v0_10222 {
+    width: 90%;
+    height: 30px;
+    opacity: 1;
+    position: absolute;
+    top: 27px;
+    left: 0%;
+    overflow: hidden;
+  }
+  #id_user_pw{
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+    border: none;
+    font-family: 'Abel';
+    font-weight: 'Regular';
+  }
+  #id_user_pw:focus{
+    border-bottom: 2px solid #FF7E00;
+    box-shadow: none;
+  }
+
+  #Input_NewPassword {
+    width: 90fr;
+    height: 20px;
+    margin-top: 5px;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 5%;
+    border: none;
+    font-family: 'Abel';
+    font-weight: 'Regular';
+  }
+  #Input_NewPassword:focus{
+    border-bottom: 2px solid #FF7E00;
+  }
+  .form-control{
+    border: none;
+    outline: none;
+  }
+  .form-control:focus{
+    box-shadow: none;
+    outline: none;
+  }
+  .v0_10224 {
+    width: 6px;
+    height: 6px;
+    background: rgba(34,43,69,1);
+    opacity: 1;
+    position: absolute;
+    top: 8px;
+    left: 88px;
+    border: 0px solid rgba(150,150,150,1);
+  }
+  .v0_10225 {
+    width: 6px;
+    height: 6px;
+    background: rgba(34,43,69,1);
+    opacity: 1;
+    position: absolute;
+    top: 8px;
+    left: 22px;
+    border: 0px solid rgba(150,150,150,1);
+  }
+  .v0_10226 {
+    width: 6px;
+    height: 6px;
+    background: rgba(34,43,69,1);
+    opacity: 1;
+    position: absolute;
+    top: 8px;
+    left: 66px;
+    border: 0px solid rgba(150,150,150,1);
+  }
+  .v0_10227 {
+    width: 6px;
+    height: 6px;
+    background: rgba(34,43,69,1);
+    opacity: 1;
+    position: absolute;
+    top: 8px;
+    left: 11px;
+    border: 0px solid rgba(150,150,150,1);
+  }
+  .v0_10228 {
+    width: 6px;
+    height: 6px;
+    background: rgba(34,43,69,1);
+    opacity: 1;
+    position: absolute;
+    top: 8px;
+    left: 55px;
+    border: 0px solid rgba(150,150,150,1);
+  }
+  .v0_10229 {
+    width: 6px;
+    height: 6px;
+    background: rgba(34,43,69,1);
+    opacity: 1;
+    position: absolute;
+    top: 8px;
+    left: 33px;
+    border: 0px solid rgba(150,150,150,1);
+  }
+  .v0_10230 {
+    width: 6px;
+    height: 6px;
+    background: rgba(34,43,69,1);
+    opacity: 1;
+    position: absolute;
+    top: 8px;
+    left: 77px;
+    border: 0px solid rgba(150,150,150,1);
+  }
+  .v0_10231 {
+    width: 6px;
+    height: 6px;
+    background: rgba(34,43,69,1);
+    opacity: 1;
+    position: absolute;
+    top: 8px;
+    left: 0px;
+    border: 0px solid rgba(150,150,150,1);
+  }
+  .v0_10232 {
+    width: 1px;
+    height: 22px;
+    background: rgba(255,126,0,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 98px;
+    overflow: hidden;
+  }
+  .name {
+    color: #fff;
+  }
+  .v0_10234 {
+    width: 80%;
+    height: 55px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 258px;
+    left: 10%;
+  }
+  .v0_10235 {
+    width: fit-content;
+    color: rgba(143,155,179,1);
+    position: absolute;
+    top: 0px;
+    left: 5%;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  /* .v0_10236 {
+    width: 315px;
+    height: 1px;
+    background: rgba(227,232,242,1);
+    opacity: 1;
+    position: absolute;
+    top: 54px;
+    left: 0px;
+    border: 0px solid rgba(150,150,150,1);
+    overflow: hidden;
+  } */
+  .v0_10237 {
+    width: 100%;
+    height: 50px;
+    opacity: 1;
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    overflow: hidden;
+  }
+  #Input_PrevPassword {
+    width: 90%;
+    height: 20px;
+    margin-top: 2px;
+    position: absolute;
+    top: 0px;
+    left: 5%;
+    border: none;
+    font-family: 'Abel';
+    font-weight: 'Regular';
+  }
+  #Input_PrevPassword:focus{
+    padding: 0px 10px;
+    border-bottom: 2px solid #FF7E00;
+  }
+  .form-control{
+    padding: 0px 10px;
+  }
+  .v0_10239 {
+    width: 6px;
+    height: 6px;
+    background: rgba(34,43,69,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 88px;
+    border: 0px solid rgba(150,150,150,1);
+  }
+  .v0_10240 {
+    width: 6px;
+    height: 6px;
+    background: rgba(34,43,69,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 22px;
+    border: 0px solid rgba(150,150,150,1);
+  }
+  .v0_10241 {
+    width: 6px;
+    height: 6px;
+    background: rgba(34,43,69,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 66px;
+    border: 0px solid rgba(150,150,150,1);
+  }
+  .v0_10242 {
+    width: 6px;
+    height: 6px;
+    background: rgba(34,43,69,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 110px;
+    border: 0px solid rgba(150,150,150,1);
+  }
+  .v0_10243 {
+    width: 6px;
+    height: 6px;
+    background: rgba(34,43,69,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 11px;
+    border: 0px solid rgba(150,150,150,1);
+  }
+  .v0_10244 {
+    width: 6px;
+    height: 6px;
+    background: rgba(34,43,69,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 55px;
+    border: 0px solid rgba(150,150,150,1);
+  }
+  .v0_10245 {
+    width: 6px;
+    height: 6px;
+    background: rgba(34,43,69,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 99px;
+    border: 0px solid rgba(150,150,150,1);
+  }
+  .v0_10246 {
+    width: 6px;
+    height: 6px;
+    background: rgba(34,43,69,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 33px;
+    border: 0px solid rgba(150,150,150,1);
+  }
+  .v0_10247 {
+    width: 6px;
+    height: 6px;
+    background: rgba(34,43,69,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 77px;
+    border: 0px solid rgba(150,150,150,1);
+  }
+  .v0_10248 {
+    width: 6px;
+    height: 6px;
+    background: rgba(34,43,69,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 121px;
+    border: 0px solid rgba(150,150,150,1);
+  }
+  .v0_10249 {
+    width: 6px;
+    height: 6px;
+    background: rgba(34,43,69,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border: 0px solid rgba(150,150,150,1);
+  }
+  .name {
+    color: #fff;
+  }
+  .v0_10251 {
+    width: 100%;
+    color: rgba(143,155,179,1);
+    position: absolute;
+    top: 205px;
+    left: 0px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    opacity: 1;
+    text-align: center;
+  }
+  .v0_10252 {
+    width: 100%;
+    color: rgba(46,58,89,1);
+    position: absolute;
+    top: 146px;
+    left: 0px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+  }
+  .name {
+    color: #fff;
+  }
+  .name {
+    color: #fff;
+  }
+  .name {
+    color: #fff;
+  }
+  .name {
+    color: #fff;
+  }
+
+  @media screen and (min-width: 800px){
+    .v0_10234{
+      width: 50%;
+      left: 25%;
+    }
+    .v0_10219{
+      width: 50%;
+      margin: 0px 25%;
+    }
+    .v0_10216{
+      width: 40%;
+      left: 30%;
+    }
+  }

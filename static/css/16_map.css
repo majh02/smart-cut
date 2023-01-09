@@ -1,0 +1,612 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+}
+
+/* menuBar */
+.menuBar {
+  width: 375px;
+  height: 68px;
+  background: rgb(255, 255, 255);
+  opacity: 1;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.vI0_9961_0_8175 {
+  width: 375px;
+  height: 68px;
+  background: rgb(255, 255, 255);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.101343967);
+}
+
+.name {
+  color: #fff;
+}
+
+/* 메인화면 */
+.main {
+  width: 75px;
+  height: 68px;
+  background: rgb(255, 255, 255);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  border: none;
+  color: #C5CEE0;
+}
+#icon1 {
+  width: 38px;
+  height: 38px;
+  font-size: 32px;
+  position: absolute;
+  top: 10px;
+  left: 18px;
+  padding: 0px 0px;
+}
+.icon1_name {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: absolute;
+  top: 50px;
+  left: 18px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+}
+.main:hover{
+  color: #FF7E00;
+}
+
+/* 내 주변 */
+.location {
+  width: 75px;
+  height: 68px;
+  background: rgb(255, 255, 255);
+  color: #FF7E00;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 75px;
+  overflow: hidden;
+  border: none;
+}
+#icon2 {
+  width: 38px;
+  height: 38px;
+  font-size: 32px;
+  position: absolute;
+  top: 10px;
+  left: 18px;
+  padding: 0px 0px;
+}
+.icon2_name {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: absolute;
+  top: 50px;
+  left: 21px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+}
+.location:hover{
+  color: #FF7E00;
+}
+.location:hover > #icon2{
+  font-size: 35px;
+}
+
+/* 예약내역 */
+.reservation {
+  width: 75px;
+  height: 68px;
+  background: rgb(255, 255, 255);
+  color: #C5CEE0;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 150px;
+  overflow: hidden;
+  border: none;
+}
+#icon3 {
+  width: 38px;
+  height: 38px;
+  font-size: 32px;
+  position: absolute;
+  top: 10px;
+  left: 18px;
+  padding: 0px 0px;
+}
+.icon3_name {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: absolute;
+  top: 50px;
+  left: 18px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+}
+.reservation:hover{
+  color: #FF7E00;
+}
+
+/* 채팅 */
+.chatting {
+  width: 75px;
+  height: 68px;
+  background: rgb(255, 255, 255);
+  color: #C5CEE0;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 225px;
+  overflow: hidden;
+  border: none;
+}
+#icon4 {
+  width: 38px;
+  height: 38px;
+  font-size: 32px;
+  position: absolute;
+  top: 10px;
+  left: 18px;
+  padding: 0px 0px;
+}
+.icon4_name {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: absolute;
+  top: 50px;
+  left: 25px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+}
+.chatting:hover{
+  color: #FF7E00;
+}
+
+/* 프로필 */
+.profile {
+  width: 75px;
+  height: 68px;
+  background: rgb(255, 255, 255);
+  color: #C5CEE0;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 300px;
+  overflow: hidden;
+  border: none;
+}
+#icon5 {
+  width: 38px;
+  height: 38px;
+  font-size: 32px;
+  position: absolute;
+  top: 10px;
+  left: 18px;
+  padding: 0px 0px;
+}
+.icon5_name {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: absolute;
+  top: 50px;
+  left: 23px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+}
+.profile:hover{
+  color: #FF7E00;
+}
+
+/* 지도 페이지 */
+.v0_9085 {
+  width: 375px;
+  height: 812px;
+  background: rgba(255,255,255,1);
+  background-image: url('/static/img/Map.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+
+/* 하단 그림자 효과 */
+.shadown {
+  width: 375px;
+  height: 250px;
+  background: linear-gradient(rgba(39,41,71,0.00009999999747378752), rgba(39,40,71,1));
+  opacity: 0.5960286259651184;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+
+/* 상단바 */
+.top {
+  width: 375px;
+  height: 71px;
+  background: linear-gradient(rgba(255,255,255,1), rgba(255,255,255,0.7569172978401184));
+  opacity: 1;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  border: 0px solid rgba(150,150,150,1);
+  overflow: hidden;
+}
+
+/* 주소 검색창 */
+.v0_9123 {
+  width: 345px;
+  height: 197px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 615px;
+  left: 15px;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0px 4px 10px #C5CEE0;
+}
+.v0_9124 {
+  width: 345px;
+  height: 197px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border: 0px solid rgba(150,150,150,1);
+  overflow: hidden;
+
+}
+
+/* 회색 버튼 */
+.v0_9125 {
+  width: 36px;
+  height: 4px;
+  position: absolute;
+  background: rgba(215, 215, 215, 1);
+  top: 8px;
+  left: 155px;
+  border: 4.5px solid rgba(217, 217, 217, 1);
+  border-radius: 10px;
+}
+.v0_9125:hover{
+  box-shadow: 0px 1px 1px #C5CEE0;
+}
+
+/* 검색창 */
+.search {
+  width: 315px;
+  height: 44px;
+  background: transparent;
+  opacity: 1;
+  position: absolute;
+  top: 64px;
+  left: 15px;
+  overflow: hidden;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px #C5CEE0;
+  color: #C5CEE0;
+}
+.search:hover{
+  box-shadow: 0px 4px 10px #010101cc;
+}
+.search:focus {outline: none;}
+
+/* 주소 */
+.v0_9130 {
+  width: fit-content;
+  color: rgba(46,58,89,1);
+  position: absolute;
+  top: 28px;
+  left: 39px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  opacity: 1;
+  text-align: left;
+}
+#pin_icon {
+  position: absolute;
+  top: 29px;
+  left: 20px;
+  font-size: 17px;
+  color: #C5CEE0;
+}
+.name {
+  color: #fff;
+}
+
+/* 가로스크롤 */
+.wrap{
+  width:350px;
+  height:100px;
+  position: absolute;
+  top: 510px;
+  white-space:nowrap;
+  overflow-x:scroll;
+  position: absolute;
+  left: 7px;
+  border-radius: 8px;
+}
+
+/* 가로스크롤 - 미용실 2 */
+.v0_9133 {
+  width: 286px;
+  height: 87px;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 286px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px #C5CEE0;
+  border-radius: 8px;
+}
+.v0_9133:hover{
+  box-shadow: 0px 4px 10px #010101cc;
+}
+.v0_9134 {
+  width: 286px;
+  height: 87px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border: 0px solid rgba(150,150,150,1);
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px rgba(0.5471892952919006, 0.5316726565361023, 0.6861979365348816, 0.07025786489248276);
+  overflow: hidden;
+}
+.salon2_photo {
+  width: 87px;
+  height: 68px;
+  background: url("/static/img/salon2.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border: 0px solid rgba(150,150,150,1);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  overflow: hidden;
+}
+.salon2_exp {
+  width: 171px;
+  color: rgba(46,58,89,1);
+  position: absolute;
+  top: 37px;
+  left: 107px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  opacity: 0.564267098903656;
+  text-align: left;
+}
+.salon2_name {
+  width: 160px;
+  color: rgba(46,58,89,1);
+  position: absolute;
+  top: 10px;
+  left: 107px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  opacity: 1;
+  text-align: left;
+}
+.v0_9138 {
+  width: 19px;
+  color: rgba(46,58,89,1);
+  position: absolute;
+  top: 63px;
+  left: 107px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  opacity: 1;
+  text-align: right;
+}
+.v0_9139 {
+  width: 49px;
+  color: rgba(46,58,89,1);
+  position: absolute;
+  top: 63px;
+  left: 171px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  opacity: 1;
+  text-align: left;
+}
+
+/* 가로스크롤 - 미용실 1 */
+.v0_9142 {
+  width: 265px;
+  height: 87px;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px #C5CEE0;
+  border-radius: 8px;
+}
+.v0_9142:hover{
+  box-shadow: 0px 4px 10px #010101cc;
+}
+.v0_9143 {
+  width: 265px;
+  height: 87px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border: 0px solid rgba(150,150,150,1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.salon1_photo {
+  width: 87px;
+  height: 67px;
+  background: url("/static/img/salon1.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border: 0px solid rgba(150,150,150,1);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  overflow: hidden;
+}
+.salon1_exp {
+  width: fit-content;
+  color: rgba(46,58,89,1);
+  position: absolute;
+  top: 37px;
+  left: 107px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  opacity: 0.564267098903656;
+  text-align: left;
+}
+.salon1_name {
+  width: fit-content;
+  color: rgba(46,58,89,1);
+  position: absolute;
+  top: 10px;
+  left: 107px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  opacity: 1;
+  text-align: left;
+}
+.v0_9147 {
+  width: 25px;
+  color: rgba(46,58,89,1);
+  position: absolute;
+  top: 62px;
+  left: 107px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  opacity: 1;
+  text-align: right;
+}
+.v0_9148 {
+  width: 49px;
+  color: rgba(46,58,89,1);
+  position: absolute;
+  top: 62px;
+  left: 171px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  opacity: 1;
+  text-align: left;
+}
+#star_icon {
+  font-size: 12px;
+  position: absolute;
+  top: 67px;
+  left: 135px;
+  color: #FF7E00;
+}
+.dot {
+  width: 5px;
+  height: 5px;
+  background: rgba(227,232,242,1);
+  opacity: 1;
+  position: absolute;
+  top: 70px;
+  left: 156px;
+  border: 0px solid rgba(150,150,150,1);
+  border-radius: 10px;
+}
+
+/* 주변 미용실 */
+.v0_9152 {
+  width: fit-content;
+  color: rgba(46,58,89,1);
+  position: absolute;
+  top: 36px;
+  left: 147px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  opacity: 1;
+  text-align: center;
+}
+
+.v0_9153 {
+  width: 36px;
+  height: 36px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 20px;
+  left: 322px;
+  overflow: hidden;
+}
+.v0_9154 {
+  width: 36px;
+  height: 36px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border: 0px solid rgba(150,150,150,1);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 0px 0px 20px rgba(0.5471892952919006, 0.5316726565361023, 0.6861979365348816, 0.11587630957365036);
+  overflow: hidden;
+}
+.name {
+  color: #fff;
+}

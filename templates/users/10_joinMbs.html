@@ -1,0 +1,223 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SMART CUT - AI 헤어 추천</title>
+    <link rel="shortcut icon" href="http://127.0.0.1:8000/static/img/favicon.png" type="image/x-icon" />
+    <link rel="icon" href="http://127.0.0.1:8000/static/img/favicon.png" type="image/x-icon" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scaleable=no, maximum-scale=1 user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.79.0">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+
+    <!-- BootStrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Swal Alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'css/10_joinMbs.css' %}">
+</head>
+    
+    <body>
+        <div class="v0_10046">
+            <input class="v0_10051" type="submit" value="가입하기"  @click="sendUserForm()" clickable>
+            
+            <div class="v0_10054">
+                <div class="v0_10048">
+                    <span class="v0_10049">이미 가입하셨나요?</span>
+                    <span class="v0_10050"> 로그인</span>
+                </div>
+                
+                <span class="v0_10055">성별</span>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="M" v-model="gender" tabindex="7">
+                  <label class="form-check-label" for="inlineRadio1" id="inlineRadio1_text">남성</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"  value="F" v-model="gender">
+                  <label class="form-check-label" for="inlineRadio2" id="inlineRadio2_text">여성</label>
+                </div>
+            </div>
+            <span class='sex_err' v-if="error_msg[3]">
+              {{"성별을 선택 해주세요."}}
+            </span>
+
+            <div class="v0_10057"></div>
+            
+           
+          
+            <div class ="bir_wrap">
+                <label class="form-label mt-4">생년월일</label>
+                <div class="bir_yy">
+                  <span class="ps_box">
+                    <input type="text" class="form-control" id="yy" placeholder="년(4자)" maxlength="4" v-model="birth_year" tabindex="4">
+                  </span>
+     
+                </div>
+                <div class="bir_mm">
+                  <span class="ps_box focus">
+                    <select class="form-select" id="mm" id="exampleSelect1" v-model="birth_month" tabindex="5">
+                      <option>월</option>
+                      <option>01</option>
+                      <option>02</option>
+                      <option>03</option>
+                      <option>04</option>
+                      <option>05</option>
+                      <option>06</option>
+                      <option>07</option>
+                      <option>08</option>
+                      <option>09</option>
+                      <option>10</option>
+                      <option>11</option>
+                      <option>12</option>
+               </select>
+                  </span>
+                </div>
+                <div class="bir_dd">
+                  <span class="ps_box">
+                    <select class="form-select" id="dd" id="exampleSelect1" v-model="birth_day" tabindex="6">
+                      <option>일</option>
+                      <option>01</option>
+                      <option>02</option>
+                      <option>03</option>
+                      <option>04</option>
+                      <option>05</option>
+                      <option>06</option>
+                      <option>07</option>
+                      <option>08</option>
+                      <option>09</option>
+                      <option>10</option>
+                      <option>11</option>
+                      <option>12</option>
+                      <option>13</option>
+                      <option>14</option>
+                      <option>15</option>
+                      <option>16</option>
+                      <option>17</option>
+                      <option>18</option>
+                      <option>19</option>
+                      <option>20</option>
+                      <option>21</option>
+                      <option>22</option>
+                      <option>23</option>
+                      <option>24</option>
+                      <option>25</option>
+                      <option>26</option>
+                      <option>27</option>
+                      <option>28</option>
+                      <option>29</option>
+                      <option>30</option>
+                      <option>31</option>
+                   </select>
+                  </span>
+                </div>
+      
+                <div class="v0_10062"></div>
+            </div>
+            <span class='bday_err' v-if="error_msg[4] || error_msg[5] || error_msg[6]">
+              {{"생년월일이 잘못 되었습니다."}}
+            </span>
+            
+            <!-- 이메일 -->
+            <div class="v0_10064">
+                <span class="v0_10065">이메일</span>
+                <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter email" v-model="email" tabindex="3">
+                <input class="v131_7376" type="submit" value="인증번호 받기" @click=mailAuth() onclick="mailAuth();" clickable> 
+            </div>
+            <span class='email_err' v-if="error_msg[2]">
+              {{"이메일 형식이 잘못되었습니다."}}
+            </span>
+
+            <!-- 이메일 인증 -->
+            <div class="email_cert_div">
+              <input id='email_cert' class="form-control" type="text" placeholder="인증번호 입력" v-model="access_token">
+            </div> 
+            <span v-if="error_msg[7]">
+              {{" 인증번호가 잘못되었습니다."}}
+            </span>
+
+
+            
+            <!-- 비밀번호 -->
+            <div class="v0_10068">
+                <span class="v0_10069">비밀번호</span>
+                <div class="v0_10070"></div>
+                <input type="password" class="form-control" id="InputPassword" placeholder="Password" v-model="user_pw" onfocus="smooth_scroll('InputPassword');" tabindex="2">
+            </div>
+            <span class='pw_err' v-if="error_msg[1]">
+              {{"비밀번호는 8~20자리 입니다."}}
+            </span>
+            
+            <!-- 이름 -->
+            <div class="v0_10085">
+                <span class="v0_10086">이름</span>
+                <input id='name' class="form-control" type="text" placeholder="Name" v-model="user_name" autofocus tabindex="1">
+            </div>
+            <span class='name_err' v-if="error_msg[0]">
+              {{"성함을 적어주세요"}}
+            </span>
+
+            <!-- 약관 동의 -->
+            <div class="form-check" id="check_all">
+              <input class="form-check-input" type="checkbox" value="" @click="allCheck()"  id="defaultCheck1" tabindex="8">
+              <label class="form-check-label" for="defaultCheck1" id="defaultCheck1_text">모든 약관에 동의합니다.</label>
+            </div>
+            <div class="form-check" id="necessary">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" v-model="agree_must" tabindex="9">
+              <label class="form-check-label" for="defaultCheck2" id="defaultCheck2_text">(필수) 이용약관과 개인정보 수집 및 이용에 동의합니다.</label>
+            </div>
+            <div class="form-check" id="choice">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck3" v-model="agree_select" tabindex="10">
+              <label class="form-check-label" for="defaultCheck3" id="defaultCheck3_text">(선택) 이메일 및 SMS 마케팅 정보 수신 동의합니다.</label>
+            </div>
+            <span class='checkbox_err' v-if="error_msg[8]">
+              {{" 필수 동의에 체크 해주세요."}}
+            </span>
+            
+            
+            <span class="v0_10089">회원가입</span>
+            <div class="name"></div>
+            <div class="name"></div>
+            <div class="name"></div>
+            <div class="v131_7366"></div>
+            <div class="name"></div>
+            <div class="name"></div>
+            <div class="name"></div>
+        </div>
+    </body>
+
+    {% block extra-script %}
+    {% include 'include/signup_vue.html' %}
+    {% endblock %}
+
+</html>
+
+<script>
+  function smooth_scroll(id){
+    element = document.getElementById(id);
+    
+    let location = document.getElementById(id).offsetTop;
+    console.log(location);
+    window.scroll({
+      top:location,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
+<script>
+  function sweetalert(){
+    swal('회원가입 완료!', '회원가입을 축하드립니다.', 'success');
+  }
+</script>

@@ -1,0 +1,221 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SMART CUT - AI 헤어 추천</title>
+        <link rel="shortcut icon" href="http://127.0.0.1:8000/static/img/favicon.png" type="image/x-icon" />
+        <link rel="icon" href="http://127.0.0.1:8000/static/img/favicon.png" type="image/x-icon" />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+        <meta name="generator" content="Hugo 0.79.0">
+    
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    
+        <!-- BootStrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/b6541407c0.js" crossorigin="anonymous"></script>
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="{% static 'css/17_map_search.css' %}">
+        
+        
+    </head>
+    <body>
+        <!-- menuBar -->
+        <div class="menuBar">
+            <div class="vI0_9961_0_8175"></div>
+
+            <!-- main -->
+            <button class="main" onclick="location.href='{% url 'users:main' %}'">
+                <i id="icon1" class="fa-solid fa-earth-asia"></i>
+                <span class="icon1_name">메인화면</span>
+            </button>
+            
+            <button class="location" onclick="location.href='{% url 'users:map' %}'">
+                <i id='icon2' class="fa-solid fa-location-dot"></i>
+                <span class="icon2_name">내 주변</span>
+            </button>
+            
+            <!-- reservation -->
+            <button class="reservation" onclick="location.href='{% url 'reservation:reservationHistory' %}'">
+                <i id='icon3' class="fa-solid fa-calendar"></i>
+                <span class="icon3_name">예약내역</span>
+            </button>
+            
+            <!-- chatting -->
+            <button class="chatting" onclick="location.href='{% url 'chatting' %}'">
+                <i id='icon4' class="fa-solid fa-comments"></i>
+                <span class="icon4_name">채팅</span>
+            </button>
+            
+            <!-- profile -->
+            <button class="profile" onclick="location.href='{% url 'users:profile' %}'">
+                <i id='icon5' class="fa-solid fa-user"></i>
+                <span class="icon5_name">프로필</span>
+            </button>
+        </div>
+
+        <div class="v0_8969">
+            <div class="v0_8970">
+                <div class="v168_7435"></div>
+                <div class="v0_8972"></div>
+                <div class="v0_8973">
+                    <div class="v0_8974">
+                        <div class="v0_8975"></div>
+                        <div class="v0_8976"></div>
+                    </div>
+                    <div class="v0_8977"></div>
+                    <div class="name"></div>
+                </div>
+                <div class="v0_8982">
+                    <div class="v0_8983">
+                        <div class="v0_8984"></div>
+                        <div class="v0_8985"></div>
+                    </div>
+                    <div class="v0_8986"></div>
+                    <div class="name"></div>
+                </div>
+                <div class="v0_8991">
+                    <div class="v0_8992">
+                        <div class="v0_8993"></div>
+                        <div class="v0_8994"></div>
+                    </div>
+                    <div class="v0_8995"></div>
+                    <div class="name"></div>
+                </div>
+                <div class="v0_9000">
+                    <div class="v0_9001"></div>
+                    <div class="v0_9002"></div>
+                    <div class="v0_9003"></div>
+                    <div class="v0_9004"></div>
+                    <div class="v0_9005"></div>
+                </div>
+                <div class="v0_9006"></div>
+            </div>
+            <div class="v0_9007">
+                <div class="v0_9008"></div>
+                <div class="v0_9010">
+                    <span class="v0_9011">부산시 중구 중앙동</span>
+                    <div class="name"></div>
+                </div>
+                <div class="v0_9013">
+                    <div class="v0_9014"></div>
+                    <div class="v0_9015">
+                        <div class="v0_9016">
+                            <input id='search' class="searchBox" type="text" value="  미용실" onclick='vanish_text()'>                                    
+                        </div>
+                        <div class="name"></div>
+                    </div>
+                    <div class="name"></div>
+                </div>
+                <div class="v0_9019"></div>
+
+                <div class="v0_9009" style="overflow-y: scroll; height:560px;">
+                    <div class="v0_9020">
+                        <div class="v0_9021"></div>
+                        <span class="v0_9022">부산 서구 구덕로 207</span>
+                        <span class="v0_9023">화요일 미용실</span>
+                        <span class="v0_9024">4.5</span>
+                        <i id='star_icon' class="fa-solid fa-star"></i>
+                        <span class="v0_9025">4.5 Km</span>
+                        <div class="name"></div>
+                        <div class="v0_9027"></div>
+                        <div class="name"></div>
+                    </div>
+                    <div class="v0_9029">
+                        <div class="v0_9030"></div>
+                        <span class="v0_9031">부산시 중구 광복로 55번지</span>
+                        <span class="v0_9032">화미주</span>
+                        <span class="v0_9033">4.5</span>
+                        <i id='star_icon' class="fa-solid fa-star"></i>
+                        <span class="v0_9034">23 Km</span>
+                        <div class="name"></div>
+                        <div class="v0_9036"></div>
+                        <div class="name"></div>
+                    </div>
+                    <div class="v0_9038">
+                        <div class="v0_9039"></div>
+                        <span class="v0_9040">부산시 중구 대청동 3가 7-17</span>
+                        <span class="v0_9041">한스헤어미용실</span>
+                        <span class="v0_9042">4.2</span>
+                        <i id='star_icon' class="fa-solid fa-star"></i>
+                        <span class="v0_9043">18 Km</span>
+                        <div class="name"></div>
+                        <div class="v0_9045"></div>
+                        <div class="name"></div>
+                    </div>
+                    <div class="v0_9047">
+                        <div class="v0_9048"></div>
+                        <span class="v0_9049">부산시 중구 초량 2동 143-2</span>
+                        <span class="v0_9050">조희 미용실</span>
+                        <span class="v0_9051">4.0</span>
+                        <i id='star_icon' class="fa-solid fa-star"></i>
+                        <span class="v0_9052">17.3 Km</span>
+                        <div class="name"></div>
+                        <div class="v0_9054"></div>
+                        <div class="name"></div>
+                    </div>
+                    <div class="v0_9056">
+                        <div class="v0_9057"></div>
+                        <span class="v0_9058">부산시 중구 초량 2동 881-3</span>
+                        <span class="v0_9059">헤어캐슬</span>
+                        <span class="v0_9060">4.5</span>
+                        <i id='star_icon' class="fa-solid fa-star"></i>
+                        <span class="v0_9061">12.1 Km</span>
+                        <div class="name"></div>
+                        <div class="v0_9063"></div>
+                        <div class="name"></div>
+                    </div>
+                    <div class="v0_9065">
+                        <div class="v0_9066"></div>
+                        <span class="v0_9067">부산시 중구 광복중앙로 2</span>
+                        <span class="v0_9068">이가자헤어비스 부산광복점</span>
+                        <span class="v0_9069">4.3</span>
+                        <i id='star_icon' class="fa-solid fa-star"></i>
+                        <span class="v0_9070">7.8 Km</span>
+                        <div class="name"></div>
+                        <div class="v0_9072"></div>
+                        <div class="name"></div>
+                    </div>
+                    <div class="v0_9074">
+                        <div class="v0_9075"></div>
+                        <span class="v0_9076">부산시 중구 중앙동 20-1</span>
+                        <span class="v0_9077">이철헤어커커</span>
+                        <span class="v0_9078">4.5</span>
+                        <i id='star_icon' class="fa-solid fa-star"></i>
+                        <span class="v0_9079">4.5 Km</span>
+                        <div class="name"></div>
+                        <div class="v0_9081"></div>
+                        <div class="name"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="name"></div>
+            <div class="name"></div>
+        </div>
+    </body>
+</html>
+
+<script>
+    function vanish_text(){
+        input = document.getElementById('search');
+        if(input.value.length>0){
+            input.value=''
+            input.style.color='#2E3A59'
+        }
+        else{
+            input.value = "  미용실"
+            input.style.color='#C5CEE0'
+        }
+    }
+</script>  

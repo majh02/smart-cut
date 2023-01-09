@@ -1,0 +1,374 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SMART CUT - AI 헤어 추천</title>
+        <link rel="shortcut icon" href="http://127.0.0.1:8000/static/img/favicon.png" type="image/x-icon" />
+        <link rel="icon" href="http://127.0.0.1:8000/static/img/favicon.png" type="image/x-icon" />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scaleable=no, maximum-scale=1 user-scalable=no">
+        <meta name="description" content="">
+        <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+        <meta name="generator" content="Hugo 0.79.0">
+    
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    
+        <!-- BootStrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/b6541407c0.js" crossorigin="anonymous"></script>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="{% static 'css/32_modifyProfile.css' %}">
+    </head>
+    
+    <body>
+        <div class="v0_8367">
+            <div class="v0_8368"></div>
+            <button class="back_icon" onclick="location.href='{% url 'users:profile' %}'">
+                <i class="fa-solid fa-arrow-left-long"></i>
+            </button>
+            <form action="" method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="v0_8404 filebox">
+                    <img alt="" id="thumbnail" class="v0_8405" src="/media/{{userinfo.thumbnail}}" />
+                    <input class="name" type="file" name="thumbnail" id="img_file">
+                    <label for="img_file" class="name"><i class="fa-solid fa-plus"></i></label>
+                </div>
+
+                <div class="v0_8369">
+                    <div class="v0_8370"></div>
+
+                    <div class="v0_8395">
+                        <input type="text" name="user_name" class="InputName" required id="user_name" value="{{userinfo.user_name}}" tabindex="1">
+                        <span class="v0_8397">이름</span>
+                    </div>
+
+                    <div class="v0_8392">
+                        <input type="email" class="v0_8387" name="email" required id="email" value="{{userinfo.email}}" readonly>
+                        <span class="v0_8391">이메일</span>
+                    </div>
+                    
+
+                    <div class="v0_8386">
+                        <input type="date" name="age" class="v0_8387" required id="id_age" value="{{userinfo.age}}" tabindex="2">
+                        <span class="v0_8394">생년월일</span>
+                        
+                    </div>
+
+                    <div class="v0_8371">
+                        <span class="v0_8372">성별</span>
+                        {% if userinfo.gender == "M" %}
+                            <input id='male_ckb' type="radio" class="btn-check" name="gender" autocomplete="off" value="M" checked>
+                        {% else %}
+                            <input id='male_ckb' type="radio" class="btn-check" name="gender" autocomplete="off" value="M">
+                        {% endif %}
+                        
+                        <label id='male_ckb_text' class="btn btn-outline-secondary" for="male_ckb">남성</label><br>
+                        
+                        {% if userinfo.gender == "F" %}
+                            <input id='female_ckb' type="radio" class="btn-check" name="gender" autocomplete="off" value="F" checked>
+                        {% else %}
+                            <input id='female_ckb' type="radio" class="btn-check" name="gender" autocomplete="off" value="F">
+                        {% endif %}
+                        
+                        <label id='female_ckb_text' class="btn btn-outline-secondary" for="female_ckb">여성</label><br>
+                    </div>
+
+                    {% comment %} <div class="v0_8389">
+                        <input class="v0_8387" type="text" id="id_hp" name="hp" value="{{userinfo.hp}}" required>
+                        <span class="v0_8388">연락처 (필수)</span>
+                    </div> {% endcomment %}
+                    
+                    {% comment %} <div class="v0_8398"></div> {% endcomment %}
+                    <!-- <div class="v0_8399"></div>
+                    <div class="v0_8400"></div>
+                    <div class="v0_8401"></div>
+                    <div class="name"></div>
+                    <div class="name"></div>
+                    <div class="name"></div> -->
+                    <span class="v135_4266">회원정보</span>
+                </div>
+                
+                
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                <script>
+                    $("#img_file").change(function(){
+                        if (this.files && this.files[0]) {
+                            var reader = new FileReader();
+                            reader.onload = function(e) {
+                                document.getElementById('thumbnail').src = e.target.result;
+                            };
+                            reader.readAsDataURL(this.files[0]);
+                            } else {
+                            document.getElementById('thumbnail').src = "";
+                            }
+                    });
+                </script>
+                
+                <span class="v0_8409">프로필 </span>
+                <div class="name"></div>
+
+                <div class="v135_4857">
+                    {% comment %} <input type="submit" value="등록" class="btn btn-secondary"> {% endcomment %}
+
+                    <span class="v135_4859">추가정보</span>
+                    <!-- 1. 두피상태 -->
+                    <div class="v135_4860">
+                        <div class="v168_5765"></div>
+                        <span class="v135_4862">1. 두피 상태</span>
+                        
+                        <div class="scalp">
+                            {% if userinfo.skin_condition == "지성" %}
+                            <input id='scalp1' type="radio" class="btn-check" name="skin_condition" autocomplete="off" value="지성" checked>
+                            {% else %}
+                            <input id='scalp1' type="radio" class="btn-check" name="skin_condition" autocomplete="off" value="지성">
+                            {% endif %}
+                            
+                            <label id='scalp1_text' class="btn btn-outline-secondary" for="scalp1">지성</label><br>
+                        
+                            {% if userinfo.skin_condition == "건성" %}
+                            <input id='scalp2' type="radio" class="btn-check" name="skin_condition" autocomplete="off" value="건성" checked>
+                            {% else %}
+                            <input id='scalp2' type="radio" class="btn-check" name="skin_condition" autocomplete="off" value="건성">
+                            {% endif %}
+                            
+                            <label id='scalp2_text' class="btn btn-outline-secondary" for="scalp2">건성</label><br>
+
+                            {% if userinfo.skin_condition == "민감성" %}
+                            <input id='scalp3' type="radio" class="btn-check" name="skin_condition" autocomplete="off" value="민감성" checked>
+                            {% else %}
+                            <input id='scalp3' type="radio" class="btn-check" name="skin_condition" autocomplete="off" value="민감성">
+                            {% endif %}
+                            
+                            <label id='scalp3_text' class="btn btn-outline-secondary" for="scalp3">민감성</label><br>
+
+                            {% if userinfo.skin_condition == "중성" %}
+                            <input id='scalp4' type="radio" class="btn-check" name="skin_condition" autocomplete="off" value="중성" checked>
+                            {% else %}
+                            <input id='scalp4' type="radio" class="btn-check" name="skin_condition" autocomplete="off" value="중성">
+                            {% endif %}
+                            
+                            <label id='scalp4_text' class="btn btn-outline-secondary" for="scalp4">중성</label><br>
+
+                            {% if userinfo.skin_condition == "모름" %}
+                            <input id='scalp5' type="radio" class="btn-check" name="skin_condition" autocomplete="off" value="모름" checked>
+                            {% else %}
+                            <input id='scalp5' type="radio" class="btn-check" name="skin_condition" autocomplete="off" value="모름">
+                            {% endif %}
+                            
+                            <label id='scalp5_text' class="btn btn-outline-secondary" for="scalp5">모름</label><br>
+                        </div>
+                    </div>
+
+                    <!-- 2. 머리카락 굵기 -->
+                    <div class="v135_4892">
+                        <div class="thickness">
+                            {% if userinfo.hair_bold == "가는모발" %}
+                                <input id='thickness1' type="radio" class="btn-check" name="hair_bold" autocomplete="off" value="가는모발" checked>
+                            {% else %}
+                                <input id='thickness1' type="radio" class="btn-check" name="hair_bold" autocomplete="off" value="가는모발">
+                            {% endif %}
+                            
+                            <label id='thickness1_text' class="btn btn-outline-secondary" for="thickness1">가는모발</label><br>
+                        
+                            {% if userinfo.hair_bold == "중간모발" %}
+                                <input id='thickness2' type="radio" class="btn-check" name="hair_bold" autocomplete="off" value="중간모발" checked>
+                            {% else %}
+                                <input id='thickness2' type="radio" class="btn-check" name="hair_bold" autocomplete="off" value="중간모발">
+                            {% endif %}
+                            
+                            <label id='thickness2_text' class="btn btn-outline-secondary" for="thickness2">중간모발</label><br>
+
+                            {% if userinfo.hair_bold == "두꺼운모발" %}
+                                <input id='thickness3' type="radio" class="btn-check" name="hair_bold" autocomplete="off" value="두꺼운모발" checked>
+                            {% else %}
+                                <input id='thickness3' type="radio" class="btn-check" name="hair_bold" autocomplete="off" value="두꺼운모발">
+                            {% endif %}
+                            
+                            <label id='thickness3_text' class="btn btn-outline-secondary" for="thickness3">두꺼운모발</label><br>
+
+                            {% if userinfo.hair_bold == "모름" %}
+                                <input id='thickness4' type="radio" class="btn-check" name="hair_bold" autocomplete="off" value="모름" checked>
+                            {% else %}
+                                <input id='thickness4' type="radio" class="btn-check" name="hair_bold" autocomplete="off" value="모름">
+                            {% endif %}
+                            
+                            <label id='thickness4_text' class="btn btn-outline-secondary" for="thickness4">모름</label><br>
+                        </div>
+                        
+                        <div class="v168_5766"></div>
+                        <span class="v135_4898">2. 머리카락 굵기</span>
+                        <div class="v135_4897"></div>
+                    </div>
+                    
+                    
+                    
+                    <!-- 3. 곱슬 정도 -->
+                    <div class="v135_4884">
+                        <div class="curly">
+                            {% if userinfo.curl == "곱슬" %}
+                                <input id='curly1' type="radio" class="btn-check" name="curl" autocomplete="off" value="곱슬" checked>
+                            {% else %}
+                                <input id='curly1' type="radio" class="btn-check" name="curl" autocomplete="off" value="곱슬">
+                            {% endif %}
+                            
+                            <label id='curly1_text' class="btn btn-outline-secondary" for="curly1">곱슬</label><br>
+                        
+                            {% if userinfo.curl == "반곱슬" %}
+                                <input id='curly2' type="radio" class="btn-check" name="curl" autocomplete="off" value="반곱슬" checked>
+                            {% else %}
+                                <input id='curly2' type="radio" class="btn-check" name="curl" autocomplete="off" value="반곱슬">
+                            {% endif %}
+                            
+                            <label id='curly2_text' class="btn btn-outline-secondary" for="curly2">반곱슬</label><br>
+
+                            {% if userinfo.curl == "직모" %}
+                                <input id='curly3' type="radio" class="btn-check" name="curl" autocomplete="off" value="직모" checked>
+                            {% else %}
+                                <input id='curly3' type="radio" class="btn-check" name="curl" autocomplete="off" value="직모">
+                            {% endif %}
+                            
+                            <label id='curly3_text' class="btn btn-outline-secondary" for="curly3">직모</label><br>
+
+                            {% if userinfo.curl == "모름" %}
+                                <input id='curly4' type="radio" class="btn-check" name="curl" autocomplete="off" value="모름" checked>
+                            {% else %}
+                                <input id='curly4' type="radio" class="btn-check" name="curl" autocomplete="off" value="모름">
+                            {% endif %}
+                            
+                            <label id='curly4_text' class="btn btn-outline-secondary" for="curly4">모름</label><br>
+                        </div>
+                        
+                        <div class="v168_5767"></div>
+                        
+                        <span class="v135_4891">3. 곱슬정도</span>
+                    </div>
+                    
+                    
+                    
+                    
+                    
+                    <!-- 4. 모발 상태 -->
+                    <div class="v135_4870">
+                        <span class="v135_4871">4. 모발 상태</span>
+                        <div class="v135_4872"></div>
+                        
+                        <div class="condition">
+                            {% if userinfo.hair_condition == "끊김" %}
+                                <input id='condition1' type="radio" class="btn-check" name="hair_condition" autocomplete="off" value="끊김" checked>
+                            {% else %}
+                                <input id='condition1' type="radio" class="btn-check" name="hair_condition" autocomplete="off" value="끊김">
+                            {% endif %}
+                            
+                            <label id='condition1_text' class="btn btn-outline-secondary" for="condition1">끊김</label><br>
+                        
+                            {% if userinfo.hair_condition == "푸석함" %}
+                                <input id='condition2' type="radio" class="btn-check" name="hair_condition" autocomplete="off" value="푸석함" checked>
+                            {% else %}
+                                <input id='condition2' type="radio" class="btn-check" name="hair_condition" autocomplete="off" value="푸석함">
+                            {% endif %}
+                            
+                            <label id='condition2_text' class="btn btn-outline-secondary" for="condition2">푸석함</label><br>
+
+                            {% if userinfo.hair_condition == "건강함" %}
+                                <input id='condition3' type="radio" class="btn-check" name="hair_condition" autocomplete="off" value="건강함" checked>
+                            {% else %}
+                                <input id='condition3' type="radio" class="btn-check" name="hair_condition" autocomplete="off" value="건강함">
+                            {% endif %}
+                            
+                            <label id='condition3_text' class="btn btn-outline-secondary" for="condition3">건강함</label><br>
+
+                            {% if userinfo.hair_condition == "모름" %}
+                                <input id='condition4' type="radio" class="btn-check" name="hair_condition" autocomplete="off" value="모름" checked>
+                            {% else %}
+                                <input id='condition4' type="radio" class="btn-check" name="hair_condition" autocomplete="off" value="모름">
+                            {% endif %}
+                            
+                            <label id='condition4_text' class="btn btn-outline-secondary" for="condition4">모름</label><br>
+                        </div>
+                    </div>
+
+                    <!-- 5. 머리숱 -->
+                    <div class="v135_4899">
+                        <span class="v135_4900">5. 머리숱</span>
+                        <div class="hair">
+                            {% if userinfo.thick_hair == "많음" %}
+                                <input id='hair1' type="radio" class="btn-check" name="thick_hair" autocomplete="off" value="많음" checked>
+                            {% else %}
+                                <input id='hair1' type="radio" class="btn-check" name="thick_hair" autocomplete="off" value="많음">
+                            {% endif %}
+                            <label id='hair1_text' class="btn btn-outline-secondary" for="hair1">많음</label><br>
+                            
+                            {% if userinfo.thick_hair == "보통" %}
+                                <input id='hair2' type="radio" class="btn-check" name="thick_hair" autocomplete="off" value="보통" checked>
+                            {% else %}
+                                <input id='hair2' type="radio" class="btn-check" name="thick_hair" autocomplete="off" value="보통">
+                            {% endif %}
+                            
+                            <label id='hair2_text' class="btn btn-outline-secondary" for="hair2">보통</label><br>
+
+                            {% if userinfo.thick_hair == "적음" %}
+                                <input id='hair3' type="radio" class="btn-check" name="thick_hair" autocomplete="off" value="적음" checked>
+                            {% else %}
+                                <input id='hair3' type="radio" class="btn-check" name="thick_hair" autocomplete="off" value="적음">
+                            {% endif %}
+                            
+                            <label id='hair3_text' class="btn btn-outline-secondary" for="hair3">적음</label><br>
+
+                            {% if userinfo.thick_hair == "탈모" %}
+                                <input id='hair4' type="radio" class="btn-check" name="thick_hair" autocomplete="off" value="탈모" checked>
+                            {% else %}
+                                <input id='hair4' type="radio" class="btn-check" name="thick_hair" autocomplete="off" value="탈모">
+                            {% endif %}
+                            <label id='hair4_text' class="btn btn-outline-secondary" for="hair4">탈모</label><br>
+                        </div>
+                        
+                        <div class="v135_4906"></div>
+                    </div>
+
+
+                    <!-- 6. 새치 유무 -->
+                    <div class="v135_4878">
+                        <div class="whiteHair">
+                            {% if userinfo.hair_age == "조금" %}
+                                <input id='whiteHair1' type="radio" class="btn-check" name="hair_age" autocomplete="off" value="조금" checked>
+                            {% else %}
+                                <input id='whiteHair1' type="radio" class="btn-check" name="hair_age" autocomplete="off" value="조금">
+                            {% endif %}
+                            <label id='whiteHair1_text' class="btn btn-outline-secondary" for="whiteHair1">조금</label><br>
+                            
+                            {% if userinfo.hair_age == "많음" %}
+                                <input id='whiteHair2' type="radio" class="btn-check" name="hair_age" autocomplete="off" value="많음" checked>
+                            {% else %}
+                                <input id='whiteHair2' type="radio" class="btn-check" name="hair_age" autocomplete="off" value="많음">
+                            {% endif %}
+                            <label id='whiteHair2_text' class="btn btn-outline-secondary" for="whiteHair2">많음</label><br>
+
+                            {% if userinfo.hair_age == "없음" %}
+                                <input id='whiteHair3' type="radio" class="btn-check" name="hair_age" autocomplete="off" value="없음" checked>
+                            {% else %}
+                                <input id='whiteHair3' type="radio" class="btn-check" name="hair_age" autocomplete="off" value="없음">
+                            {% endif %}
+                            <label id='whiteHair3_text' class="btn btn-outline-secondary" for="whiteHair3">없음</label><br>
+                        </div>
+                        <span class="v135_4883">6. 새치 유무</span>
+                    </div>
+
+                    <button id='save' type="submit" class="btn btn-secondary">저장하기</button>
+                </div>
+                
+                
+            </form>
+            
+            
+        </div>
+    </body>
+</html>

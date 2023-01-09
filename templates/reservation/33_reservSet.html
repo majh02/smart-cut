@@ -1,0 +1,188 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scaleable=no, maximum-scale=1 user-scalable=no">
+        <meta name="description" content="">
+        <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+        <meta name="generator" content="Hugo 0.79.0">
+    
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    
+        <!-- BootStrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/b6541407c0.js" crossorigin="anonymous"></script>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="{% static 'css/33_reservSet.css' %}">
+    </head>
+    
+    <body>
+        <div class="v0_8367">
+
+            <div class="v0_8404">
+                <div><img class="shop_img" href='' src="{{shop.shopfile.main_img.url}}"/></div>
+                <div class="shadown"></div>
+                <div><span class="shop_name">{{shop.shop_name}}<br>{{shop.sub_name}}</span></div>
+                <button class="back_icon" onclick="location.href='{% url 'reservation:reservationHistory' %}'">
+                    <i class="fa-solid fa-arrow-left-long"></i>
+                </button>
+            </div>
+
+            <div class="v0_8368">
+            
+                <form action="" method="POST">
+                    {% csrf_token %}
+                    <div class="v0_8369">
+                        <div class="v0_8370"></div>
+                        
+                        <div class="v0_8392">
+                                <div class="rev_h">
+                                    <span class="ps_box focus">
+                                        <select class="form-select" id="hour" name='hour'>
+                                            <option>09</option>
+                                            <option>10</option>
+                                            <option>11</option>
+                                            <option>12</option>
+                                            <option>13</option>
+                                            <option>14</option>
+                                            <option>15</option>
+                                            <option>16</option>
+                                            <option>17</option>
+                                            <option>18</option>
+                                            <option>19</option>
+                                            <option>20</option>
+                                        </select>
+                                    </span>
+                                </div>
+                                <span style="top:35px; position: absolute; left:70px;">:</span>
+                                <div class="rev_min">
+                                    <span class="ps_box">
+                                        <select class="form-select" id="min" name='min'>
+                                            <option>00</option>
+                                            <option>10</option>
+                                            <option>20</option>
+                                            <option>30</option>
+                                            <option>40</option>
+                                            <option>50</option>
+                                        </select>
+                                    </span>
+                                </div>
+                            <span class="v0_8391">예약시간</span>
+                        </div>
+                        
+                        <div class="v0_8395">
+                            <input type="date" name="reserv_date" class="v0_8387" required value='{{date_now|date:"Y-m-d"}}' >
+                            <span class="v0_8397">예약일</span>
+                        </div>
+                        
+                        {% comment %} <div class="v0_8398"></div> {% endcomment %}
+                        <span class="v135_4266">예약정보</span>
+                    </div>
+                    
+
+                    <div class="v135_4857">
+                        <button id='save' type="submit" class="btn btn-secondary">예약 하기</button>
+                        <!-- 4. 클리닉 -->
+                        <div class="v135_4870">
+                            <span class="v135_4871">4. 클리닉</span>
+                            <div class="v135_4872"></div>
+                            
+                            <div class="clinic">
+                                <input id='clinic1' type="radio" class="btn-check" name="clinic" autocomplete="off" value="모발클리닉">
+                                <label id='clinic1_text' class="btn btn-outline-secondary" for="clinic1">모발클리닉</label><br>
+                            
+                                <input id='clinic2' type="radio" class="btn-check" name="clinic" autocomplete="off" value="두피클리닉">
+                                <label id='clinic2_text' class="btn btn-outline-secondary" for="clinic2">두피클리닉</label><br>
+
+                                <input id='clinic3' type="radio" class="btn-check" name="clinic" autocomplete="off" value="안함" checked>
+                                <label id='clinic3_text' class="btn btn-outline-secondary" for="clinic3">안함</label><br>
+                            </div>
+                        </div>
+                        
+                        <!-- 3. 염색 -->
+                        <div class="v135_4884">
+                            <div class="color">
+                                <input id='color1' type="radio" class="btn-check" name="color" autocomplete="off" value="일반염색">
+                                <label id='color1_text' class="btn btn-outline-secondary" for="color1">일반염색</label><br>
+                            
+                                <input id='color2' type="radio" class="btn-check" name="color" autocomplete="off" value="뿌리염색">
+                                <label id='color2_text' class="btn btn-outline-secondary" for="color2">뿌리염색</label><br>
+
+                                <input id='color3' type="radio" class="btn-check" name="color" autocomplete="off" value="탈색">
+                                <label id='color3_text' class="btn btn-outline-secondary" for="color3">탈색</label><br>
+
+                                <input id='color4' type="radio" class="btn-check" name="color" autocomplete="off" value="안함" checked>
+                                <label id='color4_text' class="btn btn-outline-secondary" for="color4">안함</label><br>
+                            </div>
+                            
+                            <div class="v168_5767"></div>
+                            
+                            <span class="v135_4891">3. 염색</span>
+                        </div>
+                        
+                        <!-- 2. 펌 -->
+                        <div class="v135_4892">
+                            <div class="perm">
+                                <input id='perm1' type="radio" class="btn-check" name="perm" autocomplete="off" value="일반펌">
+                                <label id='perm1_text' class="btn btn-outline-secondary" for="perm1">일반펌</label><br>
+                            
+                                <input id='perm2' type="radio" class="btn-check" name="perm" autocomplete="off" value="다운펌">
+                                <label id='perm2_text' class="btn btn-outline-secondary" for="perm2">다운펌</label><br>
+
+                                <input id='perm3' type="radio" class="btn-check" name="perm" autocomplete="off" value="볼륨매직">
+                                <label id='perm3_text' class="btn btn-outline-secondary" for="perm3">볼륨매직</label><br>
+
+                                <input id='perm4' type="radio" class="btn-check" name="perm" autocomplete="off" value="안함" checked>
+                                <label id='perm4_text' class="btn btn-outline-secondary" for="perm4">안함</label><br>
+                            </div>
+                            
+                            <div class="v168_5766"></div>
+                            <span class="v135_4898">2. 펌</span>
+                        </div>
+                        
+                        <div class="v135_4897"></div>
+                        
+                        <!-- 1. 커트 -->
+                        <div class="v135_4860">
+                            <div class="v168_5765">
+                                <div class="v135_4861"></div>
+                            </div>
+                            <span class="v135_4862">1. 커트</span>
+                            
+                            <div class="cut">
+                                <input id='cut1' type="radio" class="btn-check" name="cut" autocomplete="off" value="남성 커트">
+                                <label id='cut1_text' class="btn btn-outline-secondary" for="cut1">남성 커트</label><br>
+                            
+                                <input id='cut2' type="radio" class="btn-check" name="cut" autocomplete="off" value="여성 커트">
+                                <label id='cut2_text' class="btn btn-outline-secondary" for="cut2">여성 커트</label><br>
+
+                                <input id='cut3' type="radio" class="btn-check" name="cut" autocomplete="off" value="안함" checked>
+                                <label id='cut3_text' class="btn btn-outline-secondary" for="cut3">안함</label><br>
+                            </div>
+                        </div>
+                        
+                        <span class="v135_4859">시술정보</span>
+                    </div>
+                    
+                    
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
+
+<script>
+    function goBack() {
+        window.history.back();
+    }
+</script>

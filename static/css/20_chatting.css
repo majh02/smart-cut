@@ -1,0 +1,452 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-size: 14px;
+  }
+
+ /* menuBar */
+.menuBar {
+  width: 100%;
+  height: 68px;
+  background: rgb(255, 255, 255);
+  opacity: 1;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.vI0_9961_0_8175 {
+  width: 100%;
+  height: 68px;
+  background: rgb(255, 255, 255);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.101343967);
+}
+
+
+/* 메인화면 */
+.main {
+  width: 20%;
+  height: 68px;
+  background: rgb(255, 255, 255);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  border: none;
+  color: #C5CEE0;
+}
+#icon1 {
+  width: 100%;
+  height: 100%;
+  font-size: 32px;
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  padding: 0px 0px;
+  text-align: center;
+}
+.icon1_name {
+  width: 100%;
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+}
+.main:hover{
+  color: #FF7E00;
+}
+
+/* AI 헤어추천 */
+.ai {
+  width: 20%;
+  height: 68px;
+  background: rgb(255, 255, 255);
+  color: #C5CEE0;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 20%;
+  overflow: hidden;
+  border: none;
+}
+#icon2 {
+  width: 100%;
+  height: 38px;
+  font-size: 32px;
+  position: absolute;
+  top: 10px;
+  left: 0%;
+  padding: 0px 0px;
+}
+.icon2_name {
+  width: 100%;
+  position: absolute;
+  bottom: 2px;
+  left: 0%;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+}
+.ai:hover{
+  color: #FF7E00;
+}
+
+/* 예약내역 */
+.reservation {
+  width: 20%;
+  height: 68px;
+  background: rgb(255, 255, 255);
+  color: #C5CEE0;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 40%;
+  overflow: hidden;
+  border: none;
+}
+#icon3 {
+  width: 100%;
+  height: 100%;
+  font-size: 32px;
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  padding: 0px 0px;
+}
+.icon3_name {
+  width: 100%;
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+}
+.reservation:hover{
+  color: #FF7E00;
+}
+
+/* 채팅 */
+.chatting {
+  width: 20%;
+  height: 68px;
+  background: rgb(255, 255, 255);
+  color: #FF7E00;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 60%;
+  overflow: hidden;
+  border: none;
+}
+#icon4 {
+  width: 100%;
+  height: 100%;
+  font-size: 32px;
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  padding: 0px 0px;
+}
+.icon4_name {
+  width: 100%;
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+}
+.chatting:hover{
+  color: #FF7E00;
+}
+
+/* 프로필 */
+.profile {
+  width: 20%;
+  height: 68px;
+  background: rgb(255, 255, 255);
+  color: #C5CEE0;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 80%;
+  overflow: hidden;
+  border: none;
+}
+#icon5 {
+  width: 100%;
+  height: 100%;
+  font-size: 32px;
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  padding: 0px 0px;
+}
+.icon5_name {
+  width: 100%;
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+}
+.profile:hover{
+  color: #FF7E00;
+}
+
+  /* 채팅화면 */
+  .v0_8750 {
+    display: inline-block;
+    width: 100%;
+    min-height: 100%;
+    height: fit-content;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow-y: scroll;
+  }
+  .v0_8751 {
+    width: 100%;
+    height: 100%;
+    background: rgba(244,244,244,1);
+    opacity: 1;
+    position: absolute;
+    top: 100.5px;
+    left: 0px;
+    overflow: hidden;
+  }
+
+  .chat {
+    width: 100%;
+    height: 71px;
+    background: #F2F2F2;
+    border: none;
+    border-bottom: 1px solid rgba(227,232,242,1);
+  }
+  .flex_div{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .chat_content{
+    width: 100%;
+    height: auto;
+    margin: 1% 20px;
+    text-align:left;
+  }
+  .designer_info {
+    width: fit-content;
+    color: rgba(46,58,89,1);
+    /* position: relative;
+    top: 7px; */
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    opacity: 1;
+    text-align: left;
+  }
+  .message {
+    width: fit-content;
+    color: rgba(143,155,179,1);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    text-align: left;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow:hidden;
+  }
+  .v0_8755 {
+    width: fit-content;
+    color: rgba(143,155,179,1);
+    position: relative;
+    bottom: 5px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    float: right;
+    right: 10px;
+    opacity: 1;
+    text-align: right;
+  }
+  .chat_photo {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 30px;
+    border: 1px solid rgba(244,244,244,1);
+  }
+  .chat:hover{
+    box-shadow: 0px 2px 5px #C5CEE0;
+  }
+
+
+  /* 검색창 section */
+  .search_section {
+    width: 90%;
+    height: 1px;
+    background: rgba(244,244,244,1);
+  }
+  .v0_8795 {
+    width: 42px;
+    height: 42px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    overflow: hidden;
+    border: 1px solid rgba(239,239,239,1);
+    border: 8px;
+    box-shadow: 0px 4px 10px #C5CEE0;
+    text-align: center;
+  }
+  #new_icon {
+    font-size: 25px;
+    color: #C5CEE0;
+  }
+  #new_icon:hover{
+    color: #222B45;
+  }
+  #search {
+    width: 80%;
+    height: 42px;
+    background: rgba(255,255,255,1);
+    color: #222B45;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 1px solid rgba(239,239,239,1);
+    box-shadow: 0px 4px 10px #C5CEE0;
+  }
+  .v0_8800 {
+    width: 28px;
+    color: rgba(197,206,224,1);
+    position: absolute;
+    top: 12px;
+    left: 35px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .name {
+    color: #fff;
+  }
+  .v0_8802 {
+    width: 375px;
+    height: 1px;
+    background: rgba(227,232,242,1);
+    opacity: 1;
+    position: relative;
+    left: 0px;
+    border: 0px solid rgba(150,150,150,1);
+    overflow: hidden;
+  }
+  .v0_8803 {
+    width: 100%;
+    height: 100px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    border-bottom: 1px solid #FF7E00;
+  }
+  .v0_8804 {
+    display: inline-block;
+    width: 100%;
+    color: rgba(255,126,0,1);
+    position: relative;
+    top: 50px;
+    left: 0px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    opacity: 1;
+    text-align: center;
+  }
+  .v186_4216 {
+    width: 46%;
+    height: 17px;
+    position: relative;
+    top:14px;
+    left: 54%;
+    text-align: center;
+  }
+  .v0_8806 {
+    width: 17px;
+    height: 17px;
+    background: rgba(255,126,0,1);
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    border-radius: 400px;
+  }
+  .v0_8807 {
+    width: 100%;
+    height: 100%;
+    color: rgba(255,255,255,1);
+    position: relative;
+    bottom: 3px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    opacity: 1;
+    text-align: left;
+  }
+
+
+    /* 로딩 애니매이션 */
+    #loading {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      opacity: 1;
+      background-color: #fff;
+      z-index: 99;
+      text-align: center;
+    }
+  
+    #loading > img {
+        position: absolute;
+        background-color: #fff;
+        width: 20%;
+        height: 20%;
+        top: 40%;
+        left: 40%;
+        z-index: 100;
+        object-fit: contain;
+    }
+     #loading > p {
+          width: 100%;
+          text-align: center;
+          position: absolute;
+          top: 60%;
+          left: 0%;
+          z-index: 101;
+          font-family: 'Noto Sans KR', sans-serif;
+          font-weight: 500;
+          font-size: 20px;
+      }

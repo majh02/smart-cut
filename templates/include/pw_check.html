@@ -1,0 +1,43 @@
+<script src="https://unpkg.com/vue@next"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+<script>
+    axios.defaults.xsrfCookieName = 'csrftoken';
+    axios.defaults.xsrfHeaderName = 'X-CSRFTOKEN';
+
+    const CheckPW = {
+        delimiters: ['[[', ']]'],
+
+        created() {
+            console.log("CheckPW created()...");
+            
+        },
+
+        methods: {
+            fetchCheckPW() {
+                console.log("fetchCheckPW()...");
+                let inputPw = document.getElementById('id_user_pw').value
+                axios.get(`/api/pwCheck/${inputPw}`)
+                    .then(res => {
+                        console.log("FETCH POSTDETAIL GET RES", res);
+                        this.returnPw = res.data.returnResult;
+
+                        if(this.returnPw == '0'){
+                            location.replace('/users/modifyProfile');
+                        }
+                        else{
+                            document.getElementById('id_user_pw').value = ''
+                            alert('비밀번호가 일치하지 않습니다.')
+                        }
+                        
+                    })
+                    .catch(err => {
+                        console.log("FETCH POSTDETAIL GET ERR.RESPONSE", err.response);
+                        alert(`${err.response.status} ${err.response.statusText}`);
+                    });
+            },
+        },
+    }
+
+    Vue.createApp(CheckPW).mount('.v0_10092')
+</script>

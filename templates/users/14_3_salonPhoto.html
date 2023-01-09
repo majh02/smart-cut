@@ -1,0 +1,82 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SMART CUT - AI 헤어 추천</title>
+        <link rel="shortcut icon" href="http://127.0.0.1:8000/static/img/favicon.png" type="image/x-icon" />
+        <link rel="icon" href="http://127.0.0.1:8000/static/img/favicon.png" type="image/x-icon" />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+        <meta name="generator" content="Hugo 0.79.0">
+
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+
+        <!-- BootStrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/b6541407c0.js" crossorigin="anonymous"></script>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="{% static 'css/14_3_salonPhotos.css' %}">
+    </head>
+    
+    <body>
+        <div class="v186_6641">
+            
+            <!-- 미용실 사진 section -->
+            <div class="salonPhoto">
+                <div class="v0_9842"></div>
+                <div class="v35_3286"></div>
+                <div class="v0_9843"></div>
+                <span class="v0_9895">이가자헤어비스<br>부산광복점</span>
+
+                <!--  최상단 그림자 효과 -->
+                <div class="shadown"></div>
+
+                <!-- 최상단 아이콘버튼 (통화버튼 href 나중에 수정필요) -->
+                <button class="back_icon" onclick="location.href='{% url 'main' %}'">
+                    <i class="fa-solid fa-arrow-left-long"></i>
+                </button>
+                <button class="phone_icon" onclick="location.href='{% url 'main' %}'">
+                    <i class="fa-solid fa-phone"></i>
+                </button>
+                <button class="chat_icon" onclick="location.href='{% url 'chatting' %}'">
+                    <i class="fa-regular fa-comment-dots"></i>
+                </button>
+            </div>
+            
+            <!-- 메뉴탭-->
+            <div class="menu_tab">
+                <div class="underline"></div>
+                <button class="introduction" onclick="location.href='{% url 'salon:salonDetail' salon.shop_id %}'">소개</button>
+                <button class="designer" onclick="location.href='{% url 'salon:salonDesigner' salon.shop_id %}'">디자이너</button>
+                <button class="photos" onclick="location.href='{% url 'salon:salonPhoto' salon.shop_id %}'">사진</button>
+                <button class="review" onclick="location.href='{% url 'review:review' salon.shop_id %}'">리뷰</button>
+            </div>
+
+            <!-- 시술 사진 갤러리 -->
+            <div class="gallery_background">
+                <div class="gallery">
+                    <div class="photo6"></div>
+                    <div class="photo7"></div>
+                    <div class="photo1"></div>
+                    <div class="photo4"></div>
+                    <div class="photo5"></div>
+                    <div class="photo2"></div>
+                    <div class="photo3"></div>
+                </div>
+            </div>
+            
+            <div class="name"></div>
+        </div>
+    </body>
+</html>

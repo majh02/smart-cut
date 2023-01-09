@@ -1,0 +1,339 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scaleable=no, maximum-scale=1 user-scalable=no">
+        <meta name="description" content="">
+        <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+        <meta name="generator" content="Hugo 0.79.0">
+
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+
+        <!-- BootStrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/b6541407c0.js" crossorigin="anonymous"></script>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="{% static 'css/24_AI_Complete.css' %}">
+    </head>
+    
+    
+    <body>
+        <div class="v135_5462">
+
+            <div class="btn_div">
+                <!-- 메인으로 가기 버튼 -->
+                <button class="main_btn"onclick="location.href='{% url 'users:main' %}'">
+                    메인으로 가기
+                </button>
+                
+                <!-- 예약하기 버튼 -->
+                <!-- 수정필요!!!! -->
+                <button class="reservation_btn" onclick="location.href='{% url 'salon:salonDetail' shop.shop_id %}'">
+                    {{result_user_faceshape}}이 가장 많이 예약한 미용실
+                </button>
+            </div>
+            
+            <div class="v135_5463">
+                <!-- 분석결과 창 -->
+                <div class="v135_5470">
+                    <div class="result">
+                    
+                        <!-- 그래프 -->
+                        <div id="Graph">                        
+                            <div class="wrapper">
+                                <div class="container">
+                                    <div class="h2_div"><h2>분석결과</h2></div>
+                                    <br>
+                                    <!-- 결과 설명 -->
+                                    <span class="result_exp">
+                                        고객님의 얼굴형은 <span class="bold">{{result_user_faceshape}}</span> 입니다!<br>
+                                        {{shape_exp}}
+                                    </span>
+                                    <br>
+
+                                    <!-- bar 차트-->
+                                    <!-- HTML -->
+                                    <br>
+
+                                    <div class="flex_div">
+
+                                        <div id="container">
+                                            <canvas id="bar-chart" style="width: 100%; height: 30vh;"></canvas>
+                                        </div>
+                                        
+                                        <script>
+                                            var config2 = {
+                                                type: 'horizontalBar',
+                                                data: {
+                                                datasets: [{
+                                                    data: {{ data|safe }},
+                                                    backgroundColor: [
+                                                    '#FFFFE0', '#FFFF00', '#FFA500', '#FF7F50', '#FF4500'
+                                                    ],
+                                                    label: '얼굴형'
+                                                }],
+                                                labels: {{ labels|safe }}
+                                                },
+                                                options: {
+                                                responsive: true
+                                                }
+                                            };
+                                        </script>
+
+                                        <!-- Pie Chart -->
+                                        <div id="container">
+                                            <canvas id="pie-chart" style="width: 100%; height: 30vh;"></canvas>
+                                        </div>
+                                        
+                                        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+                                        <script>
+                                            var config1 = {
+                                                type: 'pie',
+                                                data: {
+                                                datasets: [{
+                                                    data: {{ data|safe }},
+                                                    backgroundColor: [
+                                                    '#FFFFE0', '#FFFF00', '#FFA500', '#FF7F50', '#FF4500'
+                                                    ],
+                                                    label: '얼굴형'
+                                                }],
+                                                labels: {{ labels|safe }}
+                                                },
+                                                options: {
+                                                responsive: true
+                                                }
+                                            };
+                                        </script>
+                                    
+                                        <script>
+                                            window.onload = function () {
+                                                var ctx1 = document.getElementById('pie-chart').getContext('2d');
+                                                window.myPie = new Chart(ctx1, config1);
+                                                var ctx2 = document.getElementById('bar-chart').getContext('2d');
+                                                window.myBar = new Chart(ctx2, config2);
+                                            };
+                                        </script>
+                                    </div>
+                                    <br>
+
+                                    <div class="crop_box">
+                                        <div>
+                                            <p>원본 사진</p>
+                                            <img class="img_original" src="/media/{{img_url}}">
+                                        </div>
+                                        
+                                        {% comment %} <i id='next' class="fa-solid fa-circle-check"></i> {% endcomment %}
+
+                                        <div>
+                                            <p>분석 결과</p>
+                                            <img class="img_crop_landmark" src = "/media/crop_landmark/image/crop_landmark_image.jpg">
+                                        </div>                                        
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 헤어스타일 추천 -->
+                        <div id="hair_rec">
+                            <div class="wrapper">
+                                <div class="container" style='display:inline-block; height:auto;'>
+                                    <h2>헤어스타일 추천</h2>
+                                    <ul class="img_box" style="list-style:none;">  
+                                        {% for hair in hair_list %}
+                                        <li>
+                                            <button class="hair_btn">
+                                                <div class="hair">
+                                                {% for key, value in hair.items %}
+                                                    {% if '0' == key %}
+                                                    <div class="hair_photo">
+                                                        <img src="/static/{{value}}">
+                                                    </div>
+                                                    {% elif '1' == key %}
+                                                    <div class="hair_name_div">
+                                                        <span class="hair_name">{{value}}</span>
+                                                    </div>
+
+                                                    <div class="hair_exp_div">
+                                                        {% elif '2' == key %}
+                                                            <span class="hair_exp" style="display:none; overflow:hidden;text-overflow:ellipsis; white-space:nowrap;">{{value|linebreaksbr}}</span>
+                                                        {% elif '3' == key %}
+                                                            <span class="hair_tags" style="overflow:hidden;text-overflow:ellipsis; white-space:nowrap;">{{value}}</span>
+                                                    </div>
+                                                    {% endif %}
+                                                {% endfor %}
+                                                    
+                                                </div>
+                                            </button>
+                                        </li>
+                                        {% endfor %}                               
+                                        {% comment %} <div>
+                                            <img class="img1" src = "/static/{{result_hair3}}">
+                                            <br>
+                                            <span>{{result_hair1}}</span>
+                                            
+                                        </div>
+                                        
+                                        <div>
+                                            <img class="img2" src = "/static/{{result_hair4}}">
+                                            <br>
+                                            <span>{{result_hair2}}</span>
+                                        </div> {% endcomment %}
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Progress Flow -->
+            <div class="progress_flow">
+                <span class="title">헤어 스타일 추천</span>
+
+                <div class='check_div'>
+
+                    <div class="progress1">
+                        <i id='dot' class="fa-solid fa-circle"></i>
+                        <span class="progress1_text">사진 업로드</span>
+                    </div>
+
+                    <div class="line1"></div>
+
+                    <div class="progress2">
+                        <i id='dot' class="fa-solid fa-circle"></i>
+                        <span class="progress2_text">분석</span>
+                    </div>
+
+                    <div class="line2"></div>
+
+                    <div class="progress3">
+                        <i id='check_icon' class="fa-solid fa-circle-check"></i>
+                        <span class="progress3_text">완료</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 모달 팝업 될 곳 -->
+            <div class="modal" style="display: none;">
+                <div class="modal_inner">
+                    <button>&times;</button>
+                    <div class="modalBox">
+                        <div>
+                            <span class="modal_hair_name"></span>
+                        </div>
+                        <div class="flex_div2">
+                            <div class="img_div"><img src=""></div>
+
+                            <div class="block_div">
+                                <div class="exp_div"><span class="modal_hair_exp"></span></div>
+                                <div class="tag_div"><span class="modal_hair_tags"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>
+
+<!-- 이미지 클릭시 모달창 생성 event -->
+<script>
+    $(function(){
+    // 	이미지 클릭시 해당 이미지 모달
+        $("img").click(function(){
+            $(".modal").show();
+            // 해당 이미지 가겨오기
+            var imgSrc = $(this).attr("src");
+            $(".modalBox img").attr("src", imgSrc);
+        });
+        
+        //.modal안에 button을 클릭하면 .modal닫기
+        $(".modal button").click(function(){
+            $(".modal").hide();
+        });
+        
+        //.modal밖에 클릭시 닫힘
+        $(".modal").click(function (e) {
+        if (e.target.className != "modal") {
+            return false;
+        } else {
+            $(".modal").hide();
+        }
+        });
+    });
+</script>
+
+<!-- 이미지 클릭시 모달창 생성 event -->
+<script>
+    $(function(){
+    // 	이미지 클릭시 해당 이미지 모달
+        $(".hair_btn").click(function(){
+            $(".modal").show();
+            $(".block_div").css("display","block");
+
+            // 해당 이미지 가겨오기
+            var imgSrc = $(this).find('img').attr("src");
+            $(".modalBox img").attr("src", imgSrc);
+
+            // 헤어스타일 이름 가져오기
+            var hair_name = $(this).find(".hair_name").text();
+            $(".modal_hair_name").html(hair_name);
+
+            // 헤어스타일 설명 가져오기
+            var hair_exp = $(this).find(".hair_exp").text();
+            hair_exp = hair_exp.replace('.', '.<br/>');
+            $(".modal_hair_exp").html(hair_exp);
+
+            //헤어스타일 태그 가져오기
+            var hair_tags = $(this).find(".hair_tags").text();
+            $(".modal_hair_tags").html(hair_tags);
+        });
+
+        $(".img_original").click(function(){
+            $(".modal").show();
+            // 해당 이미지 가겨오기
+            var imgSrc = $(this).attr("src");
+            $(".modalBox img").attr("src", imgSrc);
+
+            $(".modal_hair_name").html('원본 이미지');
+            $(".block_div").css("display","none");
+        });
+
+        $(".img_crop_landmark").click(function(){
+            $(".modal").show();
+            // 해당 이미지 가겨오기
+            var imgSrc = $(this).attr("src");
+            $(".modalBox img").attr("src", imgSrc);
+
+            $(".modal_hair_name").html('분석 결과');
+            $(".block_div").css("display","none");
+        });
+        
+        //.modal안에 button을 클릭하면 .modal닫기
+        $(".modal button").click(function(){
+            $(".modal").hide();
+        });
+        
+        //.modal밖에 클릭시 닫힘
+        $(".modal_inner").click(function (e) {
+        if (e.target.className != "modal_inner") {
+            return false;
+        }
+        else {
+            $(".modal").hide();
+        }
+        });
+    });
+</script>

@@ -1,0 +1,108 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SMART CUT - AI 헤어 추천</title>
+    <link rel="shortcut icon" href="http://127.0.0.1:8000/static/img/favicon.png" type="image/x-icon" />
+    <link rel="icon" href="http://127.0.0.1:8000/static/img/favicon.png" type="image/x-icon" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scaleable=no, maximum-scale=1 user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.79.0">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+
+    <!-- BootStrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'css/11_authNum.css' %}">
+</head>
+    
+    <body>
+        <div class="v0_9962">
+            <div class="v0_9963"></div>
+            <div class="v0_9964">
+                <div class="v0_9965"></div>
+                <div class="name"></div>
+            </div>
+            
+            <input class="v0_10031" type="submit" value="다음" onclick="location.href='{% url 'users:joinMbs_complete' %}'">
+            
+            <input id='Timer' class="Remaining_time" type="text" value="" disabled readonly/>
+
+            <div class="container">
+              <div id='line1'></div>
+              <div id='line2'></div>
+              <div id='line3'></div>
+              <div id='line4'></div>
+              <div id='line5'></div>
+              <input id='AuthNum1' type="text" maxlength='1' onfocus="colorChange('AuthNum1', 'line1')">
+              <input id='AuthNum2' type="text" maxlength='1' onchange="colorChange('AuthNum2', 'line2')">
+              <input id='AuthNum3' type="text" maxlength='1' onchange="colorChange('AuthNum3', 'line3')">
+              <input id='AuthNum4' type="text" maxlength='1' onchange="colorChange('AuthNum4', 'line4')">
+              <input id='AuthNum5' type="text" maxlength='1' onchange="colorChange('AuthNum5', 'line5')">
+          </div>
+            
+            <span class="v0_10042">인증번호를 입력해주세요</span>
+            <div class="name"></div>
+            <div class="name"></div>
+            <div class="name"></div>
+        </div>
+    </body>
+</html>
+
+<script>
+    function colorChange(id1, id2){
+        var inputVal = document.getElementById(id1)
+        var line = document.getElementById(id2)
+
+        if(inputVal.value.length==0){
+            line.style.background = 'rgba(227,232,242,1)';
+        }
+        else{
+            line.style.background = 'rgba(255,126,0,1)';
+        }
+    }
+
+    const Timer=document.getElementById('Timer'); //스코어 기록창-분
+    let time= 180000;
+    let min=3;
+    let sec=60;
+
+
+    Timer.value=min+":"+'00'; 
+
+    function TIMER(){
+        PlAYTIME=setInterval(function(){
+            time=time-1000; //1초씩 줄어듦
+            min=time/(60*1000); //초를 분으로 나눠준다.
+
+        if(sec>0){ //sec=60 에서 1씩 빼서 출력해준다.
+                sec=sec-1;
+                Timer.value=Math.floor(min)+':'+sec; //실수로 계산되기 때문에 소숫점 아래를 버리고 출력해준다.
+            
+            }
+            if(sec===0){
+                // 0에서 -1을 하면 -59가 출력된다.
+                // 그래서 0이 되면 바로 sec을 60으로 돌려주고 value에는 0을 출력하도록 해준다.
+                sec=60;
+                Timer.value=Math.floor(min)+':'+'00'
+            }     
+
+        },1000); //1초마다 
+    }
+
+
+    TIMER();
+    setTimeout(function(){
+        clearInterval(PlAYTIME);
+    },180000);//3분이 되면 타이머를 삭제한다.
+</script>

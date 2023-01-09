@@ -1,0 +1,1747 @@
+
+body {
+  font-size: 14px;
+}
+/* 상위 메뉴탭 */
+.tab {
+  width: 100%;
+  height: 100px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+#tab1 {
+  width: 50%;
+  height: 50px;
+  opacity: 1;
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  overflow: hidden;
+  border: none;
+  background: #fff;
+  color: rgba(255,126,0,1);
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  opacity: 1;
+  text-align: center;
+  border-bottom: 1px solid rgba(255,126,0,1);
+}
+#tab1:hover{
+  color: #FF7E00;
+  font-weight: 700;
+  border-bottom: 1px solid rgba(255,126,0,1);
+}
+#tab2 {
+    width: 50%;
+    height: 50px;
+    opacity: 1;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    overflow: hidden;
+    background: #fff;
+    color: rgba(197,206,224,1);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    opacity: 1;
+    text-align: center;
+    border: none;
+    
+  }
+  #tab2:hover{
+    color: #FF7E00;
+    font-weight: 700;
+    border-bottom: 1px solid rgba(255,126,0,1);
+  }
+
+  
+/* menuBar */
+.menuBar {
+  width: 100%;
+  height: 68px;
+  background: rgb(255, 255, 255);
+  opacity: 1;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.vI0_9961_0_8175 {
+  width: 100%;
+  height: 68px;
+  background: rgb(255, 255, 255);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.101343967);
+}
+
+/* 메인화면 */
+.main {
+  width: 20%;
+  height: 68px;
+  background: rgb(255, 255, 255);
+  color: #C5CEE0;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border: none;
+}
+#icon1 {
+  width: 100%;
+  height: 38px;
+  font-size: 32px;
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  padding: 0px 0px;
+}
+.icon1_name {
+  width: 100%;
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+}
+.main:hover{
+  color: #FF7E00;
+}
+
+/* AI 헤어추천 */
+.ai {
+  width: 20%;
+  height: 68px;
+  background: rgb(255, 255, 255);
+  color: #C5CEE0;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 20%;
+  border: none;
+}
+#icon2 {
+  width: 100%;
+  height: 38px;
+  font-size: 32px;
+  position: absolute;
+  top: 10px;
+  left: 0%;
+  padding: 0px 0px;
+}
+.icon2_name {
+  width: 100%;
+  position: absolute;
+  bottom: 2px;
+  left: 0%;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+}
+.ai:hover{
+  color: #FF7E00;
+}
+
+/* 예약내역 */
+.reservation {
+  width: 20%;
+  height: 68px;
+  background: rgb(255, 255, 255);
+  color: #FF7E00;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 40%;
+  border: none;
+}
+#icon3 {
+  width: 100%;
+  height: 38px;
+  font-size: 32px;
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  padding: 0px 0px;
+}
+.icon3_name {
+  width: 100%;
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+}
+.reservation:hover{
+  color: #FF7E00;
+}
+
+/* 채팅 */
+.chatting {
+  width: 20%;
+  height: 68px;
+  background: rgb(255, 255, 255);
+  color: #C5CEE0;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 60%;
+  overflow: hidden;
+  border: none;
+}
+#icon4 {
+  width: 100%;
+  height: 38px;
+  font-size: 32px;
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  padding: 0px 0px;
+}
+.icon4_name {
+  width: 100%;
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+}
+.chatting:hover{
+  color: #FF7E00;
+}
+
+/* 프로필 */
+.profile {
+  width: 20%;
+  height: 68px;
+  background: rgb(255, 255, 255);
+  color: #C5CEE0;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 80%;
+  overflow: hidden;
+  border: none;
+}
+#icon5 {
+  width: 100%;
+  height: 38px;
+  font-size: 32px;
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  padding: 0px 0px;
+}
+.icon5_name {
+  width: 100%;
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+}
+.profile:hover{
+  color: #FF7E00;
+}
+
+/* 예약 화면 */
+/* 세로스크롤 */
+.wrap2 {
+  width: 100%;
+  height: 110%;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.v0_8860 {
+  width: 100%;
+  height: 100%;
+  background: rgba(244,244,244,1);
+  opacity: 1;
+  position: absolute;
+  top: 100px;
+  left: 0px;
+  overflow-y: scroll;
+}
+.v0_8861 {
+  width: 100%;
+  height: 85%;
+  background: transparent;
+  opacity: 1;
+  position: absolute;
+  top: 15px;
+  left: 0%;
+  border-radius: 20px;
+}
+.v0_8862 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+/* 예약내역 */
+.reservation_list {
+  width: 90%;
+  height: 169px;
+  background: rgba(255,255,255,1);
+  margin: 5px 5%;
+  border-radius: 8px;
+}
+.reservation_list:hover{
+  box-shadow: 0px 2px 5px #C5CEE0;
+}
+.reserv_box {
+  width: 100%;
+  height: 169;
+  padding: 10px 20px;
+  background: rgba(255,255,255,1);
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px #01010112;
+}
+.reserv_box > .flex_div:nth-child(1){
+  border-bottom: 1px solid rgba(244,244,244,1);
+}
+
+.photo_div{
+  width: 50%;
+  height: fit-content;
+}
+.salon_photo {
+  width: 120px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.salon_info_div {
+  width: 100%;
+}
+.salon_name {
+  display: inline-block;
+  width: 100%;
+  color: rgba(46,58,89,1);
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  text-align: left;
+}
+.salon_addr {
+  width: 100%;
+  color: rgba(46,58,89,1);
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  opacity: 0.57;
+  text-align: left;
+}
+
+.flex_div{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  margin: 10px 0px;
+}
+.designer_info_div {
+  width: 50%;
+  height: 19px;
+}
+.designer_info {
+  display: inline-block;
+  width: 100%;
+  color: rgba(143,155,179,1);
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  text-align: left;
+}
+
+.block_div{
+  display: block;
+  width: 50%;
+}
+.date_div{
+  width: 100%;
+}
+.reserv_date {
+  display: inline-block;
+  width: 100%;
+  color: rgba(46,58,89,1);
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  text-align: left;
+}
+.time_div{
+  width: 100%;
+}
+.reserv_time {
+  display: inline-block;
+  width: 100%;
+  color: rgba(46,58,89,1);
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  opacity: 1;
+  text-align: left;
+}
+
+/* 시술 정보 */
+.information {
+  width: 90%;
+  height: 365px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 202px;
+  left: 5%;
+  border: 0px solid rgba(150,150,150,1);
+  border-radius: 20px;
+  box-shadow: 0px 2px 5px #C5CEE0;
+  overflow: hidden;
+}
+.v0_8878 {
+  width: 95px;
+  color: rgba(143,155,179,1);
+  position: absolute;
+  top: 204px;
+  left: 10px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  opacity: 1;
+  text-align: left;
+}
+.v0_8879 {
+  width: 180px;
+  height: 60px;
+  position: absolute;
+  top: 183px;
+  left: 153px;
+  overflow: hidden;
+}
+.v0_8880 {
+  width: 2px;
+  height: 60px;
+  background: rgba(34,43,69,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border: 0px solid rgba(150,150,150,1);
+  overflow: hidden;
+}
+.v0_8881 {
+  width: 2px;
+  height: 60px;
+  background: rgba(34,43,69,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 87px;
+  border: 0px solid rgba(150,150,150,1);
+  overflow: hidden;
+}
+.v0_8882 {
+  width: 2px;
+  height: 60px;
+  background: rgba(34,43,69,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 173px;
+  border: 0px solid rgba(150,150,150,1);
+  overflow: hidden;
+}
+.v0_8883 {
+  width: 2px;
+  height: 60px;
+  background: rgba(34,43,69,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 5px;
+  border: 0px solid rgba(150,150,150,1);
+  overflow: hidden;
+}
+.v0_8884 {
+  width: 2px;
+  height: 60px;
+  background: rgba(34,43,69,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 92px;
+  border: 0px solid rgba(150,150,150,1);
+  overflow: hidden;
+}
+.v0_8885 {
+  width: 2px;
+  height: 60px;
+  background: rgba(34,43,69,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 178px;
+  border: 0px solid rgba(150,150,150,1);
+  overflow: hidden;
+}
+.v0_8886 {
+  width: 3px;
+  height: 60px;
+  background: rgba(34,43,69,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  border: 0px solid rgba(150,150,150,1);
+  overflow: hidden;
+}
+.v0_8887 {
+  width: 3px;
+  height: 60px;
+  background: rgba(34,43,69,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 97px;
+  border: 0px solid rgba(150,150,150,1);
+  overflow: hidden;
+}
+.v0_8888 {
+  width: 3px;
+  height: 60px;
+  background: rgba(34,43,69,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 28px;
+  border: 0px solid rgba(150,150,150,1);
+  overflow: hidden;
+}
+.v0_8889 {
+  width: 3px;
+  height: 60px;
+  background: rgba(34,43,69,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 115px;
+  border: 0px solid rgba(150,150,150,1);
+  overflow: hidden;
+}
+.v0_8890 {
+  width: 3px;
+  height: 60px;
+  background: rgba(34,43,69,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 47px;
+  border: 0px solid rgba(150,150,150,1);
+  overflow: hidden;
+}
+.v0_8891 {
+  width: 3px;
+  height: 60px;
+  background: rgba(34,43,69,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 134px;
+  border: 0px solid rgba(150,150,150,1);
+  overflow: hidden;
+}
+.v0_8892 {
+  width: 4px;
+  height: 60px;
+  background: rgba(34,43,69,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 66px;
+  border: 0px solid rgba(150,150,150,1);
+  overflow: hidden;
+}
+.v0_8893 {
+  width: 4px;
+  height: 60px;
+  background: rgba(34,43,69,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 153px;
+  border: 0px solid rgba(150,150,150,1);
+  overflow: hidden;
+}
+.v0_8894 {
+  width: 8px;
+  height: 60px;
+  background: rgba(34,43,69,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 33px;
+  border: 0px solid rgba(150,150,150,1);
+  overflow: hidden;
+}
+.v0_8895 {
+  width: 8px;
+  height: 60px;
+  background: rgba(34,43,69,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 120px;
+  border: 0px solid rgba(150,150,150,1);
+  overflow: hidden;
+}
+.v0_8896 {
+  width: 8px;
+  height: 60px;
+  background: rgba(34,43,69,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 75px;
+  border: 0px solid rgba(150,150,150,1);
+  overflow: hidden;
+}
+.v0_8897 {
+  width: 8px;
+  height: 60px;
+  background: rgba(34,43,69,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 162px;
+  border: 0px solid rgba(150,150,150,1);
+  overflow: hidden;
+}
+.v0_8898 {
+  width: 2px;
+  height: 60px;
+  background: rgba(34,43,69,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 17px;
+  border: 0px solid rgba(150,150,150,1);
+  overflow: hidden;
+}
+.v0_8899 {
+  width: 2px;
+  height: 60px;
+  background: rgba(34,43,69,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 104px;
+  border: 0px solid rgba(150,150,150,1);
+  overflow: hidden;
+}
+.v0_8900 {
+  width: 2px;
+  height: 60px;
+  background: rgba(34,43,69,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 55px;
+  border: 0px solid rgba(150,150,150,1);
+  overflow: hidden;
+}
+.v0_8901 {
+  width: 2px;
+  height: 60px;
+  background: rgba(34,43,69,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 142px;
+  border: 0px solid rgba(150,150,150,1);
+  overflow: hidden;
+}
+.v0_8902 {
+  width: 2px;
+  height: 60px;
+  background: rgba(34,43,69,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 22px;
+  border: 0px solid rgba(150,150,150,1);
+  overflow: hidden;
+}
+.v0_8903 {
+  width: 2px;
+  height: 60px;
+  background: rgba(34,43,69,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 109px;
+  border: 0px solid rgba(150,150,150,1);
+  overflow: hidden;
+}
+.v0_8904 {
+  width: 2px;
+  height: 60px;
+  background: rgba(34,43,69,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 59px;
+  border: 0px solid rgba(150,150,150,1);
+  overflow: hidden;
+}
+.v0_8905 {
+  width: 2px;
+  height: 60px;
+  background: rgba(34,43,69,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 146px;
+  border: 0px solid rgba(150,150,150,1);
+  overflow: hidden;
+}
+.v0_8906 {
+  width: 2px;
+  height: 60px;
+  background: rgba(34,43,69,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 72px;
+  border: 0px solid rgba(150,150,150,1);
+  overflow: hidden;
+}
+.v0_8907 {
+  width: 2px;
+  height: 60px;
+  background: rgba(34,43,69,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 159px;
+  border: 0px solid rgba(150,150,150,1);
+  overflow: hidden;
+}
+.v0_8908 {
+  width: 2px;
+  height: 60px;
+  background: rgba(34,43,69,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 43px;
+  border: 0px solid rgba(150,150,150,1);
+  overflow: hidden;
+}
+.v0_8909 {
+  width: 2px;
+  height: 60px;
+  background: rgba(34,43,69,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 130px;
+  border: 0px solid rgba(150,150,150,1);
+  overflow: hidden;
+}
+.v0_8910 {
+  width: 345px;
+  height: 1px;
+  background: rgba(215,215,215,1);
+  opacity: 1;
+  position: absolute;
+  top: 167px;
+  left: 0px;
+  border: 1px solid rgba(244,244,244,1);
+}
+.v0_8911 {
+  width: 330px;
+  height: 1px;
+  background: rgba(215,215,215,1);
+  opacity: 1;
+  position: absolute;
+  top: 258px;
+  left: 8px;
+  border: 1px solid rgba(244,244,244,1);
+}
+.v0_8912 {
+  width: 345px;
+  height: 307px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 115px;
+  left: 15px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.v0_8913 {
+  width: 345px;
+  height: 307px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border: 0px solid rgba(150,150,150,1);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 0px 0px 20px rgba(0.5471892952919006, 0.5316726565361023, 0.6861979365348816, 0.07025786489248276);
+  overflow: hidden;
+}
+.v0_8914 {
+  width: 99px;
+  color: rgba(46,58,89,1);
+  position: absolute;
+  top: 18px;
+  left: 131px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  opacity: 1;
+  text-align: center;
+}
+.name {
+  color: #fff;
+}
+.name {
+  color: #fff;
+}
+.v168_7666 {
+  width: 105px;
+  height: 18px;
+  margin: 38px;
+  position: absolute;
+  top: 95px;
+  left: 224px;
+  overflow: hidden;
+}
+.v0_8917 {
+  width: 40px;
+  height: 40px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 75px;
+  left: 60px;
+  overflow: hidden;
+}
+.v0_8918 {
+  width: 40px;
+  height: 38px;
+  background: rgba(255,126,0,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  overflow: hidden;
+}
+.v0_8920 {
+  width: 5px;
+  height: 4px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 31px;
+  left: 18px;
+  border: 0px solid rgba(150,150,150,1);
+}
+.v0_8919 {
+  width: 17px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  opacity: 1;
+  text-align: center;
+}
+.v0_8922 {
+  width: 10px;
+  color: rgba(197,206,224,1);
+  position: absolute;
+  top: 43px;
+  left: 205px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  opacity: 1;
+  text-align: center;
+}
+.v0_8923 {
+  width: 9px;
+  color: rgba(197,206,224,1);
+  position: absolute;
+  top: 43px;
+  left: 100px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  opacity: 1;
+  text-align: center;
+}
+.v0_8924 {
+  width: 10px;
+  color: rgba(197,206,224,1);
+  position: absolute;
+  top: 43px;
+  left: 1px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  opacity: 1;
+  text-align: center;
+}
+.v0_8925 {
+  width: 10px;
+  color: rgba(197,206,224,1);
+  position: absolute;
+  top: 43px;
+  left: 153px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  opacity: 1;
+  text-align: center;
+}
+.v0_8926 {
+  width: 10px;
+  color: rgba(197,206,224,1);
+  position: absolute;
+  top: 43px;
+  left: 45px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  opacity: 1;
+  text-align: center;
+}
+.v0_8927 {
+  width: 17px;
+  color: rgba(197,206,224,1);
+  position: absolute;
+  top: 43px;
+  left: 43px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  opacity: 1;
+  text-align: center;
+}
+.v0_8928 {
+  width: 21px;
+  color: rgba(197,206,224,1);
+  position: absolute;
+  top: 43px;
+  left: 89px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  opacity: 1;
+  text-align: center;
+}
+.v0_8929 {
+  width: 17px;
+  color: rgba(46,58,89,1);
+  position: absolute;
+  top: 128px;
+  left: 208px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  opacity: 1;
+  text-align: center;
+}
+.v0_8930 {
+  width: 19px;
+  color: rgba(46,58,89,1);
+  position: absolute;
+  top: 175px;
+  left: 208px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  opacity: 1;
+  text-align: center;
+}
+.v0_8931 {
+  width: 23px;
+  color: rgba(46,58,89,1);
+  position: absolute;
+  top: 129px;
+  left: 109px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  opacity: 1;
+  text-align: center;
+}
+.v0_8932 {
+  width: 19px;
+  color: rgba(46,58,89,1);
+  position: absolute;
+  top: 175px;
+  left: 105px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  opacity: 1;
+  text-align: center;
+}
+.v0_8933 {
+  width: 19px;
+  color: rgba(46,58,89,1);
+  position: absolute;
+  top: 128px;
+  left: 6px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  opacity: 1;
+  text-align: center;
+}
+.v0_8934 {
+  width: 19px;
+  color: rgba(46,58,89,1);
+  position: absolute;
+  top: 175px;
+  left: 4px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  opacity: 1;
+  text-align: center;
+}
+.v0_8935 {
+  width: 19px;
+  color: rgba(46,58,89,1);
+  position: absolute;
+  top: 128px;
+  left: 156px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  opacity: 1;
+  text-align: center;
+}
+.v0_8936 {
+  width: 25px;
+  color: rgba(46,58,89,1);
+  position: absolute;
+  top: 175px;
+  left: 159px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  opacity: 1;
+  text-align: center;
+}
+.v0_8937 {
+  width: 18px;
+  color: rgba(46,58,89,1);
+  position: absolute;
+  top: 128px;
+  left: 49px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  opacity: 1;
+  text-align: center;
+}
+.v0_8938 {
+  width: 19px;
+  color: rgba(46,58,89,1);
+  position: absolute;
+  top: 175px;
+  left: 49px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  opacity: 1;
+  text-align: center;
+}
+.v0_8939 {
+  width: 19px;
+  color: rgba(46,58,89,1);
+  position: absolute;
+  top: 128px;
+  left: 43px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  opacity: 1;
+  text-align: center;
+}
+.v0_8940 {
+  width: 26px;
+  color: rgba(46,58,89,1);
+  position: absolute;
+  top: 175px;
+  left: 40px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  opacity: 1;
+  text-align: center;
+}
+.v0_8941 {
+  width: 23px;
+  color: rgba(46,58,89,1);
+  position: absolute;
+  top: 128px;
+  left: 88px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  opacity: 1;
+  text-align: center;
+}
+.v0_8942 {
+  width: 16px;
+  color: rgba(197,206,224,1);
+  position: absolute;
+  top: 86px;
+  left: 208px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  opacity: 1;
+  text-align: center;
+}
+.v0_8943 {
+  width: 17px;
+  color: rgba(46,58,89,1);
+  position: absolute;
+  top: 86px;
+  left: 105px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  opacity: 1;
+  text-align: center;
+}
+.v0_8944 {
+  width: 17px;
+  color: rgba(46,58,89,1);
+  position: absolute;
+  top: 86px;
+  left: 4px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  opacity: 1;
+  text-align: center;
+}
+.v0_8945 {
+  width: 17px;
+  color: rgba(197,206,224,1);
+  position: absolute;
+  top: 86px;
+  left: 156px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  opacity: 1;
+  text-align: center;
+}
+.v0_8946 {
+  width: 18px;
+  color: rgba(46,58,89,1);
+  position: absolute;
+  top: 86px;
+  left: 44px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  opacity: 1;
+  text-align: center;
+}
+.v0_8947 {
+  width: 17px;
+  color: rgba(46,58,89,1);
+  position: absolute;
+  top: 86px;
+  left: 91px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  opacity: 1;
+  text-align: center;
+}
+.v0_8950 {
+  width: 9px;
+  color: rgba(197,206,224,1);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  opacity: 1;
+  text-align: center;
+}
+.v0_8952 {
+  width: 10px;
+  color: rgba(197,206,224,1);
+  position: absolute;
+  top: 0px;
+  left: 47px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  opacity: 1;
+  text-align: center;
+}
+.v0_8953 {
+  width: 10px;
+  color: rgba(197,206,224,1);
+  position: absolute;
+  top: 0px;
+  left: 95px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  opacity: 1;
+  text-align: center;
+}
+.v168_7667 {
+  width: 323px;
+  height: 14px;
+  margin: 30px;
+  position: absolute;
+  top: 60px;
+  left: 12px;
+  overflow: hidden;
+}
+.v0_8921 {
+  width: 24px;
+  color: rgba(143,155,179,1);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  opacity: 1;
+  text-align: center;
+}
+.v0_8954 {
+  width: 20px;
+  color: rgba(143,155,179,1);
+  position: absolute;
+  top: 0px;
+  left: 54px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  opacity: 1;
+  text-align: center;
+}
+.v0_8948 {
+  width: 25px;
+  color: rgba(143,155,179,1);
+  position: absolute;
+  top: 0px;
+  left: 104px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  opacity: 1;
+  text-align: center;
+}
+.v0_8955 {
+  width: 21px;
+  color: rgba(143,155,179,1);
+  position: absolute;
+  top: 0px;
+  left: 159px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  opacity: 1;
+  text-align: center;
+}
+.v0_8949 {
+  width: 14px;
+  color: rgba(143,155,179,1);
+  position: absolute;
+  top: 0px;
+  left: 210px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  opacity: 1;
+  text-align: center;
+}
+.v0_8956 {
+  width: 18px;
+  color: rgba(143,155,179,1);
+  position: absolute;
+  top: 0px;
+  left: 254px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  opacity: 1;
+  text-align: center;
+}
+.v0_8957 {
+  width: 21px;
+  color: rgba(143,155,179,1);
+  position: absolute;
+  top: 0px;
+  left: 302px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  opacity: 1;
+  text-align: center;
+}
+.v0_8958 {
+  width: 5px;
+  height: 4px;
+  background: rgba(255,126,0,1);
+  opacity: 1;
+  position: absolute;
+  top: 245px;
+  left: 275px;
+  border: 0px solid rgba(150,150,150,1);
+}
+.v0_8959 {
+  width: 5px;
+  height: 4px;
+  background: rgba(197,206,224,1);
+  opacity: 1;
+  position: absolute;
+  top: 115px;
+  left: 274px;
+  border: 0px solid rgba(150,150,150,1);
+}
+.v168_7664 {
+  width: 26px;
+  color: rgba(46,58,89,1);
+  position: absolute;
+  top: 270px;
+  left: 313px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  opacity: 1;
+  text-align: center;
+}
+.v0_8960 {
+  width: 375px;
+  height: 99px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v0_8961 {
+  width: 375px;
+  height: 1px;
+  background: rgba(227,232,242,1);
+  opacity: 1;
+  position: absolute;
+  top: 99px;
+  left: 0px;
+  border: 0px solid rgba(150,150,150,1);
+  overflow: hidden;
+}
+.v0_8962 {
+  width: 313px;
+  height: 29px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 71px;
+  left: 0px;
+  overflow: hidden;
+}
+.v0_8963 {
+  width: 188px;
+  height: 29px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v0_8964 {
+  width: 96px;
+  color: rgba(255,126,0,1);
+  position: absolute;
+  top: 0px;
+  left: 46px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  opacity: 1;
+  text-align: center;
+}
+.v0_8965 {
+  width: 188px;
+  height: 1px;
+  background: rgba(255,126,0,1);
+  opacity: 1;
+  position: absolute;
+  top: 28px;
+  left: 0px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  overflow: hidden;
+}
+.v0_8966 {
+  width: 94px;
+  color: rgba(197,206,224,1);
+  position: absolute;
+  top: 0px;
+  left: 219px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  opacity: 1;
+  text-align: center;
+}
+.name {
+  color: #fff;
+}
+.name {
+  color: #fff;
+}
+
+.v168_5769 {
+  width: 315px;
+  height: 1px;
+  position: absolute;
+  top: 60px;
+  left: 0px;
+  overflow: hidden;
+}
+.v135_4906 {
+  width: 315px;
+  height: 1px;
+  background: rgba(227,232,242,1);
+  opacity: 1;
+  position: absolute;
+  top: 400px;
+  left: 9px;
+  border: 0px solid rgba(150,150,150,1);
+}
+.v135_4870 {
+  width: 90%;
+  height: 70px;
+  position: absolute;
+  top: 265px;
+  left: 5%;
+}
+.v135_4871 {
+  width: fit-content;
+  color: rgba(143,155,179,1);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  opacity: 1;
+  text-align: left;
+}
+.v135_4872 {
+  width: 315px;
+  height: 1px;
+  background: rgba(227,232,242,1);
+  opacity: 1;
+  position: absolute;
+  top: 60px;
+  left: 0px;
+  border: 0px solid rgba(150,150,150,1);
+  overflow: hidden;
+}
+.clinic {
+  width: 100%;
+  height: 40px;
+  opacity: 1;
+  position: absolute;
+  top: 19px;
+  left: 0px;
+}
+.clinic input, .clinic label{
+  width: fit-content;
+  position: absolute;
+  top: 5px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  border-radius: 30px;
+}
+#clinic1, #clinic1_text{
+  left: 7px;
+}
+#clinic2, #clinic2_text{
+  left: 100px;
+}
+#clinic3, #clinic3_text{
+  left: 193px;
+}
+#clinic4, #clinic4_text{
+  left: 236px;
+}
+.v135_4884 {
+  width: 90%;
+  height: 60px;
+  position: absolute;
+  top: 200px;
+  left: 5%;
+}
+.color {
+  width: 100%;
+  height: 40px;
+  opacity: 1;
+  position: absolute;
+  top: 18px;
+  left: 0px;
+}
+.color input, .color label{
+  width: fit-content;
+  position: absolute;
+  top: 5px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  border-radius: 30px;
+}
+#color1, #color1_text{
+  left: 7px;
+}
+#color2, #color2_text{
+  left: 90px;
+}
+#color3, #color3_text{
+  left: 175px;
+}
+#color4, #color4_text{
+  left: 240px;
+}
+.v168_5767 {
+  width: 315px;
+  height: 1px;
+  background: rgba(227,232,242,1);
+  opacity: 1;
+  position: absolute;
+  top: 59px;
+  left: 0px;
+  border: 0px solid rgba(150,150,150,1);
+  overflow: hidden;
+}
+.v135_4891 {
+  width: fit-content;
+  color: rgba(143,155,179,1);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  opacity: 1;
+  text-align: left;
+}
+.v135_4892 {
+  width: 90%;
+  height: 70px;
+  position: absolute;
+  top: 130px;
+  left: 5%;
+  overflow: hidden;
+}
+.perm {
+  width: 100%;
+  height: 45px;
+  opacity: 1;
+  position: absolute;
+  top: 18px;
+  left: 0px;
+  overflow: hidden;
+}
+.perm input, .perm label{
+  width: fit-content;
+  position: absolute;
+  top: 5px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  border-radius: 30px;
+}
+#perm1, #perm1_text{
+  left: 7px;
+}
+#perm2, #perm2_text{
+  left: 80px;
+}
+#perm3, #perm3_text{
+  left: 153px;
+}
+#perm4, #perm4_text{
+  left: 238px;
+}
+.v168_5766 {
+  width: 315px;
+  height: 1px;
+  position: absolute;
+  top: 75px;
+  left: 0px;
+  overflow: hidden;
+}
+.v135_4898 {
+  width: fit-content;
+  color: rgba(143,155,179,1);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  opacity: 1;
+  text-align: left;
+}
+.v135_4897 {
+  width: 315px;
+  height: 1px;
+  background: rgba(227,232,242,1);
+  opacity: 1;
+  position: absolute;
+  top: 190px;
+  left: 9px;
+  border: 0px solid rgba(150,150,150,1);
+  overflow: hidden;
+}
+.v135_4860 {
+  width: 90%;
+  height: 80px;
+  position: absolute;
+  top: 59px;
+  left: 5%;
+  overflow: hidden;
+}
+.v168_5765 {
+  width: 315px;
+  height: 1px;
+  position: absolute;
+  top: 63px;
+  left: 0px;
+  overflow: hidden;
+}
+.v135_4861 {
+  width: 315px;
+  height: 1px;
+  background: rgba(227,232,242,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border: 0px solid rgba(150,150,150,1);
+  overflow: hidden;
+}
+.v135_4862 {
+  width: fit-content;
+  color: rgba(143,155,179,1);
+  position: absolute;
+  top: 0px;
+  left: 7px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  opacity: 1;
+  text-align: left;
+}
+.cut {
+  width: 100%;
+  height: 45px;
+  opacity: 1;
+  position: absolute;
+  top: 22px;
+  left: 0%;
+  overflow: hidden;
+}
+.cut input, .cut label{
+  width: fit-content;
+  position: absolute;
+  top: 5px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  border-radius: 30px;
+}
+#cut1, #cut1_text{
+  left: 7px;
+}
+#cut2, #cut2_text{
+  left: 100px;
+}
+#cut3, #cut3_text{
+  left: 190px;
+}
+#cut4, #cut4_text{
+  left: 217px;
+}
+#cut5, #cut5_text{
+  left: 229px;
+}
+.v135_4859 {
+  width: 74px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  opacity: 1;
+  text-align: left;
+}
+#save {
+  width: 50%;
+  height: fit-content;
+  position: absolute;
+  top: 700px;
+  left: 25%;
+  border-radius: 30px;
+}

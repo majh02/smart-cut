@@ -1,0 +1,34 @@
+        <!-- menuBar -->
+        <div class="menuBar">
+            <div class="vI0_9961_0_8175"></div>
+      
+            <!-- main -->
+            <button class="main" onclick="location.href='{% url 'users:main' %}'">
+                <i id="icon1" class="fa-solid fa-earth-asia"></i>
+                <span class="icon1_name">메인화면</span>
+            </button>
+            
+            <!-- AI_Photo -->
+            <button class="ai" onclick="location.href='{% url 'users:AI_Photo' %}'">
+                <i id="icon2" class="fa-solid fa-robot"></i>
+                <span class="icon2_name">AI 헤어추천</span>
+            </button>
+            
+            <!-- reservation -->
+            <button class="reservation" onclick="location.href='{% url 'reservation:reservationHistory' %}'">
+                <i id='icon3' class="fa-solid fa-calendar"></i>
+                <span class="icon3_name">예약내역</span>
+            </button>
+            
+            <!-- chatting -->
+            <button class="chatting" onclick="location.href='{% url 'chatting' %}'">
+                <i id='icon4' class="fa-solid fa-comments"></i>
+                <span class="icon4_name">채팅</span>
+            </button>
+            
+            <!-- profile -->
+            <button class="profile" onclick="location.href='{% url 'users:profile' %}'">
+                <i id='icon5' class="fa-solid fa-user"></i>
+                <span class="icon5_name">프로필</span>
+            </button>
+        </div>

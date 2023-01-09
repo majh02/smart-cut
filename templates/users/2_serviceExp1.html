@@ -1,0 +1,18 @@
+{% extends 'users/serviceExp_base.html' %}
+{% load static %}
+{% block img %}
+<img src="{% static 'img/bitmap1.png' %}">
+{% endblock img %}
+
+{% block tabBar %}
+<input id="colored_tab" class="tap1" type="submit" value="" onclick="location.href='{% url 'users:serviceExp1' %}'">
+<input class="tap2" type="submit" value="" onclick="location.href='{% url 'users:serviceExp2' %}'">
+<input class="tap3" type="submit" value="" onclick="location.href='{% url 'users:serviceExp3' %}'">
+{% endblock tabBar %}
+
+{% block title %}AI가 찾아주는 헤어 스타일{% endblock title %}
+{% block exp %}스마트컷 AI를 통해 얼굴형에 딱 맞는 <br/>헤어스타일을 추천해드립니다!{% endblock exp %}
+
+{% block skip_btn %}
+<input class="skip_btn" type="submit" value="Skip" onclick="location.href='{% url 'users:serviceExp2' %}'">
+{% endblock skip_btn %}

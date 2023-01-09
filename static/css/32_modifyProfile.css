@@ -1,0 +1,757 @@
+* {
+    box-sizing: border-box;
+  }
+  .back_icon, .phone_icon, .chat_icon{
+    width: 25px;
+    height: 25px;
+    font-size: 20px;
+    opacity: 1;
+    position: absolute;
+    top: 30px;
+    left:30px;
+    border: none;
+    background-color: transparent;
+    color: black;
+  }
+  body {
+    font-size: 14px;
+  }
+  .v0_8367 {
+    width: 100%;
+    height: 1000px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  .v0_8368 {
+    width: 100%;
+    height: 100%;
+    background: rgba(244,244,244,1);
+    opacity: 1;
+    position: absolute;
+    top: 250px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .v0_8369 {
+    width: 90%;
+    height: 405px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 261px;
+    left: 5%;
+    overflow: hidden;
+  }
+  .v0_8370 {
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,1);
+    border: 0px solid rgba(150,150,150,1);
+    box-shadow: 0px 0px 20px rgba(0.5471892952919006, 0.5316726565361023, 0.6861979365348816, 0.07025786489248276);
+  }
+  .v0_8371 {
+    width: 90%;
+    height: 80px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 289px;
+    left: 5%;
+  }
+  #male_ckb, #male_ckb_text{
+    width: 80px;
+    position: absolute;
+    top: 35px;
+    left: 7px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    border-radius: 30px;
+  }
+  #female_ckb, #female_ckb_text{
+    width: 80px;
+    position: absolute;
+    top: 35px;
+    left: 95px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    border-radius: 30px;
+  }
+  .v0_8372 {
+    width: 100%;
+    color: rgba(143,155,179,1);
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v0_8386 {
+    width: 90%;
+    height: 60px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 220px;
+    left: 5%;
+    overflow: hidden;
+  }
+  .v0_8387 {
+    width: 94%;
+    height: 25px;
+    padding: 0px 0px;
+    margin: 5px 1%;
+    color: rgba(46,58,89,1);
+    position: absolute;
+    top: 22px;
+    font-family: 'Abel';
+    font-weight: 'Regular';
+    font-size: 17px;
+    opacity: 1;
+    text-align: left;
+    border: none;
+  }
+  .v0_8388 {
+    width: 300px;
+    color: rgba(143,155,179,1);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v0_8389 {
+    width: 248px;
+    height: 60px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 217px;
+    left: 35px;
+    overflow: hidden;
+  }
+  .v0_8390 {
+    width: 300px;
+    color: rgba(46,58,89,1);
+    position: absolute;
+    top: 22px;
+    left: 0px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v0_8391 {
+    width: 100%;
+    color: rgba(143,155,179,1);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v0_8392 {
+    width: 90%;
+    height: 60px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 141px;
+    left: 5%;
+    border-bottom: 1px solid #C5CEE0;
+  }
+  .v0_8393 {
+    width: 300px;
+    color: rgba(46,58,89,1);
+    position: absolute;
+    top: 22px;
+    left: 0px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v0_8394 {
+    width: 100%;
+    color: rgba(143,155,179,1);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v0_8395 {
+    width: 90%;
+    height: 70px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 65px;
+    left: 5%;
+    border-bottom: 1px solid #C5CEE0;
+  }
+  .InputName {
+    width: 94%;
+    height: 25px;
+    padding: 0px 0px;
+    margin: 5px 1%;
+    color: rgba(46,58,89,1);
+    position: absolute;
+    top: 22px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    opacity: 1;
+    text-align: left;
+    border: none;
+  }
+  input:focus{
+    outline: none;
+    box-shadow: none;
+    border-bottom: 2px solid #FF7E00;
+  }
+  .v0_8397 {
+    width: 23px;
+    color: rgba(143,155,179,1);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v0_8398 {
+    width: 315px;
+    height: 1px;
+    background: rgba(227,232,242,1);
+    opacity: 1;
+    position: absolute;
+    top: 341px;
+    left: 35px;
+    border: 0px solid rgba(150,150,150,1);
+    overflow: hidden;
+  }
+  .v0_8399 {
+    width: 315px;
+    height: 1px;
+    background: rgba(227,232,242,1);
+    opacity: 1;
+    position: absolute;
+    top: 267px;
+    left: 35px;
+    border: 0px solid rgba(150,150,150,1);
+    overflow: hidden;
+  }
+  .v0_8400 {
+    width: 315px;
+    height: 1px;
+    background: rgba(227,232,242,1);
+    opacity: 1;
+    position: absolute;
+    top: 191px;
+    left: 35px;
+    border: 0px solid rgba(150,150,150,1);
+    overflow: hidden;
+  }
+  .v0_8401 {
+    width: 315px;
+    height: 1px;
+    background: rgba(227,232,242,1);
+    opacity: 1;
+    position: absolute;
+    top: 115px;
+    left: 35px;
+    border: 0px solid rgba(150,150,150,1);
+    overflow: hidden;
+  }
+  .v135_4266 {
+    width: 90%;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 30px;
+    left: 5%;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v0_8404 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 117px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 91px;
+  }
+  .filebox input[type="file"] {  /* 파일 필드 숨기기 */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip:rect(0,0,0,0);
+    border: 0;
+  }
+  .v0_8405 {
+    width: 117px;
+    height: 117px;
+    object-fit: cover;
+    border-radius: 300px;
+    border: 5px solid rgb(244,244,244);
+  }
+  .v0_8404 .name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 65%;
+    margin-left: 82px;
+    color: #fff;
+    font-size: 30px;
+    border: none;
+    background-color: #FF7E00;
+    border-radius: 20px;
+    text-align: center;
+    z-index: 2;
+  }
+  .v0_8404 .name:hover{
+    background-color: #feb368;
+  }
+  #thumbnail:hover{
+    opacity: 0.7;
+  }
+  .v0_8409 {
+    width: 100%;
+    color: rgba(46,58,89,1);
+    position: absolute;
+    top: 51px;
+    left: 0px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    text-align: center;
+  }
+  .v135_4857 {
+    width: 90%;
+    height: 525px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 675px;
+    left: 5%;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  #save {
+    width: 60%;
+    height: fit-content;
+    position: absolute;
+    top: 480px;
+    left: 20%;
+    border-radius: 30px;
+  }
+  .v135_4878 {
+    width: 90%;
+    height: 70px;
+    position: absolute;
+    top: 410px;
+    left: 5%;
+  }
+  .whiteHair {
+    width: 90%;
+    height: 40px;
+    position: absolute;
+    top: 18px;
+    left: 5%;
+  }
+  .whiteHair input, .whiteHair label{
+    width: fit-content;
+    position: absolute;
+    top: 5px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    border-radius: 30px;
+  }
+  #whiteHair1, #whiteHair1_text{
+    left: 2px;
+  }
+  #whiteHair2, #whiteHair2_text{
+    left: 55px;
+  }
+  #whiteHair3, #whiteHair3_text{
+    left: 108px;
+  }
+  .v135_4883 {
+    width: 90%;
+    color: rgba(143,155,179,1);
+    position: absolute;
+    top: 0px;
+    left: 5%;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v135_4899 {
+    width: 90%;
+    height: 70px;
+    opacity: 1;
+    position: absolute;
+    top: 335px;
+    left: 5%;
+  }
+  .v135_4900 {
+    width: 90%;
+    color: rgba(143,155,179,1);
+    position: absolute;
+    top: 0px;
+    left: 5%;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    text-align: left;
+  }
+  .hair {
+    width: 90%;
+    height: 40px;
+    position: absolute;
+    top: 19px;
+    left: 5%;
+  }
+  .hair input, .hair label{
+    width: fit-content;
+    position: absolute;
+    top: 5px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    border-radius: 30px;
+  }
+  #hair1, #hair1_text{
+    left: 2px;
+  }
+  #hair2, #hair2_text{
+    left: 55px;
+  }
+  #hair3, #hair3_text{
+    left: 108px;
+  }
+  #hair4, #hair4_text{
+    left: 161px;
+  }
+  .v135_4906 {
+    width: 80%;
+    height: 1px;
+    background: rgba(227,232,242,1);
+    opacity: 1;
+    position: absolute;
+    top: 60px;
+    left: 5%;
+    border: 0px solid rgba(150,150,150,1);
+  }
+  .v135_4870 {
+    width: 90%;
+    height: 70px;
+    position: absolute;
+    top: 265px;
+    left: 5%;
+  }
+  .v135_4871 {
+    width: 90%;
+    color: rgba(143,155,179,1);
+    position: absolute;
+    top: 0px;
+    left: 5%;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    text-align: left;
+  }
+  .v135_4872 {
+    width: 80%;
+    height: 1px;
+    background: rgba(227,232,242,1);
+    opacity: 1;
+    position: absolute;
+    top: 60px;
+    left: 5%;
+    border: 0px solid rgba(150,150,150,1);
+    overflow: hidden;
+  }
+  .condition {
+    width: 90%;
+    height: 40px;
+    position: absolute;
+    top: 19px;
+    left: 5%;
+  }
+  .condition input, .condition label{
+    width: fit-content;
+    position: absolute;
+    top: 5px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    border-radius: 30px;
+  }
+  #condition1, #condition1_text{
+    left: 2px;
+  }
+  #condition2, #condition2_text{
+    left: 55px;
+  }
+  #condition3, #condition3_text{
+    left: 118px;
+  }
+  #condition4, #condition4_text{
+    left: 181px;
+  }
+  .v135_4884 {
+    width: 90%;
+    height: 60px;
+    position: absolute;
+    top: 200px;
+    left: 5%;
+    overflow: hidden;
+  }
+  .curly {
+    width: 90%;
+    height: 40px;
+    position: absolute;
+    top: 18px;
+    left: 5%;
+  }
+  .curly input, .curly label{
+    width: fit-content;
+    position: absolute;
+    top: 5px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    border-radius: 30px;
+  }
+  #curly1, #curly1_text{
+    left: 2px;
+  }
+  #curly2, #curly2_text{
+    left: 55px;
+  }
+  #curly3, #curly3_text{
+    left: 118px;
+  }
+  #curly4, #curly4_text{
+    left: 171px;
+  }
+  .v168_5767 {
+    width: 80%;
+    height: 1px;
+    background: rgba(227,232,242,1);
+    opacity: 1;
+    position: absolute;
+    top: 59px;
+    left: 5%;
+    border: 0px solid rgba(150,150,150,1);
+    overflow: hidden;
+  }
+  .v135_4891 {
+    width: 90%;
+    color: rgba(143,155,179,1);
+    position: absolute;
+    top: 0px;
+    left: 5%;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    text-align: left;
+  }
+  .v135_4892 {
+    width: 90%;
+    height: 70px;
+    position: absolute;
+    top: 130px;
+    left: 5%;
+  }
+  .thickness {
+    width: 90%;
+    height: 45px;
+    position: absolute;
+    top: 18px;
+    left: 5%;
+  }
+  .thickness input, .thickness label{
+    width: fit-content;
+    position: absolute;
+    top: 5px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    border-radius: 30px;
+  }
+  #thickness1, #thickness1_text{
+    left: 2px;
+  }
+  #thickness2, #thickness2_text{
+    left: 75px;
+  }
+  #thickness3, #thickness3_text{
+    left: 148px;
+  }
+  #thickness4, #thickness4_text{
+    left: 231px;
+  }
+  .v168_5766 {
+    width: 315px;
+    height: 1px;
+    background: url("../images/v168_5766.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 75px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .v135_4898 {
+    width: 90%;
+    color: rgba(143,155,179,1);
+    position: absolute;
+    top: 0px;
+    left: 5%;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v135_4897 {
+    width: 80%;
+    height: 1px;
+    background: rgba(227,232,242,1);
+    opacity: 1;
+    position: absolute;
+    top: 60px;
+    left: 5%;
+    border: 0px solid rgba(150,150,150,1);
+    overflow: hidden;
+  }
+  .v135_4860 {
+    width: 90%;
+    height: 80px;
+    position: absolute;
+    top: 59px;
+    left: 5%;
+  }
+  .v168_5765 {
+    width: 80%;
+    height: 1px;
+    background: rgba(227,232,242,1);
+    position: absolute;
+    top: 63px;
+    left: 5%;
+    overflow: hidden;
+  }
+  .v135_4862 {
+    width: 90%;
+    color: rgba(143,155,179,1);
+    position: absolute;
+    top: 0px;
+    left: 5%;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    opacity: 1;
+    text-align: left;
+  }
+  .scalp {
+    width: 90%;
+    height: 45px;
+    opacity: 1;
+    position: absolute;
+    top: 22px;
+    left: 5%;
+    overflow: hidden;
+  }
+  .scalp input, .scalp label{
+    width: fit-content;
+    position: absolute;
+    top: 5px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    border-radius: 30px;
+  }
+  #scalp1, #scalp1_text{
+    left: 2px;
+  }
+  #scalp2, #scalp2_text{
+    left: 55px;
+  }
+  #scalp3, #scalp3_text{
+    left: 108px;
+  }
+  #scalp4, #scalp4_text{
+    left: 172px;
+  }
+  #scalp5, #scalp5_text{
+    left: 224px;
+  }
+  .v135_4859 {
+    width: 90%;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 10px;
+    left: 5%;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    opacity: 1;
+    text-align: left;
+  }
+  #backBtn {
+    width: 35px;
+    height: 35px;
+    background: url('/static/img/Leftarrow.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border: none;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+  }
+
+  @media screen and (min-width: 800px){
+    .v0_8369, .v135_4857{
+      width: 50%;
+      left: 25%;
+    }
+  }

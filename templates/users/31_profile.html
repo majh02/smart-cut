@@ -1,0 +1,170 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SMART CUT - AI 헤어 추천</title>
+        <link rel="shortcut icon" href="http://127.0.0.1:8000/static/img/favicon.png" type="image/x-icon" />
+        <link rel="icon" href="http://127.0.0.1:8000/static/img/favicon.png" type="image/x-icon" />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scaleable=no, maximum-scale=1 user-scalable=no">
+        <meta name="description" content="">
+        <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+        <meta name="generator" content="Hugo 0.79.0">
+
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+
+        <!-- BootStrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/b6541407c0.js" crossorigin="anonymous"></script>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="{% static 'css/31_profile/31_profile.css' %}">
+
+        <!-- Axios -->
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+        <!-- <link rel="stylesheet" href="{% static 'css/menuBar.css' %}"> -->
+    </head>
+    
+    <body>
+        <!-- menuBar -->
+        <div class="menuBar">
+            <div class="vI0_9961_0_8175"></div>
+      
+            <!-- main -->
+            <button class="main" onclick="location.href='{% url 'users:main' %}'">
+                <i id="icon1" class="fa-solid fa-earth-asia"></i>
+                <span class="icon1_name">메인화면</span>
+            </button>
+            
+            <!-- AI_Photo -->
+            <button class="ai" onclick="location.href='{% url 'users:AI_Photo' %}'">
+                <i id="icon2" class="fa-solid fa-robot"></i>
+                <span class="icon2_name">AI 헤어추천</span>
+            </button>
+            
+            <!-- reservation -->
+            <button class="reservation" onclick="location.href='{% url 'reservation:reservationHistory' %}'">
+                <i id='icon3' class="fa-solid fa-calendar"></i>
+                <span class="icon3_name">예약내역</span>
+            </button>
+            
+            <!-- chatting -->
+            <button class="chatting" onclick="location.href='{% url 'chatting' %}'">
+                <i id='icon4' class="fa-solid fa-comments"></i>
+                <span class="icon4_name">채팅</span>
+            </button>
+            
+            <!-- profile -->
+            <button class="profile" onclick="location.href='{% url 'users:profile' %}'">
+                <i id='icon5' class="fa-solid fa-user"></i>
+                <span class="icon5_name">프로필</span>
+            </button>
+        </div>
+
+        <div class="v0_8411">
+            <div class="v0_8412"></div>
+            
+            <!-- 로그아웃 -->
+            <button class="logout" onclick="Logout()">
+                <i id='logout_icon' class="fa-solid fa-arrow-right-to-bracket"></i>
+                <!-- <div class="v0_8415"></div> -->
+                <span class="v0_8416"> 로그아웃</span>
+            </button>
+            
+            {% comment %} <!-- 나의 정보2 -->
+            <div class="v0_8418">
+                <div class="v0_8419"></div>
+
+                <!-- 고객센터 -->
+                <button class="client_center">
+                    <span class="v0_8422">고객센터</span>
+                    <div class="v168_4393"></div>
+                </button>
+                
+                <!-- 설정 -->
+                <button class="setting">
+                    <span class="v0_8426">설정</span>
+                    <div class="v168_4392"></div>
+                </button>
+                
+                <!-- 친구 초대 -->
+                <button class="invite_friend">
+                    <span class="v0_8430">친구 초대</span>
+                    <div class="v168_4391"></div>
+                </button>
+                
+                <!-- 알림 -->
+                <button class="alert">
+                    <span class="v0_8434">알림</span>
+                    <div class="v168_4390"></div>
+                </button>
+            </div> {% endcomment %}
+            
+            <!-- 나의 정보1 -->
+            <div class="v0_8440">
+                <div class="v0_8441"></div>
+
+                <!-- 프로필 수정하기 -->
+                <button class="modify_profile" onclick="location.href='{% url 'users:check_password' %}'">
+                    <span class="v0_8448">프로필 수정하기</span>
+                    <div class="v168_4389"></div>
+                </button>
+                
+                <!--결제 -->
+                <button class="payment" onclick="alert('서비스 준비 중입니다.')">
+                    <span class="v0_8444">결제</span>
+                    <div class="v168_4388"></div>
+                </button>
+            </div>
+            
+            <!-- 프로필 사진 -->
+            <div class="profile_photo">
+                <div class="v168_4566">
+                    <img class="v0_8453" src='{{userinfo.thumbnail.url}}' onclick="location.href='{% url 'users:modifyProfile' %}'"/>
+                </div>
+                <div id='name' class="v0_8454">{{userinfo.user_name}}</div>
+                <div id='email' class="v0_8455">{{userinfo.email}}</div>
+            </div>
+        </div>
+    </body>
+</html>
+
+<script>
+    axios.defaults.xsrfCookieName = 'csrftoken';
+    axios.defaults.xsrfHeaderName = 'X-CSRFTOKEN';
+
+    function Logout(){
+        axios.get(`/users/logout/`)
+        .then(res => {
+        
+            location.replace('/users/login/');
+          
+        }).catch(err=> {
+            console.log("FETCH MAILACCESS ERR.RESPONSE", err.response);
+        })
+        /*
+        axios({
+            method: "GET",
+            url: 'http://' + window.location.host + 'users/logout/',
+
+            }).then(res => {
+        
+                location.replace('/users/login/');
+              
+            }).catch(err=> {
+                console.log("FETCH MAILACCESS ERR.RESPONSE", err.response);
+            })
+        */
+
+    }
+    
+</script>

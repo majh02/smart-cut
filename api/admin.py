@@ -1,0 +1,31 @@
+from django.contrib import admin
+from .models import *
+
+# Register your models here.
+
+admin.site.register(AgreeInfo)
+# admin.site.register(AuthGroupPermissions)
+# admin.site.register(AuthPermission)
+# admin.site.register(AuthUser)
+# admin.site.register(AuthUserGroups)
+# admin.site.register(AuthUserUserPermissions)
+# admin.site.register(Board)
+# admin.site.register(BoardFile)
+# admin.site.register(BoardReview)
+admin.site.register(ChatDetail)
+admin.site.register(ChatRoom)
+# admin.site.register(CodeDetail)
+# admin.site.register(CodeMaster)
+admin.site.register(Designer)
+# admin.site.register(Model)
+# admin.site.register(Priceinfo)
+admin.site.register(Hairstyle)
+admin.site.register(RecommendHair)
+admin.site.register(ReservReview)
+# admin.site.register(ReservReviewFile)
+# admin.site.register(ReservReviewTag)
+admin.site.register(Reservation)
+admin.site.register(Shop)
+admin.site.register(ShopFile)
+admin.site.register(Userinfo)
+admin.site.register(UserinfoDetail)

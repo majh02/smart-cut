@@ -1,0 +1,618 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-size: 14px;
+    overflow: hidden;
+  }
+  .v0_9839 {
+    width: 100%;
+    height: 110%;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  .v0_9840 {
+    width: 100%;
+    height: 850px;
+    background: rgba(244,244,244,1);
+    opacity: 1;
+    position: absolute;
+    top: 284px;
+    left: 1px;
+    overflow: hidden;
+    /* overflow-x: hidden; */
+  }
+
+  /* 미용실 사진 */
+ .salonPhoto {
+  width: 100%;
+  height: 228px;
+  opacity: 1;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.v0_9842 {
+  width: 100%;
+  height: 228px;
+  background: rgb(143, 155, 179);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border: 0px solid rgb(150, 150, 150);
+  overflow: hidden;
+}
+
+.v35_3286 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border: 0px solid rgb(150, 150, 150);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  overflow: hidden;
+}
+
+.salon_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: linear-gradient(rgba(24, 24, 39, 0.3695367277), rgba(48, 47, 104, 0.0001));
+  opacity: 0.8;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border: 0px solid rgb(150, 150, 150);
+  overflow: hidden;
+}
+
+.salon_name {
+  width: fit-content;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  opacity: 1;
+  text-align: left;
+}
+
+/* 최상단 그림자 효과 */
+.shadown {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(24, 24, 39, 0.3695367277), rgba(48, 47, 104, 0.0001));
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border: 0px solid rgb(150, 150, 150);
+  overflow: hidden;
+}
+
+ /* 최상단 아이콘버튼(뒤로가기, 전화, 채팅) */
+ .back_icon, .phone_icon, .chat_icon{
+  width: 25px;
+  height: 25px;
+  font-size: 20px;
+  opacity: 1;
+  position: absolute;
+  top: 30px;
+  border: none;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.7);
+}
+.salonPhoto button:hover > i{
+  font-size: 22px;
+  color: rgba(255, 255, 255, 1);
+}
+.back_icon{
+  left: 5px;
+}
+.phone_icon{
+  right: 45px;
+}
+.chat_icon{
+  right: 10px;
+}
+
+/* 별점 */
+.star_point {
+  width: 60px;
+  height: 24px;
+  opacity: 1;
+  position: absolute;
+  top: 164px;
+  right: 5%;
+  overflow: hidden;
+}
+.v0_9891 {
+  width: 30px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 1px;
+  left: 0px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  opacity: 1;
+  text-align: right;
+}
+#star_icon {
+  width: 25px;
+  height: 25px;
+  font-size: 20px;
+  color: #FF7E00;
+  position: absolute;
+  top: 2px;
+  right: 0px;
+}
+  
+
+  /* 주소 */
+  .address {
+    width: 90%;
+    height: 300px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 470px;
+    left: 5%;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  .address:hover{
+    box-shadow: 0px 4px 10px #C5CEE0;
+  }
+  .v0_9846 {
+    width: 345px;
+    height: 184px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .map_api {
+    width: 90%;
+    height: 220px;
+    position: absolute;
+    top: 60px;
+    left: 5%;
+    border: 0px solid rgba(150,150,150,1);
+    border-radius: 8px;
+    overflow: hidden;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+  }
+  .v0_9849 {
+    width: 43px;
+    height: 52px;
+    background: url("../images/v0_9849.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 78px;
+    left: 140px;
+    overflow: hidden;
+  }
+  .v0_9850 {
+    width: 22px;
+    height: 3px;
+    background: rgba(255,126,0,1);
+    opacity: 1;
+    position: absolute;
+    top: 49px;
+    left: 11px;
+  }
+  .v0_9854 {
+    width: 2px;
+    height: 2px;
+    background: rgba(223,110,0,1);
+    opacity: 1;
+    position: absolute;
+    top: 47px;
+    left: 20px;
+    border: 0px solid rgba(120,159,254,1);
+  }
+  .v0_9858 {
+    width: 26px;
+    height: 26px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 8px;
+    left: 9px;
+    border: 0px solid rgba(150,150,150,1);
+  }
+  .v0_9859 {
+    width: 24px;
+    height: 24px;
+    opacity: 1;
+    position: absolute;
+    top: 9px;
+    left: 10px;
+    border: 0px solid rgba(150,150,150,1);
+  }
+  .v0_9860 {
+    width: fit-content;
+    color: rgba(255,126,0,1);
+    position: absolute;
+    top: 12px;
+    right: 5%;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    opacity: 1;
+    text-align: right;
+  }
+  .v0_9847 {
+    width: 184px;
+    color: rgba(46,58,89,1);
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    opacity: 1;
+    text-align: left;
+  }
+
+  /* 영업시간 */
+  .hours {
+    width: 90%;
+    height: 132px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 323px;
+    left: 5%;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  .hours:hover{
+    box-shadow: 0px 4px 10px #C5CEE0;
+  }
+  .v0_9862 {
+    width: 345px;
+    height: 132px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .v0_9866 {
+    width: 159px;
+    height: 77px;
+    opacity: 1;
+    position: absolute;
+    top: 44px;
+    left: 174px;
+    overflow: hidden;
+  }
+  .v0_9867 {
+    width: 128px;
+    color: rgba(46,58,89,1);
+    position: absolute;
+    top: 0px;
+    left: 31px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v0_9868 {
+    width: 128px;
+    color: rgba(46,58,89,1);
+    position: absolute;
+    top: 58px;
+    left: 31px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v0_9869 {
+    width: 128px;
+    color: rgba(46,58,89,1);
+    position: absolute;
+    top: 28px;
+    left: 31px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v0_9870 {
+    width: 5px;
+    height: 5px;
+    background: rgba(227,232,242,1);
+    opacity: 1;
+    position: absolute;
+    top: 7px;
+    left: 0px;
+    border: 0px solid rgba(150,150,150,1);
+  }
+  .v0_9871 {
+    width: 5px;
+    height: 5px;
+    background: rgba(227,232,242,1);
+    opacity: 1;
+    position: absolute;
+    top: 35px;
+    left: 0px;
+    border: 0px solid rgba(150,150,150,1);
+  }
+  .v0_9872 {
+    width: 5px;
+    height: 5px;
+    background: rgba(227,232,242,1);
+    opacity: 1;
+    position: absolute;
+    top: 65px;
+    left: 0px;
+    border: 0px solid rgba(150,150,150,1);
+  }
+  .v0_9865 {
+    width: 111px;
+    color: rgba(143,155,179,1);
+    position: absolute;
+    top: 102px;
+    left: 12px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v0_9864 {
+    width: 111px;
+    color: rgba(143,155,179,1);
+    position: absolute;
+    top: 44px;
+    left: 12px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v0_9863 {
+    width: 184px;
+    color: rgba(46,58,89,1);
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    opacity: 1;
+    text-align: left;
+  }
+
+  /* 연락처, 결제방식 */
+  .contact {
+    width: 90%;
+    height: 113px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 195px;
+    left: 5%;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  .contact:hover{
+    box-shadow: 0px 4px 10px #C5CEE0;
+  }
+  .v0_9874 {
+    width: 345px;
+    height: 113px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .v0_9877 {
+    width: 213px;
+    color: rgba(46,58,89,1);
+    position: absolute;
+    top: 80px;
+    left: 44px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  #card_icon {
+    width: 25px;
+    height: 25px;
+    font-size: 15px;
+    color: #C5CEE0;
+    position: absolute;
+    top: 85px;
+    left: 15px;
+  }
+  .v0_9876 {
+    width: fit-content;
+    color: rgba(46,58,89,1);
+    position: absolute;
+    top: 47px;
+    left: 44px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v0_9876:hover{
+    color: rgba(46,58,89,1);
+    font-weight: 500;
+    border-bottom: 1px solid #C5CEE0;
+  }
+  #call_icon {
+    width: 25px;
+    height: 25px;
+    font-size: 15px;
+    color: #C5CEE0;
+    position: absolute;
+    top: 53px;
+    left: 15px;
+  }
+  .v0_9875 {
+    width: 184px;
+    color: rgba(46,58,89,1);
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    opacity: 1;
+    text-align: left;
+  }
+
+  /* 정보 */
+  .information {
+    display: inline-block;
+    width: 90%;
+    height: 150px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 30px;
+    left: 5%;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  .information:hover{
+    box-shadow: 0px 4px 10px #C5CEE0;
+  }
+  .v0_9881 {
+    width: 100%;
+    /* height: fit-content; */
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+
+  .info_text{
+    width: 90%;
+    margin-top: 5px;
+    margin-left: 5%;
+  }
+  .v0_9883 {
+    width: 100%;
+    height: fit-content;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    opacity: 1;
+    text-align: left;
+  }
+
+  .info_title{
+    width: fit-content;
+    margin-top: 6px;
+    margin-left: 12px;
+  }
+  .v0_9882 {
+    width: fit-content;
+    color: rgba(46,58,89,1);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    opacity: 1;
+    text-align: left;
+  }
+
+  /* 메뉴탭(소개, 디자이너, 사진, 리뷰) */
+.menu_tab {
+  width: 100%;
+  height: 58px;
+  opacity: 1;
+  position: fixed;
+  top: 228px;
+  left: 0px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.menu_tab button {
+  width: 25%;
+  height: 32px;
+  opacity: 1;
+  position: absolute;
+  bottom: 0px;
+  overflow: hidden;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  text-align: center;
+  background-color: transparent;
+}
+.menu_tab button:hover{
+  color: rgb(255, 126, 0);
+  border-bottom: 2px solid rgb(255, 126, 0);
+}
+
+.introduction {
+  border: none;
+  color: rgb(255, 126, 0);
+  border-bottom: 2px solid rgb(255, 126, 0);
+  left: 0%;
+}
+
+.designer {
+  border: none;
+  color: rgb(197, 206, 224);
+  left: 25%;
+}
+
+.photos {
+  border: none;
+  color: rgb(197, 206, 224);
+  left: 50%;
+}
+
+.review {
+  border: none;
+  color: rgb(197, 206, 224);
+  left: 75%;
+}
+
+@media screen and (min-width: 800px){
+  .information, .contact, .hours, .address{
+    width: 50%;
+    left: 25%;
+  }
+}

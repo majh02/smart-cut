@@ -1,0 +1,621 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-size: 14px;
+  }
+  .v0_8411 {
+    width: 375px;
+    height: 812px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .v0_8412 {
+    width: 375px;
+    height: 595px;
+    background: rgba(244,244,244,1);
+    opacity: 1;
+    position: absolute;
+    top: 217px;
+    left: 0px;
+    overflow: hidden;
+  }
+
+/* menuBar */
+.menuBar {
+  width: 375px;
+  height: 68px;
+  background: rgb(255, 255, 255);
+  opacity: 1;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.vI0_9961_0_8175 {
+  width: 375px;
+  height: 68px;
+  background: rgb(255, 255, 255);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.101343967);
+}
+
+.name {
+  color: #fff;
+}
+
+/* 메인화면 */
+.main {
+  width: 75px;
+  height: 68px;
+  background: rgb(255, 255, 255);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  border: none;
+  color: #C5CEE0;
+}
+#icon1 {
+  width: 38px;
+  height: 38px;
+  font-size: 32px;
+  position: absolute;
+  top: 10px;
+  left: 18px;
+  padding: 0px 0px;
+}
+.icon1_name {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: absolute;
+  top: 50px;
+  left: 18px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+}
+.main:hover{
+  color: #FF7E00;
+}
+
+/* 내 주변 */
+.location {
+  width: 75px;
+  height: 68px;
+  background: rgb(255, 255, 255);
+  color: #C5CEE0;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 75px;
+  overflow: hidden;
+  border: none;
+}
+#icon2 {
+  width: 38px;
+  height: 38px;
+  font-size: 32px;
+  position: absolute;
+  top: 10px;
+  left: 18px;
+  padding: 0px 0px;
+}
+.icon2_name {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: absolute;
+  top: 50px;
+  left: 21px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+}
+.location:hover{
+  color: #FF7E00;
+}
+.location:hover > #icon2{
+  font-size: 35px;
+}
+
+/* 예약내역 */
+.reservation {
+  width: 75px;
+  height: 68px;
+  background: rgb(255, 255, 255);
+  color: #C5CEE0;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 150px;
+  overflow: hidden;
+  border: none;
+}
+#icon3 {
+  width: 38px;
+  height: 38px;
+  font-size: 32px;
+  position: absolute;
+  top: 10px;
+  left: 18px;
+  padding: 0px 0px;
+}
+.icon3_name {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: absolute;
+  top: 50px;
+  left: 18px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+}
+.reservation:hover{
+  color: #FF7E00;
+}
+
+/* 채팅 */
+.chatting {
+  width: 75px;
+  height: 68px;
+  background: rgb(255, 255, 255);
+  color: #C5CEE0;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 225px;
+  overflow: hidden;
+  border: none;
+}
+#icon4 {
+  width: 38px;
+  height: 38px;
+  font-size: 32px;
+  position: absolute;
+  top: 10px;
+  left: 18px;
+  padding: 0px 0px;
+}
+.icon4_name {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: absolute;
+  top: 50px;
+  left: 25px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+}
+.chatting:hover{
+  color: #FF7E00;
+}
+
+/* 프로필 */
+.profile {
+  width: 75px;
+  height: 68px;
+  background: rgb(255, 255, 255);
+  color: #FF7E00;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 300px;
+  overflow: hidden;
+  border: none;
+}
+#icon5 {
+  width: 38px;
+  height: 38px;
+  font-size: 32px;
+  position: absolute;
+  top: 10px;
+  left: 18px;
+  padding: 0px 0px;
+}
+.icon5_name {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: absolute;
+  top: 50px;
+  left: 23px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+}
+.profile:hover{
+  color: #FF7E00;
+}
+
+  .logout {
+    width: 345px;
+    height: 74px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 640px;
+    left: 15px;
+    overflow: hidden;
+    border: none;
+  }
+  #logout_icon {
+    width: 34px;
+    height: 34px;
+    font-size: 20px;
+    color: #222B45;
+    text-align: center;
+    position: absolute;
+    top: 28px;
+    left: 12px;
+    border: none;
+  }
+  .v0_8416 {
+    width: 59px;
+    color: rgba(34,43,69,1);
+    position: absolute;
+    top: 28px;
+    left: 58px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .name {
+    color: #fff;
+  }
+  .v0_8418 {
+    width: 345px;
+    height: 251px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 377px;
+    left: 15px;
+    overflow: hidden;
+    border: none;
+  }
+  .v0_8419 {
+    width: 345px;
+    height: 251px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border: 0px solid rgba(150,150,150,1);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0px 0px 20px rgba(0.5471892952919006, 0.5316726565361023, 0.6861979365348816, 0.07025786489248276);
+    overflow: hidden;
+  }
+  .name {
+    color: #fff;
+  }
+  .client_center {
+    width: 300px;
+    height: 50px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 197px;
+    left: 12px;
+    overflow: hidden;
+    border: none;
+  }
+  .v0_8422 {
+    width: 56px;
+    color: rgba(34,43,69,1);
+    position: absolute;
+    top: 8px;
+    left: 46px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v168_4393 {
+    width: 34px;
+    height: 34px;
+    background: url("/static/img/client_center.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .setting {
+    width: 300px;
+    height: 50px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 138px;
+    left: 12px;
+    overflow: hidden;
+    border: none;
+  }
+  .v0_8426 {
+    width: 28px;
+    color: rgba(34,43,69,1);
+    position: absolute;
+    top: 8px;
+    left: 46px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v168_4392 {
+    width: 34px;
+    height: 34px;
+    background: url("/static/img/setting.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .invite_friend {
+    width: 300px;
+    height: 50px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 79px;
+    left: 12px;
+    overflow: hidden;
+    border: none;
+  }
+  .v0_8430 {
+    width: fit-content;
+    color: rgba(34,43,69,1);
+    position: absolute;
+    top: 8px;
+    left: 46px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v168_4391 {
+    width: 34px;
+    height: 34px;
+    background: url("/static/img/friend.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .alert {
+    width: 300px;
+    height: 50px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 20px;
+    left: 12px;
+    overflow: hidden;
+    border: none;
+  }
+  .v0_8434 {
+    width: 28px;
+    color: rgba(34,43,69,1);
+    position: absolute;
+    top: 8px;
+    left: 46px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v168_4390 {
+    width: 34px;
+    height: 34px;
+    background: url("/static/img/alert.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .v0_8440 {
+    width: 345px;
+    height: 133px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 232px;
+    left: 15px;
+    overflow: hidden;
+  }
+  .v0_8441 {
+    width: 345px;
+    height: 133px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border: 0px solid rgba(150,150,150,1);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0px 0px 20px rgba(0.5471892952919006, 0.5316726565361023, 0.6861979365348816, 0.07025786489248276);
+    overflow: hidden;
+  }
+  .modify_profile {
+    width: 300px;
+    height: 50px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 79px;
+    left: 12px;
+    overflow: hidden;
+    border: none;
+  }
+  .v0_8448 {
+    width: 101px;
+    color: rgba(34,43,69,1);
+    position: absolute;
+    top: 8px;
+    left: 46px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v168_4389 {
+    width: 34px;
+    height: 34px;
+    background: url("/static/img/modifyProfile.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .name {
+    color: #fff;
+  }
+  .name {
+    color: #fff;
+  }
+  .payment {
+    width: 300px;
+    height: 50px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 20px;
+    left: 12px;
+    overflow: hidden;
+    border: none;
+  }
+  .v0_8444 {
+    width: 28px;
+    color: rgba(34,43,69,1);
+    position: absolute;
+    top: 8px;
+    left: 46px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v168_4388 {
+    width: 34px;
+    height: 34px;
+    background: url("/static/img/payment.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .profile_photo {
+    width: 214px;
+    height: 153px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 49px;
+    left: 81px;
+    overflow: hidden;
+  }
+  .v168_4566 {
+    width: 86px;
+    height: 86px;
+    background: url("/static/img/profile.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: 10px;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 67px;
+    overflow: hidden;
+  }
+  .v0_8453 {
+    width: 86px;
+    height: 86px;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  .v0_8454 {
+    width: 56px;
+    color: rgba(46,58,89,1);
+    position: absolute;
+    top: 98px;
+    left: 79px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    opacity: 1;
+    text-align: center;
+  }
+  #email{
+    width: fit-content;
+    height: fit-content;
+    color: rgba(46,58,89,1);
+    position: absolute;
+    top: 130px;
+    left: 0px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    opacity: 1;
+    text-align: center;
+  }
+  .name {
+    color: #fff;
+  }
+  .name {
+    color: #fff;
+  }

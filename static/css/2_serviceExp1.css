@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+  width: 100%;
+  height: 100%;
+}
+.v0_10778 {
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v0_10779 {
+  width: 100%;
+  height: 68%;
+  background: url("/static/img/serviceExp1_bitmap.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.shadown {
+  width: 100%;
+  height: 100%;
+  background: rgba(11,13,26,1);
+  opacity: 0.4538225531578064;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v0_10780 {
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 65%;
+  left: 0px;
+  overflow: hidden;
+}
+
+/* skip 버튼 */
+.skip_div{
+  display: flex;
+  width: 100%;
+  margin-top: 22vh;
+  justify-content: center;
+  z-index: 1;
+}
+.v0_10781 {
+  width: 60px;
+  height: 30px;
+  border: none;
+  color: rgba(143,154,179,1);
+  background-color: #EFEFEF;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  z-index: 1;
+}
+.v0_10781:hover{
+  box-shadow: 0px 2px 5px #C5CEE0;
+}
+.v0_10782 {
+  width: 100%;
+  color: rgba(143,155,179,1);
+  position: absolute;
+  top: 80%;
+  left: 0%;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  opacity: 1;
+  text-align: center;
+}
+.v0_10783 {
+  width: 100%;
+  color: rgba(46,58,89,1);
+  position: absolute;
+  top: 73%;
+  left: 0%;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  opacity: 1;
+  text-align: center;
+}
+
+/* tabBar */
+.v0_10784 {
+  display: flex;
+  width: 100%;
+  height: 4px;
+  margin-top: 69vh;
+  justify-content: center;
+  z-index: 2;
+}
+.v0_10785 {
+  width: 34px;
+  height: 4px;
+  background: rgba(255,126,0,1);
+  margin-left: 0px;
+  border: none;
+  border-radius: 2px;
+  z-index: 2;
+}
+.v0_10786 {
+  width: 34px;
+  height: 4px;
+  background: rgba(227,232,242,1);
+  margin-left: 5px;
+  border: none;
+  border-radius: 2px;
+  z-index: 2;
+}
+.v0_10787 {
+  width: 34px;
+  height: 4px;
+  background: rgba(227,232,242,1);
+  margin-left: 5px;
+  border: none;
+  border-radius: 2px;
+  z-index: 2;
+}

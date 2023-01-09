@@ -1,0 +1,58 @@
+<script src="https://unpkg.com/vue@next"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+<script>
+    axios.defaults.xsrfCookieName = 'csrftoken';
+    axios.defaults.xsrfHeaderName = 'X-CSRFTOKEN';
+
+    const salonListAPP = {
+
+        delimiters: ['[[', ']]'],
+        data(){
+            
+            return{
+
+                remark:'',
+                hh : 'hi',
+
+            }
+        },
+
+        created(){
+
+            console.log("salonListAPP")
+            const shopId = location.pathname.split('/')[3]
+            console.log(shopId)
+            this.fetchShopDetail()
+        
+        },
+
+        methods :{
+
+            fetchShopDetail(shopId) {
+            
+
+                axios.get(`/salon/detail/1`)
+                    .then(res => {
+
+                        console.log("FETCH SALON_DETAIL GET RES", res);
+                        this.remark = res.data.remark;
+
+                        console.log(this.remark)
+                
+                    })
+                    .catch(err => {
+                    
+                       console.log("ERROR SHOPDETAIL" ,err)
+                    
+                    });
+           
+            },
+
+        }
+
+
+    }
+
+    Vue.createApp(salonListAPP).mount('.v0_9839')
+</script>

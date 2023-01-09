@@ -1,0 +1,38 @@
+<script src="https://unpkg.com/vue@next"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+<script type="text/javascript">
+    axios.defaults.xsrfCookieName = 'csrftoken';
+    axios.defaults.xsrfHeaderName = 'X-CSRFTOKEN';
+    
+    const roomCheck = {
+        data(){
+            return{
+            }
+        },
+        
+        created() {
+            console.log("roomCheck created()...");
+        },
+        
+        methods: {
+            fetchRoomCheck(designer_id) {
+                console.log("fetchRoomCheck()...");
+                axios.get(`/api/roomCheck/${designer_id}`)
+                    .then(res => {
+                        console.log("FETCH POSTDETAIL GET RES", res);
+                        this.room_id = res.data.room_id;
+                        location.replace('/chat/room/' + this.room_id + '/');
+                        
+                    })
+                    .catch(err => {
+                        console.log("FETCH POSTDETAIL GET ERR.RESPONSE", err.response);
+                        alert(`${err.response.status} ${err.response.statusText}`);
+                    });
+            },
+        },
+
+    }
+
+    Vue.createApp(roomCheck).mount('.v302_4334')
+</script>

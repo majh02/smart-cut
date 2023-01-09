@@ -1,0 +1,385 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-size: 14px;
+  }
+
+ /* menuBar */
+.menuBar {
+  width: 100%;
+  height: 68px;
+  background: rgb(255, 255, 255);
+  opacity: 1;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.vI0_9961_0_8175 {
+  width: 100%;
+  height: 68px;
+  background: rgb(255, 255, 255);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.101343967);
+}
+
+/* 메인화면 */
+.main {
+  width: 20%;
+  height: 68px;
+  background: rgb(255, 255, 255);
+  color: #C5CEE0;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border: none;
+}
+#icon1 {
+  width: 100%;
+  height: 38px;
+  font-size: 32px;
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  padding: 0px 0px;
+}
+.icon1_name {
+  width: 100%;
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+}
+.main:hover{
+  color: #FF7E00;
+}
+
+/* AI 헤어추천 */
+.ai {
+  width: 20%;
+  height: 68px;
+  background: rgb(255, 255, 255);
+  color: #C5CEE0;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 20%;
+  border: none;
+}
+#icon2 {
+  width: 100%;
+  height: 38px;
+  font-size: 32px;
+  position: absolute;
+  top: 10px;
+  left: 0%;
+  padding: 0px 0px;
+}
+.icon2_name {
+  width: 100%;
+  position: absolute;
+  bottom: 2px;
+  left: 0%;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+}
+.ai:hover{
+  color: #FF7E00;
+}
+
+/* 예약내역 */
+.reservation {
+  width: 20%;
+  height: 68px;
+  background: rgb(255, 255, 255);
+  color: #FF7E00;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 40%;
+  border: none;
+}
+#icon3 {
+  width: 100%;
+  height: 38px;
+  font-size: 32px;
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  padding: 0px 0px;
+}
+.icon3_name {
+  width: 100%;
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+}
+.reservation:hover{
+  color: #FF7E00;
+}
+
+/* 채팅 */
+.chatting {
+  width: 20%;
+  height: 68px;
+  background: rgb(255, 255, 255);
+  color: #C5CEE0;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 60%;
+  overflow: hidden;
+  border: none;
+}
+#icon4 {
+  width: 100%;
+  height: 38px;
+  font-size: 32px;
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  padding: 0px 0px;
+}
+.icon4_name {
+  width: 100%;
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+}
+.chatting:hover{
+  color: #FF7E00;
+}
+
+/* 프로필 */
+.profile {
+  width: 20%;
+  height: 68px;
+  background: rgb(255, 255, 255);
+  color: #C5CEE0;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 80%;
+  overflow: hidden;
+  border: none;
+}
+#icon5 {
+  width: 100%;
+  height: 38px;
+  font-size: 32px;
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  padding: 0px 0px;
+}
+.icon5_name {
+  width: 100%;
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+}
+.profile:hover{
+  color: #FF7E00;
+}
+
+  .v0_8810 {
+    display: inline-block;
+    width: 100%;
+    min-height: 80vh;
+    background: rgba(244,244,244,1);
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    padding-bottom: 5%;
+  }
+  .v0_8811 {
+    display: inline-block;
+    width: 100%;
+    height: fit-content;  
+    background: rgba(244,244,244,1);
+    padding: 10px 0px;
+    overflow-y: scroll;
+  }
+
+  /* 예약내역 */
+  a{
+    display: inline-block;
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 10px;
+  }
+  .reservation_list {
+    width: 90%;
+    height: 169px;
+    background: rgba(255,255,255,1);
+    margin: 5px 5%;
+    border-radius: 8px;
+  }
+  .reservation_list:hover{
+    box-shadow: 0px 2px 5px #C5CEE0;
+  }
+  .reserv_box {
+    width: 100%;
+    height: 100%;
+    padding: 10px 20px;
+    background: rgba(255,255,255,1);
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px #01010112;
+  }
+  .reserv_box > .flex_div:nth-child(1){
+    border-bottom: 1px solid rgba(244,244,244,1);
+  }
+
+  .photo_div{
+    width: 50%;
+    height: fit-content;
+  }
+  .salon_photo {
+    width: 120px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .salon_info_div {
+    width: 100%;
+  }
+  .salon_name {
+    display: inline-block;
+    width: 100%;
+    color: rgba(46,58,89,1);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    text-align: left;
+  }
+  .salon_addr {
+    width: 100%;
+    color: rgba(46,58,89,1);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    opacity: 0.57;
+    text-align: left;
+  }
+
+  .flex_div{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin: 10px 0px;
+  }
+  .designer_info_div {
+    width: 50%;
+    height: 19px;
+  }
+  .designer_info {
+    display: inline-block;
+    width: 100%;
+    color: rgba(143,155,179,1);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    text-align: left;
+  }
+
+  .block_div{
+    display: block;
+    width: 50%;
+  }
+  .date_div{
+    width: 100%;
+  }
+  .reserv_date {
+    display: inline-block;
+    width: 100%;
+    color: rgba(46,58,89,1);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: left;
+  }
+  .time_div{
+    width: 100%;
+  }
+  .reserv_time {
+    display: inline-block;
+    width: 100%;
+    color: rgba(46,58,89,1);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+
+  /* 상위 메뉴탭 */
+  .tab {
+    width: 100%;
+    height: 100px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  #tab1 {
+    width: 50%;
+    height: 50px;
+    opacity: 1;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    overflow: hidden;
+    border: none;
+    background: #fff;
+    color: rgba(197,206,224,1);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    opacity: 1;
+    text-align: center;
+  }
+  #tab1:hover{
+    color: #FF7E00;
+    font-weight: 700;
+    border-bottom: 1px solid rgba(255,126,0,1);
+  }
+  #tab2 {
+    width: 50%;
+    height: 50px;
+    opacity: 1;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    background: #fff;
+    color: rgba(255,126,0,1);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    opacity: 1;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid rgba(255,126,0,1);
+  }

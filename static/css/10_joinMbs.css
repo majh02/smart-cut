@@ -1,0 +1,752 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+}
+.v0_10046 {
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: scroll;
+}
+
+/* 가입하기 버튼 */
+.v0_10051 {
+  cursor: pointer;
+  width: 85%;
+  height: 44px;
+  color: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 105%;
+  left: 7%;
+  overflow: hidden;
+  background: rgba(255,126,0,1);
+  opacity: 1;
+  border: none;
+  border-radius: 8px;
+  z-index: 222;
+}
+.v0_10051:hover{
+  box-shadow: 0px 4px 10px #C5CEE0;
+}
+
+/* 성별 */
+.v0_10054 {
+  width: 90%;
+  height: 55px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 77%;
+  left: 7%;
+  overflow: hidden;
+}
+.v0_10048 {
+  width: 201px;
+  height: 19px;
+  opacity: 1;
+  position: absolute;
+  top: 213px;
+  left: 57px;
+  overflow: hidden;
+}
+.v0_10049 {
+  width: 143px;
+  color: rgba(143,155,179,1);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  opacity: 1;
+  text-align: right;
+}
+.v0_10050 {
+  width: 54px;
+  color: rgba(255,126,0,1);
+  position: absolute;
+  top: 0px;
+  left: 147px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  opacity: 1;
+  text-align: left;
+}
+.v0_10055 {
+  width: fit-content;
+  color: rgba(143,155,179,1);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  opacity: 1;
+  text-align: left;
+}
+#inlineRadio1{
+    position: absolute;
+    top: 28px;
+    left: 0px;
+    margin: 0px 0px;
+}
+#inlineRadio2{
+    position: absolute;
+    top: 28px;
+    left: 70px;
+    margin: 0px 0px;
+}
+#inlineRadio1_text {
+  width: fit-content;
+  color: rgba(46,58,89,1);
+  position: absolute;
+  top: 23px;
+  left: 20px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  opacity: 1;
+  text-align: left;
+}
+#inlineRadio2_text {
+    width: fit-content;
+    color: rgba(46,58,89,1);
+    position: absolute;
+    top: 23px;
+    left: 90px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+.v0_10057 {
+  width: 90%;
+  height: 1px;
+  background: rgba(227,232,242,1);
+  opacity: 1;
+  position: absolute;
+  top: 89%;
+  left: 5%;
+  border: 0px solid rgba(150,150,150,1);
+  overflow: hidden;
+}
+.sex_err{
+  width: 85%;
+  height: fit-content;
+  background: transparent;
+  color: #FF7E00;
+  position: absolute;
+  top: 85%;
+  left: 7%;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+/* 휴대전화 text*/
+.v131_7364 {
+  width: 270px;
+  color: rgba(143,155,179,1);
+  position: absolute;
+  top: 75%;
+  left: 7%;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  opacity: 1;
+  text-align: left;
+} 
+
+/* 생년월일 */
+.bir_wrap {
+  width: 90%;
+  height: fit-content;
+  color: rgba(143,155,179,1);
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 60%;
+  left: 7%;
+  overflow: hidden;
+}
+body > div > div.v0_10059 > label {
+  width: fit-content;
+  height: fit-content;
+  color: rgba(143,155,179,1);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  opacity: 1;
+  text-align: left;
+}
+.bir_yy,.bir_mm,.bir_dd{
+    width:90px;
+    display:table-cell;
+}
+.bir_mm+.bir_dd, .bir_yy+.bir_mm{
+    padding-left:10px;
+}
+#yy, #mm, #dd{
+    height: 25px;
+    padding: 0px 0px;
+    margin: 5px 5px;
+    border: none;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+}
+#yy:focus, #mm:focus, #dd:focus{
+  border-bottom: 2px solid #FF7E00;
+  box-shadow: none;
+}
+.v0_10061 {
+  width: 270px;
+  color: rgba(46,58,89,1);
+  position: absolute;
+  top: 28px;
+  left: 0px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  opacity: 1;
+  text-align: left;
+}
+.v0_10062 {
+  width: 315px;
+  height: 1px;
+  background: rgba(227,232,242,1);
+  opacity: 1;
+  position: absolute;
+  top: 90px;
+  left: 0px;
+  border: 0px solid rgba(150,150,150,1);
+  overflow: hidden;
+}
+
+.bday_err{
+  width: fit-content;
+  height: fit-content;
+  background: transparent;
+  color: #FF7E00;
+  position: absolute;
+  top: 73%;
+  left: 7%;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+/* 이메일 */
+.v0_10064 {
+  width: 90%;
+  height: 55px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 43%;
+  left: 7%;
+  overflow: hidden;
+}
+.v0_10065 {
+  width: fit-content;
+  color: rgba(143,155,179,1);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  opacity: 1;
+  text-align: left;
+}
+#InputEmail {
+  width: 60%;
+  height: 25px;
+  color: rgba(46,58,89,1);
+  position: absolute;
+  top: 20px;
+  left: 5px;
+  padding: 0px 0px;
+  margin-top: 5px;
+  font-family: 'Abel';
+  font-size: 15px;
+  opacity: 1;
+  text-align: left;
+  border: none;
+}
+#InputEmail:focus{
+  border-bottom: 2px solid #FF7E00;
+  box-shadow: none;
+}
+.v131_7376 {
+  cursor: pointer;
+  width: 107px;
+  height: 30px;
+  background: rgba(255,126,0,1);
+  opacity: 1;
+  position: absolute;
+  top: 20px;
+  left: 65%;
+  border: none;
+  border-radius: 5px;
+  color: rgba(255,255,255,1);
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  /* line-height: 0.1px; */
+  text-align: center;
+  z-index: 222;
+}
+.v131_7376:hover{
+  box-shadow: 0px 4px 10px #C5CEE0;
+}
+
+/* 이메일 인증 */
+.email_cert_div{
+  width: 60%;
+  height: 40px;
+  background: rgba(255,255,255,1);
+  position: absolute;
+  top: 55%;
+  left: 6%;
+}
+#email_cert {
+  width: 90%;
+  height: 25px;
+  margin-top: 5px;
+  padding: 0px 5px;
+  position: absolute;
+  top: 0px;
+  left: 5px;
+  border: none;
+  border-radius: 5px;
+  color: rgba(46,58,89,1);
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  text-align: left;
+}
+#email_cert:focus {
+  box-shadow: none;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #FF7E00;
+}
+.v0_10067 {
+  width: 315px;
+  height: 1px;
+  background: rgba(227,232,242,1);
+  opacity: 1;
+  position: absolute;
+  top: 54px;
+  left: 0px;
+  border: 0px solid rgba(150,150,150,1);
+  overflow: hidden;
+}
+.email_err{
+  width: 85%;
+  height: fit-content;
+  background: transparent;
+  color: #FF7E00;
+  position: absolute;
+  top: 51%;
+  left: 7%;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  /* border-top: 1px solid #FF7E00; */
+}
+
+/* 약관동의 */
+#check_all{
+  width: 85%;
+  height: 15px;
+  position: absolute;
+  top: 90%;
+  left: 13%;
+}
+#necessary{
+  width: 85%;
+  height: 15px;
+  position: absolute;
+  top: 93%;
+  left: 13%;
+}
+#choice{
+  width: 85%;
+  height: 15px;
+  position: absolute;
+  top: 96%;
+  left: 13%;
+}
+#defaultCheck1{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+#defaultCheck2{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+#defaultCheck3{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+#defaultCheck1_text {
+  width: 300px;
+  color: rgba(46,58,89,1);
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  opacity: 1;
+  text-align: left;
+}
+#defaultCheck2_text {
+  width: 300px;
+  color: rgba(46,58,89,1);
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  opacity: 1;
+  text-align: left;
+}
+#defaultCheck3_text {
+  width: 300px;
+  color: rgba(46,58,89,1);
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  opacity: 1;
+  text-align: left;
+}
+.checkbox_err{
+  width: 85%;
+  height: fit-content;
+  background: transparent;
+  color: #FF7E00;
+  position: absolute;
+  top: 99%;
+  left: 7%;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  /* border-top: 1px solid #FF7E00; */
+}
+
+/* 비밀번호 */
+.v0_10068 {
+  width: 90%;
+  height: 55px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 30%;
+  left: 7%;
+  overflow: hidden;
+}
+.v0_10069 {
+  width: fit-content;
+  color: rgba(143,155,179,1);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  opacity: 1;
+  text-align: left;
+}
+.v0_10070 {
+  width: 315px;
+  height: 1px;
+  background: rgba(227,232,242,1);
+  opacity: 1;
+  position: absolute;
+  top: 70px;
+  left: 0px;
+  border: 0px solid rgba(150,150,150,1);
+  overflow: hidden;
+}
+#InputPassword {
+  width: 90%;
+  height: 25px;
+  opacity: 1;
+  position: absolute;
+  top: 20px;
+  left: 5px;
+  padding: 0px 0px;
+  margin-top: 5px;
+  overflow: hidden;
+  border: none;
+  font-family: 'Abel';
+}
+#InputPassword:focus{
+  border-bottom: 2px solid #FF7E00;
+  box-shadow: none;
+}
+.pw_err{
+  width: 85%;
+  height: fit-content;
+  background: transparent;
+  color: #FF7E00;
+  position: absolute;
+  top: 38%;
+  left: 7%;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  /* border-top: 1px solid #FF7E00; */
+}
+/* 
+.v0_10072 {
+  width: 6px;
+  height: 6px;
+  background: rgba(46,58,89,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 44px;
+  border: 0px solid rgba(150,150,150,1);
+}
+
+.v0_10073 {
+  width: 6px;
+  height: 6px;
+  background: rgba(46,58,89,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 88px;
+  border: 0px solid rgba(150,150,150,1);
+}
+.v0_10074 {
+  width: 6px;
+  height: 6px;
+  background: rgba(46,58,89,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 22px;
+  border: 0px solid rgba(150,150,150,1);
+}
+.v0_10075 {
+  width: 6px;
+  height: 6px;
+  background: rgba(46,58,89,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 66px;
+  border: 0px solid rgba(150,150,150,1);
+}
+.v0_10076 {
+  width: 6px;
+  height: 6px;
+  background: rgba(46,58,89,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 110px;
+  border: 0px solid rgba(150,150,150,1);
+}
+.v0_10077 {
+  width: 6px;
+  height: 6px;
+  background: rgba(46,58,89,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 11px;
+  border: 0px solid rgba(150,150,150,1);
+}
+.v0_10078 {
+  width: 6px;
+  height: 6px;
+  background: rgba(46,58,89,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 55px;
+  border: 0px solid rgba(150,150,150,1);
+}
+.v0_10079 {
+  width: 6px;
+  height: 6px;
+  background: rgba(46,58,89,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 99px;
+  border: 0px solid rgba(150,150,150,1);
+}
+.v0_10080 {
+  width: 6px;
+  height: 6px;
+  background: rgba(46,58,89,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 33px;
+  border: 0px solid rgba(150,150,150,1);
+}
+.v0_10081 {
+  width: 6px;
+  height: 6px;
+  background: rgba(46,58,89,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 77px;
+  border: 0px solid rgba(150,150,150,1);
+}
+.v0_10082 {
+  width: 6px;
+  height: 6px;
+  background: rgba(46,58,89,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 121px;
+  border: 0px solid rgba(150,150,150,1);
+}
+.v0_10083 {
+  width: 6px;
+  height: 6px;
+  background: rgba(46,58,89,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border: 0px solid rgba(150,150,150,1);
+} 
+
+/* 이름 */
+.v0_10085 {
+  width: 90%;
+  height: 55px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 17%;
+  left: 7%;
+  overflow: hidden;
+}
+.v0_10086 {
+  width: fit-content;
+  color: rgba(143,155,179,1);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  opacity: 1;
+  text-align: left;
+}
+#name {
+  width: 90%;
+  height: 25px;
+  color: rgba(46,58,89,1);
+  position: absolute;
+  top: 20px;
+  left: 5px;
+  padding: 0px 0px;
+  margin-top: 5px;
+  border: none;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  opacity: 1;
+  text-align: left;
+}
+#name:focus{
+  border-bottom: 2px solid #FF7E00;
+  /* box-shadow: 0 0 0 0.25rem rgba(255,126,0,0.4); */
+  box-shadow: none;
+}
+.v0_10088 {
+  width: 90%;
+  height: 1px;
+  background: rgba(227,232,242,1);
+  opacity: 1;
+  position: absolute;
+  top: 99%;
+  left: 0px;
+  border: 0px solid rgba(150,150,150,1);
+  overflow: hidden;
+}
+.name_err{
+  width: 85%;
+  height: fit-content;
+  background: transparent;
+  color: #FF7E00;
+  position: absolute;
+  top: 25%;
+  left: 7%;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  /* border-top: 1px solid #FF7E00; */
+}
+
+/* 회원가입 text */
+.v0_10089 {
+  width: 100%;
+  height: 100px;
+  color: rgba(46,58,89,1);
+  background-color: #fff;
+  position: fixed;
+  top: 0%;
+  left: 0px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  opacity: 1;
+  text-align: center;
+  line-height: 7rem;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0px 4px 10px rgb(244, 244, 244);;
+}
+.v131_7366 {
+  width: 245px;
+  height: fit-content;
+  opacity: 1;
+  position: absolute;
+  top: 570px;
+  left: 32px;
+  border: 0px solid rgba(228,233,242,1);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  overflow: hidden;
+}

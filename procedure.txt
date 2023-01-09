@@ -1,0 +1,162 @@
+
+
+-- 사용자 정보 SELECT
+DROP PROCEDURE  if exists get_userinfo;
+DELIMITER $$
+CREATE procedure get_userinfo(
+	IN _user_id int
+)
+BEGIN
+	SELECT u.user_id, u.user_pw, u.user_name, u.email, u.age, u.gender, u.hp, u.thumbnail
+			, d.skin_condition, d.hair_bold, d.curl, d.hair_condition, d.thick_hair, d.hair_age
+    FROM userinfo as u
+    LEFT JOIN userinfo_detail as d
+	ON u.user_id = d.user_id
+    WHERE u.user_id = _user_id;
+END $$
+DELIMITER ;
+
+
+-- 사용자 정보 UPDATE 및 상세정보 INSERT/UPDATE
+DROP PROCEDURE  if exists set_userinfo;
+DELIMITER $$
+CREATE procedure set_userinfo(
+	IN _user_id int,
+    IN _age varchar(10),
+    IN _hp varchar(20),
+    IN _gender varchar(5),
+    IN _skin_condition varchar(10),
+    IN _hair_bold varchar(10),
+    IN _curl varchar(10),
+    IN _hair_condition varchar(10),
+    IN _thick_hair varchar(10),
+    IN _hair_age varchar(10),
+    IN _thumbnail varchar(255)
+)
+BEGIN
+	DECLARE EXIT HANDLER FOR SQLEXCEPTION
+	BEGIN
+		GET DIAGNOSTICS CONDITION 1
+		@p1 = RETURNED_SQLSTATE, @p2 = MESSAGE_TEXT;
+        ROLLBACK;
+        
+        INSERT INTO sql_error_log(sp_name, return_sql, message, dt) values('set_userinfo', @p1, @p2, now());
+        SELECT -9 as 'state';
+		RESIGNAL;
+	END;
+    
+	START TRANSACTION;
+    
+    UPDATE userinfo SET age = _age
+						, hp = _hp
+						, gender = _gender
+                        , thumbnail = _thumbnail
+						-- , updatedatetime = NOW()
+					WHERE user_id = _user_id;
+    
+    IF EXISTS(select user_id from userinfo_detail where user_id = _user_id) THEN
+		UPDATE userinfo_detail SET skin_condition = _skin_condition
+									, hair_bold = _hair_bold
+                                    , curl = _curl
+                                    , hair_condition = _hair_condition
+                                    , thick_hair = _thick_hair
+                                    , hair_age = _hair_age
+                                    , updatedatetime = NOW()
+								WHERE user_id = _user_id;
+		
+        
+    ELSE
+		INSERT INTO userinfo_detail(user_id, skin_condition, hair_bold, curl, hair_condition, thick_hair, hair_age, remark, regdatetime, updatedatetime)
+								VALUE(_user_id, _skin_condition, _hair_bold, _curl, _hair_condition, _thick_hair, _hair_age, '', NOW(), NOW());
+    END IF;
+    
+    SELECT 0 as 'state';
+    COMMIT;
+END $$
+DELIMITER ;
+
+
+-- 사용자 채팅룸 리스트
+DROP PROCEDURE if exists get_user_chatlist;
+DELIMITER $$
+CREATE PROCEDURE get_user_chatlist(
+	IN _user_id int
+)
+BEGIN
+	SELECT c.room_id, u.user_id, u.user_name, u.thumbnail, d.designer_id, d.designer, d.photo
+			, (select cd.message from chat_detail cd where cd.room_id = c.room_id order by cd.seq DESC limit 1) as message
+    FROM userinfo u, chat_room c, designer d
+    WHERE u.user_id = c.user_id
+    AND c.designer_id = d.designer_id
+    AND (c.user_id = _user_id OR c.designer_id = _user_id);
+END $$
+DELIMITER ;
+
+
+-- 채팅 상세내용 저장
+DROP PROCEDURE if exists set_chat_detail;
+DELIMITER $$
+CREATE PROCEDURE set_chat_detail(
+	IN _room_id int,
+    IN _writer varchar(30),
+    IN _message text,
+    IN _img MEDIUMTEXT,
+    IN _chat_type TINYINT(1)
+)
+BEGIN
+	DECLARE _seq int default 1;
+	DECLARE EXIT HANDLER FOR SQLEXCEPTION
+	BEGIN
+		GET DIAGNOSTICS CONDITION 1
+		@p1 = RETURNED_SQLSTATE, @p2 = MESSAGE_TEXT;
+        ROLLBACK;
+        
+        INSERT INTO sql_error_log(sp_name, return_sql, message, dt) values('set_chat_detail', @p1, @p2, now());
+        SELECT -9 as 'state';
+		RESIGNAL;
+	END;
+    
+    SET _seq = (SELECT COALESCE(MAX(seq),0) + 1 FROM chat_detail WHERE room_id = _room_id);
+    
+    START TRANSACTION;
+    
+    INSERT INTO chat_detail(room_id, seq, writer, message, writedatetime, chat_type, img)
+						VALUES(_room_id, _seq, _writer, _message, now(), _chat_type, _img);
+                        
+    SELECT 0 as 'state';
+    COMMIT;
+END $$
+DELIMITER ;
+
+
+-- 채팅룸 생성
+DROP PROCEDURE if exists check_chatroom;
+DELIMITER $$
+CREATE PROCEDURE check_chatroom(
+	IN _user_id int,
+    IN _designer_id int
+)
+BEGIN
+	DECLARE EXIT HANDLER FOR SQLEXCEPTION
+	BEGIN
+		GET DIAGNOSTICS CONDITION 1
+		@p1 = RETURNED_SQLSTATE, @p2 = MESSAGE_TEXT;
+        ROLLBACK;
+        
+        INSERT INTO sql_error_log(sp_name, return_sql, message, dt) values('check_chatroom', @p1, @p2, now());
+        SELECT -9 as 'state';
+		RESIGNAL;
+	END;
+    
+	START TRANSACTION;
+    
+    IF NOT EXISTS(SELECT room_id FROM chat_room WHERE user_id = _user_id AND designer_id = _designer_id) THEN
+		INSERT INTO chat_room(user_id, designer_id)
+						VALUE(_user_id, _designer_id);
+    END IF;
+		
+    SELECT room_id FROM chat_room WHERE user_id = _user_id AND designer_id = _designer_id;
+    
+    COMMIT;
+END $$
+DELIMITER ;

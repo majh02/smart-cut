@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-size: 14px;
+  }
+  .shadowm {
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+
+  /* 이미지 */
+  .v116_3310 {
+    width: 100%;
+    height: 68%;
+    background: url("/static/img/serviceExp3_bitmap.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: fixed;
+    top: -20px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .v153_4235 {
+    width: 100%;
+    height: 100%;
+    background: rgba(11,13,26,1);
+    opacity: 0.4538225531578064;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+
+  /* 하단 설명부분 */
+  .v0_10754 {
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 65%;
+    left: 0px;
+    overflow: hidden;
+  }
+
+  /* get started 버튼 */
+  .v0_10755 {
+    display: flex;
+    width: 100%;
+    height: 44px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 90%;
+    left: 0%;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  .getStarted_btn {
+    width: 204px;
+    height: 44px;
+    background: rgba(255,126,0,1);
+    opacity: 1;
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    color: rgba(255,255,255,1);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    opacity: 1;
+    margin: auto;
+  }
+  .getStarted_btn:hover{
+    box-shadow: 0px 2px 5px #C5CEE0;
+  }
+
+
+  .v0_10758 {
+    width: 100%;
+    color: rgba(143,155,179,1);
+    position: absolute;
+    top: 80%;
+    left: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    opacity: 1;
+    text-align: center;
+  }
+  .v0_10759 {
+    width: 100%;
+    color: rgba(46,58,89,1);
+    position: absolute;
+    top: 73%;
+    left: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    opacity: 1;
+    text-align: center;
+  }
+
+  /* tap Bar */
+  .v0_10760 {
+    display: flex;
+    width: 100%;
+    height: 4px;
+    margin-top: 69vh;
+    justify-content: center;
+    z-index: 2;
+  }
+  .v0_10761 {
+    width: 34px;
+    height: 4px;
+    background: rgba(227,232,242,1);
+    border: none;
+    border-radius: 2px;
+    z-index: 2;
+  }
+  .v0_10762 {
+    width: 34px;
+    height: 4px;
+    background: rgba(227,232,242,1);
+    margin-left: 5px;
+    border: none;
+    border-radius: 2px;
+    z-index: 2;
+  }
+  .v0_10763 {
+    width: 34px;
+    height: 4px;
+    background: rgba(255,126,0,1);
+    margin-left: 5px;
+    border: none;
+    border-radius: 2px;
+    z-index: 2;
+  }

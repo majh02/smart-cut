@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-size: 14px;
+  }
+  .v0_10257 {
+    width: 375px;
+    height: 812px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .v0_10258 {
+    width: 375px;
+    height: 284px;
+    background: rgba(255,126,0,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .v0_10259 {
+    width: 375px;
+    height: 709px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 103px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .v0_10260 {
+    width: 375px;
+    height: 709px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border: 0px solid rgba(150,150,150,1);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    overflow: hidden;
+  }
+  .v0_10381 {
+    width: 315px;
+    height: 44px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 437px;
+    left: 30px;
+    overflow: hidden;
+  }
+  .v0_10382 {
+    width: 315px;
+    height: 44px;
+    background: rgba(255,126,0,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    overflow: hidden;
+  }
+  .v0_10383 {
+    width: 120px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 12px;
+    left: 97px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    opacity: 1;
+    text-align: center;
+  }
+  .v0_10417 {
+    width: 270px;
+    color: rgba(46,58,89,1);
+    position: absolute;
+    top: 146px;
+    left: 53px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    opacity: 1;
+    text-align: center;
+  }
+  .name {
+    color: #fff;
+  }
+  .name {
+    color: #fff;
+  }
+  .name {
+    color: #fff;
+  }
+  .name {
+    color: #fff;
+  }
+  .v0_10422 {
+    width: 375px;
+    height: 812px;
+    background: rgba(11,13,26,1);
+    opacity: 0.4538225531578064;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .v0_10423 {
+    width: 345px;
+    height: 409px;
+    opacity: 1;
+    position: absolute;
+    top: 182px;
+    left: 15px;
+    overflow: hidden;
+  }
+  .v0_10424 {
+    width: 345px;
+    height: 409px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow: hidden;
+  }
+  .v0_10425 {
+    width: 307px;
+    height: 188px;
+    opacity: 1;
+    position: absolute;
+    top: 102px;
+    left: 19px;
+    overflow: hidden;
+  }
+  .v0_10426 {
+    width: 307px;
+    color: rgba(255,126,0,1);
+    position: absolute;
+    top: 111px;
+    left: 0px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 32px;
+    opacity: 1;
+    text-align: center;
+  }
+  .v0_10427 {
+    width: 270px;
+    color: rgba(143,155,179,1);
+    position: absolute;
+    top: 169px;
+    left: 19px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    opacity: 1;
+    text-align: center;
+  }
+  .v0_10428 {
+    width: 71px;
+    height: 71px;
+    background: url("/static/img/checkmark-circle-outline.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 118px;
+    overflow: hidden;
+  }
+  .v0_10429 {
+    width: 42px;
+    height: 35px;
+    /*background: rgba(255,126,0,1);*/
+    opacity: 1;
+    position: absolute;
+    top: 15px;
+    left: 21px;
+  }
+  .v0_10430 {
+    width: 71px;
+    height: 71px;
+    /*background: rgba(255,126,0,1);*/
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  .name {
+    color: #fff;
+  }

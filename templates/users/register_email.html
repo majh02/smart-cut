@@ -1,0 +1,12 @@
+{% autoescape off %}
+<!DOCTYPE html>
+<body>
+    <div>
+        <h2>{{ name }}님의 회원가입을 위한 인증메일 입니다.<h2>
+          <hr>
+          {{ token }}
+        {% comment %} <a href="http://{{domain}}{% url 'activate' token=token %}">인증하기</button> {% endcomment %}
+    </div>           
+</body>
+</html>
+{% endautoescape %}

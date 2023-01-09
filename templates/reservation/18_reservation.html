@@ -1,0 +1,395 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SMART CUT - AI 헤어 추천</title>
+        <link rel="shortcut icon" href="http://127.0.0.1:8000/static/img/favicon.png" type="image/x-icon" />
+        <link rel="icon" href="http://127.0.0.1:8000/static/img/favicon.png" type="image/x-icon" />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scaleable=no, maximum-scale=1 user-scalable=no">
+        <meta name="description" content="">
+        <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+        <meta name="generator" content="Hugo 0.79.0">
+    
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    
+        <!-- BootStrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/b6541407c0.js" crossorigin="anonymous"></script>
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="{% static 'css/18_reservation.css' %}">
+        <link rel="stylesheet" href="{% static 'css/18_calendar.css' %}">
+    </head>
+
+    <body>
+        <!-- menuBar -->
+        <div class="menuBar">
+            <div class="vI0_9961_0_8175"></div>
+
+            <!-- main -->
+            <button class="main" onclick="location.href='{% url 'users:main' %}'">
+                <i id="icon1" class="fa-solid fa-earth-asia"></i>
+                <span class="icon1_name">메인화면</span>
+            </button>
+            
+            <!-- AI_Photo -->
+            <button class="ai" onclick="location.href='{% url 'users:AI_Photo' %}'">
+                <i id="icon2" class="fa-solid fa-robot"></i>
+                <span class="icon2_name">AI 헤어추천</span>
+            </button>
+            
+            <!-- reservation -->
+            <button class="reservation" onclick="location.href='{% url 'reservation:reservationHistory' %}'">
+                <i id='icon3' class="fa-solid fa-calendar"></i>
+                <span class="icon3_name">예약내역</span>
+            </button>
+            
+            <!-- chatting -->
+            <button class="chatting" onclick="location.href='{% url 'chatting' %}'">
+                <i id='icon4' class="fa-solid fa-comments"></i>
+                <span class="icon4_name">채팅</span>
+            </button>
+            
+            <!-- profile -->
+            <button class="profile" onclick="location.href='{% url 'users:profile' %}'">
+                <i id='icon5' class="fa-solid fa-user"></i>
+                <span class="icon5_name">프로필</span>
+            </button>
+        </div>
+
+        <!-- 예약 화면 -->
+        <div class="wrap2">
+            <div class="v0_8860" style="overflow-y: scroll;">
+                <div class="v0_8861">
+                    <div class="v0_8862">
+                        <!-- 예약내역 -->
+                        <div class="reservation_list">
+                            <div class="reserv_box">
+
+                                <div class="flex_div">
+                                    <div class="photo_div">
+                                        <img class="salon_photo" src="{{shop_file.url}}"/>
+                                    </div>
+
+                                    <div class="block_div">
+                                        <div class="salon_info_div">
+                                            <div class="salon_name">{{reservation.shop.shop_name}}</div>
+                                            <div class="salon_addr">
+                                                <i id="pin_icon" class="fa-solid fa-location-dot"></i> {{reservation.shop.addr}}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex_div">
+                                    <div class="designer_info_div">
+                                        <span class="designer_info">
+                                            <i id='profile_icon' class="fa-solid fa-user"></i>
+                                            {{reservation.designer.designer}}</span>
+                                    </div>
+                                    
+                                    <div class="block_div">
+                                        <div class="date_div">
+                                            <span class="reserv_date">{{reservation.reserv_date}}</span>
+                                        </div>
+                                        <div class="time_div">
+                                            <span class="reserv_time">{{reservation.reserv_time}}</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 예약 1시간 전 알림 -->
+                        <div class="information">
+                            <div class="v135_4857">
+                                <span class="v135_4859">시술정보</span>
+
+                                <!-- 1. 커트 -->
+                                <div class="v135_4860">
+                                    <div class="v168_5765">
+                                        <div class="v135_4861"></div>
+                                    </div>
+                                    <span class="v135_4862">1. 커트</span>
+                                    
+                                    <div class="cut">
+                                        {% if reservation.cut == "남성 커트" %}
+                                            <input id='cut1' type="radio" class="btn-check" name="cut" autocomplete="off" value="남성 커트" onclick="return(false);" checked>
+                                        {% else %}
+                                            <input id='cut1' type="radio" class="btn-check" name="cut" autocomplete="off" value="남성 커트" onclick="return(false);">
+                                        {% endif %}
+                                        <label id='cut1_text' class="btn btn-outline-secondary" for="cut1">남성 커트</label><br>
+                                        
+                                        {% if reservation.cut == "여성 커트" %}
+                                            <input id='cut2' type="radio" class="btn-check" name="cut" autocomplete="off" value="여성 커트" onclick="return(false);" checked>
+                                        {% else %}
+                                            <input id='cut2' type="radio" class="btn-check" name="cut" autocomplete="off" value="여성 커트" onclick="return(false);">
+                                        {% endif %}                                    
+                                        <label id='cut2_text' class="btn btn-outline-secondary" for="cut2">여성 커트</label><br>
+                                        
+                                        {% if reservation.cut == "안함" %}
+                                            <input id='cut3' type="radio" class="btn-check" name="cut" autocomplete="off" value="안함" onclick="return(false);" checked>
+                                        {% else %}
+                                            <input id='cut3' type="radio" class="btn-check" name="cut" autocomplete="off" value="안함" onclick="return(false);">
+                                        {% endif %}
+                                        <label id='cut3_text' class="btn btn-outline-secondary" for="cut3">안함</label><br>
+                                    </div>
+                                </div>
+
+                                <!-- 2. 펌 -->
+                                <div class="v135_4892">
+                                    <div class="perm">
+                                        {% if reservation.perm == "일반펌" %}
+                                            <input id='perm1' type="radio" class="btn-check" name="perm" autocomplete="off" value="일반펌" onclick="return(false);" checked>
+                                        {% else %}
+                                            <input id='perm1' type="radio" class="btn-check" name="perm" autocomplete="off" value="일반펌" onclick="return(false);">
+                                        {% endif %}
+                                        <label id='perm1_text' class="btn btn-outline-secondary" for="perm1">일반펌</label><br>
+                                        
+                                        {% if reservation.perm == "다운펌" %}
+                                            <input id='perm2' type="radio" class="btn-check" name="perm" autocomplete="off" value="다운펌" onclick="return(false);" checked>
+                                        {% else %}
+                                            <input id='perm2' type="radio" class="btn-check" name="perm" autocomplete="off" value="다운펌" onclick="return(false);">
+                                        {% endif %}
+                                        <label id='perm2_text' class="btn btn-outline-secondary" for="perm2">다운펌</label><br>
+                                        
+                                        {% if reservation.perm == "볼륨매직" %}
+                                            <input id='perm3' type="radio" class="btn-check" name="perm" autocomplete="off" value="볼륨매직" onclick="return(false);" checked>
+                                        {% else %}
+                                            <input id='perm3' type="radio" class="btn-check" name="perm" autocomplete="off" value="볼륨매직" onclick="return(false);">
+                                        {% endif %}
+                                        <label id='perm3_text' class="btn btn-outline-secondary" for="perm3">볼륨매직</label><br>
+
+                                        {% if reservation.perm == "안함" %}
+                                            <input id='perm4' type="radio" class="btn-check" name="perm" autocomplete="off" value="안함" onclick="return(false);" checked>
+                                        {% else %}
+                                            <input id='perm4' type="radio" class="btn-check" name="perm" autocomplete="off" value="안함" onclick="return(false);">
+                                        {% endif %}
+                                        <label id='perm4_text' class="btn btn-outline-secondary" for="perm4">안함</label><br>
+                                    </div>
+                                    
+                                    <div class="v168_5766"></div>
+                                    <span class="v135_4898">2. 펌</span>
+                                </div>
+                                
+
+                                <!-- 3. 염색 -->
+                                <div class="v135_4884">
+                                    <div class="color">
+                                        {% if reservation.color == "일반염색" %}
+                                            <input id='color1' type="radio" class="btn-check" name="color" autocomplete="off" value="일반염색" onclick="return(false);" checked>
+                                        {% else %}
+                                            <input id='color1' type="radio" class="btn-check" name="color" autocomplete="off" value="일반염색" onclick="return(false);">
+                                        {% endif %}
+                                        <label id='color1_text' class="btn btn-outline-secondary" for="color1">일반염색</label><br>
+                                    
+                                        {% if reservation.color == "뿌리염색" %}
+                                            <input id='color2' type="radio" class="btn-check" name="color" autocomplete="off" value="뿌리염색" onclick="return(false);" checked>
+                                        {% else %}
+                                            <input id='color2' type="radio" class="btn-check" name="color" autocomplete="off" value="뿌리염색" onclick="return(false);">
+                                        {% endif %}
+                                        <label id='color2_text' class="btn btn-outline-secondary" for="color2">뿌리염색</label><br>
+                                        
+                                        {% if reservation.color == "탈색" %}
+                                            <input id='color3' type="radio" class="btn-check" name="color" autocomplete="off" value="탈색" onclick="return(false);" checked>
+                                        {% else %}
+                                            <input id='color3' type="radio" class="btn-check" name="color" autocomplete="off" value="탈색" onclick="return(false);">
+                                        {% endif %}
+                                        <label id='color3_text' class="btn btn-outline-secondary" for="color3">탈색</label><br>
+                                        
+                                        {% if reservation.color == "안함" %}
+                                            <input id='color4' type="radio" class="btn-check" name="color" autocomplete="off" value="안함" onclick="return(false);" checked>
+                                        {% else %}
+                                            <input id='color4' type="radio" class="btn-check" name="color" autocomplete="off" value="안함" onclick="return(false);">
+                                        {% endif %}
+                                        <label id='color4_text' class="btn btn-outline-secondary" for="color4">안함</label><br>
+                                    </div>
+                                    <div class="v168_5767"></div>
+                                    
+                                    <span class="v135_4891">3. 염색</span>
+                                </div>
+                            </div>
+
+                            <!-- 4. 클리닉 -->
+                            <div class="v135_4870">
+                                <span class="v135_4871">4. 클리닉</span>
+                                <div class="v135_4872"></div>
+                                
+                                <div class="clinic">
+                                    {% if reservation.clinic == "모발클리닉" %}
+                                        <input id='clinic1' type="radio" class="btn-check" name="clinic" autocomplete="off" value="모발클리닉" onclick="return(false);" checked>
+                                    {% else %}
+                                        <input id='clinic1' type="radio" class="btn-check" name="clinic" autocomplete="off" value="모발클리닉" onclick="return(false);">
+                                    {% endif %}
+                                    <label id='clinic1_text' class="btn btn-outline-secondary" for="clinic1">모발클리닉</label><br>
+                                
+                                    {% if reservation.clinic == "두피클리닉" %}
+                                        <input id='clinic2' type="radio" class="btn-check" name="clinic" autocomplete="off" value="두피클리닉" onclick="return(false);" checked>
+                                    {% else %}
+                                        <input id='clinic2' type="radio" class="btn-check" name="clinic" autocomplete="off" value="두피클리닉" onclick="return(false);">
+                                    {% endif %}
+                                    <label id='clinic2_text' class="btn btn-outline-secondary" for="clinic2">두피클리닉</label><br>
+        
+                                    {% if reservation.clinic == "안함" %}
+                                        <input id='clinic3' type="radio" class="btn-check" name="clinic" autocomplete="off" value="안함" onclick="return(false);" checked>
+                                    {% else %}
+                                        <input id='clinic3' type="radio" class="btn-check" name="clinic" autocomplete="off" value="안함" onclick="return(false);">
+                                    {% endif %}
+                                    
+                                    <label id='clinic3_text' class="btn btn-outline-secondary" for="clinic3">안함</label><br>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <button id='save' type="button" class="btn btn-secondary" onclick="location.href='{% url 'review:review' reservation.shop_id %}'">리뷰작성</button>
+            <!--
+            <div class="v0_8912">
+                <div class="v0_8913">
+                    <div class="sec_cal">
+                        <div class="cal_nav">
+                            <a id="prev" href="javascript:;" class="nav-btn go-prev">prev</a>
+                            <div class="year-month"></div>
+                            <a id="next" href="javascript:;" class="nav-btn go-next">next</a>
+                        </div>
+                        <div class="cal_wrap">
+                            <div class="days">
+                            <div class="day">MON</div>
+                            <div class="day">TUE</div>
+                            <div class="day">WED</div>
+                            <div class="day">THU</div>
+                            <div class="day">FRI</div>
+                            <div class="day">SAT</div>
+                            <div class="day">SUN</div>
+                            </div>
+                            <div class="dates"></div>
+                        </div>
+                    </div>
+                    <script>
+                        $(document).ready(function() {
+                            calendarInit();
+                        });
+                        /*
+                            달력 렌더링 할 때 필요한 정보 목록 
+    
+                            현재 월(초기값 : 현재 시간)
+                            금월 마지막일 날짜와 요일
+                            전월 마지막일 날짜와 요일
+                        */
+    
+                        function calendarInit() {
+    
+                            // 날짜 정보 가져오기
+                            var date = new Date(); // 현재 날짜(로컬 기준) 가져오기
+                            var utc = date.getTime() + (date.getTimezoneOffset() * 60 * 1000); // uct 표준시 도출
+                            var kstGap = 9 * 60 * 60 * 1000; // 한국 kst 기준시간 더하기
+                            var today = new Date(utc + kstGap); // 한국 시간으로 date 객체 만들기(오늘)
+                        
+                            var thisMonth = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+                            // 달력에서 표기하는 날짜 객체
+                        
+                            
+                            var currentYear = thisMonth.getFullYear(); // 달력에서 표기하는 연
+                            var currentMonth = thisMonth.getMonth(); // 달력에서 표기하는 월
+                            var currentDate = thisMonth.getDate(); // 달력에서 표기하는 일
+    
+                            // kst 기준 현재시간
+                            // console.log(thisMonth);
+    
+                            // 캘린더 렌더링
+                            renderCalender(thisMonth);
+    
+                            function renderCalender(thisMonth) {
+    
+                                // 렌더링을 위한 데이터 정리
+                                currentYear = thisMonth.getFullYear();
+                                currentMonth = thisMonth.getMonth();
+                                currentDate = thisMonth.getDate();
+    
+                                // 이전 달의 마지막 날 날짜와 요일 구하기
+                                var startDay = new Date(currentYear, currentMonth, 0);
+                                var prevDate = startDay.getDate();
+                                var prevDay = startDay.getDay();
+    
+                                // 이번 달의 마지막날 날짜와 요일 구하기
+                                var endDay = new Date(currentYear, currentMonth + 1, 0);
+                                var nextDate = endDay.getDate();
+                                var nextDay = endDay.getDay();
+    
+                                // console.log(prevDate, prevDay, nextDate, nextDay);
+    
+                                // 현재 월 표기
+                                $('.year-month').text(currentYear + '.' + (currentMonth + 1));
+    
+                                // 렌더링 html 요소 생성
+                                calendar = document.querySelector('.dates')
+                                calendar.innerHTML = '';
+                                
+                                // 지난달
+                                for (var i = prevDate - prevDay + 1; i <= prevDate; i++) {
+                                    calendar.innerHTML = calendar.innerHTML + '<div class="day prev disable">' + i + '</div>'
+                                }
+                                // 이번달
+                                for (var i = 1; i <= nextDate; i++) {
+                                    calendar.innerHTML = calendar.innerHTML + '<div class="day current">' + i + '</div>'
+                                }
+                                // 다음달
+                                for (var i = 1; i <= (7 - nextDay == 7 ? 0 : 7 - nextDay); i++) {
+                                    calendar.innerHTML = calendar.innerHTML + '<div class="day next disable">' + i + '</div>'
+                                }
+    
+                                // 오늘 날짜 표기
+                                if (today.getMonth() == currentMonth) {
+                                    todayDate = today.getDate();
+                                    var currentMonthDate = document.querySelectorAll('.dates .current');
+                                    currentMonthDate[todayDate -1].classList.add('today');
+                                }
+                            }
+    
+                            // 이전달로 이동
+                            $('.go-prev').on('click', function() {
+                                thisMonth = new Date(currentYear, currentMonth - 1, 1);
+                                renderCalender(thisMonth);
+                            });
+    
+                            // 다음달로 이동
+                            $('.go-next').on('click', function() {
+                                thisMonth = new Date(currentYear, currentMonth + 1, 1);
+                                renderCalender(thisMonth); 
+                            });
+                        }
+                    </script>
+                </div>
+            </div>
+            
+            
+        </div>
+        -->
+        <div class="tab">
+            <button id='tab1' onclick="checkReserv({{reservation.reserv_id}})">예약날짜</button>
+            <button id='tab2' onclick="location.href='{% url 'reservation:reservationHistory' %}'">예약내역</button>
+        </div>
+        <script>
+            function checkReserv(reserv_id){
+                if (reserv_id > 0){
+                    location.href='/reservation/reservation/' + reserv_id
+                } else {
+                    alert('예약 내역이 없습니다.')
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+{% extends 'users/serviceExp_base.html' %}
+{% load static %}
+{% block img %}
+<img src="{% static 'img/bitmap2_.png' %}">
+{% endblock img %}
+
+{% block tabBar %}
+<input class="tap1" type="submit" value="" onclick="location.href='{% url 'users:serviceExp1' %}'">
+<input id="colored_tab" class="tap2" type="submit" value="" onclick="location.href='{% url 'users:serviceExp2' %}'">
+<input class="tap3" type="submit" value="" onclick="location.href='{% url 'users:serviceExp3' %}'">
+{% endblock tabBar %}
+
+{% block title %}헤어 추천부터 예약까지 한번에{% endblock title %}
+{% block exp %}사진 촬영을 통한 헤어 분석<br/>분석 후 예약까지 해보세요!{% endblock exp %}
+
+{% block skip_btn %}
+<input class="skip_btn" type="submit" value="Skip" onclick="location.href='{% url 'users:serviceExp3' %}'">
+{% endblock skip_btn %}

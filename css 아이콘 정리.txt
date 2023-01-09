@@ -1,0 +1,64 @@
+[색깔]
+주황색 #FF7E00  / rgba(255,126,0,1)
+어두운파랑 #2E3A59
+연한 주황색 #FFB266
+회색 #C5CEE0
+그림자(진회색) #010101cc
+연보라 #F7F1F7
+연노랑 #FEFAE9
+연찐노랑 #FBEFD1
+연연연회색 #F3F3F3
+갈색 #574841
+
+[그림자]
+연회색 그림자 box-shadow: 0px 4px 10px #C5CEE0;
+진회색 그림자 box-shadow: 0px 4px 10px #010101cc;
+
+[폰트]
+
+font-family는 모두 'Noto Sans KR', sans-serif 로 바꾸기
+300, 500, 700
+
+font-family		font-weight		=> font_weight 변경값
+--------------		--------------		-------------------
+SF Pro Display	Semibold		500
+Anek Gujarati 	Bold			700
+Abel			Regular		300		
+
+[아이콘]
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/b6541407c0.js" crossorigin="anonymous"></script>
+
+지구		<i class="fa-solid fa-earth-asia"></i>
+지도(pin)	<i class="fa-solid fa-location-dot"></i>
+달력(예약)	<i class="fa-solid fa-calendar"></i>
+채팅		<i class="fa-solid fa-comments"></i>
+프로필	<i class="fa-solid fa-user"></i>
+종모양(알림) 	<i class="fa-regular fa-bell"></i>
+별		<i class="fa-solid fa-star"></i>
+로그아웃	<i class="fa-solid fa-arrow-right-to-bracket"></i>
+new 채팅	<i class="fa-solid fa-comment-medical"></i>
+뒤로가기	<i class="fa-solid fa-arrow-left-long"></i>
+전화		<i class="fa-solid fa-phone"></i>
+쩜쩜쩜채팅	<i class="fa-regular fa-comment-dots"></i>
+카드		<i class="fa-regular fa-credit-card"></i>
+plus		<i class="fa-solid fa-plus"></i>
+카메라	<i class="fa-solid fa-camera"></i>
+
+find . | grep -E "(__pycache__|\.pyc|\.pyo$)" | xargs rm -rf
+
+
+
+[top, left]
+이미지 height: 68%; position: fixed;
+start 페이지 top: 65%;
+skip : top: 90%;  left: 42%; #EFEFEF
+페이지바 : top: 70%;  left: 35%;
+제목: top: 73%;  left: 15%;
+설명: top: 80%;  left: 25%;
+
+seonil.kwon@kt.com
+
+@media screen and (max-width: 900px)
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scaleable=no, maximum-scale=1">

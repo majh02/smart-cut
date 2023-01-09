@@ -1,0 +1,412 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+}
+
+.v0_10653 {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+
+/* 로고 이미지 창 */
+.v0_10654 {
+  width: 100%;
+  height: 40%;
+  background: rgba(255, 126, 0, 1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  z-index: -2;
+}
+
+/* 로그인 창 */
+.v0_10655 {
+  width: 100%;
+  height: 40%;
+  background: rgba(255, 255, 255, 1);
+  opacity: 1;
+  position: absolute;
+  top: 35%;
+  left: 0px;
+  border: 0px solid rgba(150, 150, 150, 1);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  overflow: hidden;
+  /* z-index: 1; */
+}
+
+/* 회원가입 */
+.v0_10657 {
+  width: 200px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  overflow: hidden;
+}
+
+.v0_10659 {
+  width: fit-content;
+  height: auto;
+  color: rgba(255, 126, 0, 1);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border: none;
+  background: none;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  opacity: 1;
+  text-align: left;
+}
+
+.v0_10659:hover {
+  font-weight: 500;
+}
+
+/* 간편로그인 창 */
+.v0_10660 {
+  width: 100%;
+  height: 100px;
+  opacity: 1;
+  position: absolute;
+  bottom: 5%;
+  left: 0px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.v0_10661 {
+  width: 100%;
+  height: 19px;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.v0_10662 {
+  width: 100%;
+  color: rgba(143, 155, 179, 1);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  opacity: 1;
+  text-align: center;
+}
+
+.v0_10663 {
+  width: 95px;
+  height: 1px;
+  background: rgba(227, 232, 242, 1);
+  opacity: 1;
+  position: absolute;
+  top: 9px;
+  right: 5%;
+  border: 0px solid rgba(150, 150, 150, 1);
+  overflow: hidden;
+}
+
+.v0_10664 {
+  width: 95px;
+  height: 1px;
+  background: rgba(227, 232, 242, 1);
+  opacity: 1;
+  position: absolute;
+  top: 9px;
+  left: 5%;
+  border: 0px solid rgba(150, 150, 150, 1);
+  overflow: hidden;
+}
+
+/* 카카오 로그인 */
+.v0_10665 {
+  width: 100%;
+  height: 41px;
+  opacity: 1;
+  position: absolute;
+  top: 41px;
+  left: 0px;
+  overflow: hidden;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.v120_4264 {
+  width: 100%;
+  height: 41px;
+  border: none;
+  background: url("/static/img/kakao_login_medium_narrow.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v120_4264:hover {
+  box-shadow: 0px 4px 10px #C5CEE0;
+}
+
+/* 로그인 버튼 */
+.v0_10683 {
+  width: 100%;
+  height: 44px;
+  background: rgba(255, 255, 255, 1);
+  opacity: 1;
+  position: absolute;
+  top: 70%;
+  left: 0px;
+  overflow: hidden;
+}
+
+.v0_10684 {
+  width: 90%;
+  height: 44px;
+  position: absolute;
+  top: 65%;
+  left: 5%;
+  background: rgba(255, 126, 0, 1);
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  color: rgba(255, 255, 255, 1);
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+  opacity: 1;
+}
+.v0_10684:hover {
+  font-weight: 500;
+  box-shadow: 0px 4px 10px #C5CEE0;
+}
+
+/* 비밀번호 찾기 */
+.v0_10686 {
+  width: fit-content;
+  color: rgba(46, 58, 89, 1);
+  position: absolute;
+  right: 10%;
+  border: none;
+  background: none;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  opacity: 1;
+  text-align: right;
+  padding: 0px 0px;
+}
+
+.v0_10686:hover {
+  font-weight: 500;
+}
+
+/* 비밀번호 입력창 */
+.v0_10687 {
+  width: 85%;
+  height: 55px;
+  background: rgba(255, 255, 255, 1);
+  opacity: 1;
+  position: absolute;
+  top: 51%;
+  left: 6%;
+  overflow: hidden;
+}
+
+.v0_10688 {
+  width: fit-content;
+  color: rgba(143, 155, 179, 1);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  opacity: 1;
+  text-align: left;
+}
+
+.v0_10689 {
+  width: 95%;
+  height: 1px;
+  background: rgba(227, 232, 242, 1);
+  opacity: 1;
+  position: absolute;
+  top: 99%;
+  left: 0px;
+  border: 0px solid rgba(150, 150, 150, 1);
+  overflow: hidden;
+}
+
+.v0_10690 {
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  top: 25px;
+  left: 1px;
+  font-family: 'Abel';
+  font-weight: 'Regular';
+  font-size: 15px;
+  opacity: 1;
+  text-align: left;
+  overflow: hidden;
+}
+
+#InputPassword {
+  width: 90%;
+  height: 25px;
+  border: none;
+  margin: 0px 5px;
+  padding: 0px 0px;
+}
+
+#InputPassword:focus {
+  box-shadow: none;
+}
+
+/* 이메일 입력창 */
+.v0_10704 {
+  width: 85%;
+  height: 55px;
+  background: rgba(255, 255, 255, 1);
+  opacity: 1;
+  position: absolute;
+  top: 40%;
+  left: 6%;
+  overflow: hidden;
+}
+
+.v0_10705 {
+  width: fit-content;
+  color: rgba(143, 155, 179, 1);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  opacity: 1;
+  text-align: left;
+}
+
+.v0_10706 {
+  width: 100%;
+  height: 40px;
+  color: rgba(46, 58, 89, 1);
+  position: absolute;
+  top: 25px;
+  left: 1px;
+  font-family: 'Abel';
+  font-weight: 'Regular';
+  font-size: 15px;
+  opacity: 1;
+  text-align: left;
+}
+
+#InputEmail {
+  width: 90%;
+  height: 25px;
+  border: none;
+  margin: 0px 5px;
+  padding: 0px 0px;
+}
+
+#InputEmail:focus {
+  box-shadow: none;
+}
+
+.v0_10707 {
+  width: 95%;
+  height: 1px;
+  background: rgba(227, 232, 242, 1);
+  opacity: 1;
+  position: absolute;
+  top: 99%;
+  left: 0%;
+  border: 0px solid rgba(150, 150, 150, 1);
+  overflow: hidden;
+}
+
+.logo_div {
+  display: flex;
+  width: 100%;
+  height: 34vh;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+.logo_div img{
+  width: 205px;
+  object-fit: contain;
+  z-index: -1;
+}
+
+.name {
+  color: #fff;
+}
+
+.name {
+  color: #fff;
+}
+
+.v0_10693 {
+  width: 90%;
+  height: 300px;
+  background: rgba(255, 255, 255, 1);
+  opacity: 1;
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  overflow: hidden;
+}
+
+.form-group{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  margin-bottom: 9px;
+}
+.form-group label{
+  font-weight: 500;
+}
+.form-control{
+  border: none;
+}
+.form-control:focus{
+  box-shadow: none;
+  border-bottom: 1.5px solid #FF7E00;
+}
+.errorlist{
+  margin: 0px 0px;
+  font-size: 12px;
+}
+
+@media screen and (min-width: 800px){
+  .v0_10693{
+    width: 40%;
+    left: 30%;
+  }
+}

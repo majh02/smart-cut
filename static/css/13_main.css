@@ -1,0 +1,919 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  overscroll-behavior: none
+}
+body {
+  font-size: 14px;
+  width: 100%;
+  height: 100%;
+}
+.v0_9901 {
+  display: inline-block;
+  width: 100%;
+  min-height: 1200px;
+  height: fit-content;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* menuBar */
+.menuBar {
+  width: 100%;
+  height: 68px;
+  background: rgb(255, 255, 255);
+  opacity: 1;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.vI0_9961_0_8175 {
+  width: 100%;
+  height: 68px;
+  background: rgb(255, 255, 255);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.101343967);
+}
+
+.name {
+  color: #fff;
+}
+
+/* 메인화면 */
+.main {
+  width: 20%;
+  height: 68px;
+  background: rgb(255, 255, 255);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0%;
+  overflow: hidden;
+  border: none;
+  color: #FF7E00;
+}
+#icon1 {
+  width: 100%;
+  height: 38px;
+  font-size: 32px;
+  position: absolute;
+  top: 10px;
+  left: 0%;
+  padding: 0px 0px;
+}
+.icon1_name {
+  width: 100%;
+  position: absolute;
+  bottom: 2px;
+  left: 0%;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+}
+.main:hover{
+  color: #FF7E00;
+}
+
+/* AI 헤어추천 */
+.ai {
+  width: 20%;
+  height: 68px;
+  background: rgb(255, 255, 255);
+  color: #C5CEE0;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 20%;
+  overflow: hidden;
+  border: none;
+}
+#icon2 {
+  width: 100%;
+  height: 38px;
+  font-size: 32px;
+  position: absolute;
+  top: 10px;
+  left: 0%;
+  padding: 0px 0px;
+}
+.icon2_name {
+  width: 100%;
+  position: absolute;
+  bottom: 2px;
+  left: 0%;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+}
+.ai:hover{
+  color: #FF7E00;
+}
+
+/* 예약내역 */
+.reservation {
+  width: 20%;
+  height: 68px;
+  background: rgb(255, 255, 255);
+  color: #C5CEE0;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 40%;
+  overflow: hidden;
+  border: none;
+}
+#icon3 {
+  width: 100%;
+  height: 38px;
+  font-size: 32px;
+  position: absolute;
+  top: 10px;
+  left: 0%;
+  padding: 0px 0px;
+}
+.icon3_name {
+  width: 100%;
+  position: absolute;
+  top: 50px;
+  left: 0%;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+}
+.reservation:hover{
+  color: #FF7E00;
+}
+
+/* 채팅 */
+.chatting {
+  width: 20%;
+  height: 68px;
+  background: rgb(255, 255, 255);
+  color: #C5CEE0;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 60%;
+  overflow: hidden;
+  border: none;
+}
+#icon4 {
+  width: 100%;
+  height: 38px;
+  font-size: 32px;
+  position: absolute;
+  top: 10px;
+  left: 0%;
+  padding: 0px 0px;
+}
+.icon4_name {
+  width: 100%;
+  position: absolute;
+  bottom: 2px;
+  left: 0%;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+}
+.chatting:hover{
+  color: #FF7E00;
+}
+
+/* 프로필 */
+.profile {
+  width: 20%;
+  height: 68px;
+  background: rgb(255, 255, 255);
+  color: #C5CEE0;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 80%;
+  overflow: hidden;
+  border: none;
+}
+#icon5 {
+  width: 100%;
+  height: 38px;
+  font-size: 32px;
+  position: absolute;
+  top: 10px;
+  left: 0%;
+  padding: 0px 0px;
+}
+.icon5_name {
+  width: 100%;
+  position: absolute;
+  top: 50px;
+  left: 0%;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+}
+.profile:hover{
+  color: #FF7E00;
+}
+
+/* 특별할인 */
+.best_hairshop {
+  width: 100%;
+  height: 300px;
+  background: rgba(255,255,255,1);
+  position: absolute;
+  top: 820px;
+  left: 0px;
+  overflow: hidden;
+}
+
+/* 특별할인 - 가로 스크롤 */
+.wrap2{
+  display: inline-flex;
+  width:94%;
+  height:275px;
+  position: absolute;
+  top: 40px;
+  left: 3%;
+  white-space:nowrap;
+  overflow-x:scroll;
+  border-radius: 8px;
+}
+
+/* 특별할인 */
+.salon_div{
+  display: block;
+  width: 350px;
+  height: 240px;
+  background-color: transparent;
+  border: none;
+  margin-right: 10px;
+  padding: 0px 0px;
+}
+.salon_div:hover .salon_box{
+  box-shadow: 0px 4px 10px #010101cc;
+}
+.salon_box {
+  width: 100%;
+  height: 238px;
+  background: rgba(255,255,255,1);
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px #C5CEE0;
+}
+.salon_img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  overflow: hidden;
+}
+.salon_box2 {
+  display: block;
+  width: 287px;
+  height: 68px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  overflow: hidden;
+  text-align: left;
+}
+
+/* 미용실 상호명 */
+.div1{
+  width: 90%;
+  margin-top: 7px;
+  margin-left: 10px;
+}
+.salon_name {
+  width: fit-content;
+  color: rgba(46,58,89,1);
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  opacity: 1;
+  text-align: left;
+}
+
+/* 미용실 이벤트명 */
+.div2{
+  width: 80%;
+  margin-top: 0px;
+  margin-left: 10px;
+}
+.salon_event_name {
+  width: fit-content;
+  line-height: 1.8rem;
+  color: rgba(143,155,179,1);
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  text-align: left;
+}
+
+/* 미용실 이벤트 가격 */
+.div3{
+  width: 97%;
+  margin-right: 3%;
+  text-align: right;
+}
+.salon_event_price {
+  width: fit-content;
+  height: fit-content;
+  color: rgba(255,126,0,1);
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  opacity: 1;
+  text-align: left;
+}
+
+/* 특별할인 text */
+.v0_9921 {
+  width: fit-content;
+  color: rgba(46,58,89,1);
+  position: absolute;
+  top: 0px;
+  left: 3%;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  opacity: 1;
+  text-align: left;
+}
+
+/* 베스트 디자이너 */
+.best_designer {
+  width: 100%;
+  height: 250px;
+  background: rgba(255,255,255,1);
+  position: absolute;
+  top: 555px;
+  left: 0px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* 베스트 디자이너 - 가로 스크롤 */
+.wrap{
+  display: inline-flex;
+  float: left;
+  max-width: 200000px;
+  width: 94%;
+  height:220px;
+  margin-top: 40px;
+  margin-left: 3%;
+  padding: 0px 0px;
+  white-space: nowrap;
+  overflow-x:scroll;
+  border-radius: 8px;
+  list-style:none;
+}
+
+/* 베스트 디자이너 리스트 */
+.designer_div{
+  display: block;
+  width: 125px;
+  height: 180px;
+  border: none;
+  margin: 10px 10px;
+  padding: 0px 0px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px #C5CEE0;
+}
+.designer_div:hover .designer_box{
+  box-shadow: 0px 4px 10px #010101cc;
+}
+.designer_box {
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,1);
+  border-radius: 8px;
+}
+.photo_div {
+  display: inline-block;
+  width: 100%;
+  height: 125px;
+  border: 0px solid rgba(150,150,150,1);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.designer_photo{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.desinger_name_div{
+  width: 100%;
+  margin-top: 5px;
+}
+.desinger_name {
+  display: inline-block;
+  width: 100%;
+  margin-left: 10px;
+  color: rgba(46,58,89,1);
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  text-align: left;
+}
+.designer_shop {
+  display: inline-block;
+  width: 100%;
+  margin-left: 10px;
+  color: rgba(143,155,179,1);
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  opacity: 1;
+  text-align: left;
+}
+
+/* 모두 보기 버튼 */
+/* .view_all {
+  width: 90px;
+  height: 30px;
+  opacity: 1;
+  position: absolute;
+  top: 3px;
+  right: 3%;
+  overflow: hidden;
+  color: rgba(255,126,0,1);
+  background-color: transparent;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  text-align: center;
+  border: none;
+  padding: 0px 0px;
+}
+.view_all:hover{
+  background-color: #FF7E00;
+  color: #fff;
+  border-radius: 8px;
+} */
+
+.v0_9942 {
+  width: fit-content;
+  color: rgba(46,58,89,1);
+  position: absolute;
+  top: 0px;
+  left: 3%;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  opacity: 1;
+  text-align: left;
+}
+
+/* 상단 고정 화면 */
+.v0_9943 {
+  width: 100%;
+  height: 150px;
+  background: rgba(254,255,254,1);
+  position: fixed;
+  top: 0px;
+  left: 0%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0px 4px 10px rgb(244, 244, 244);
+}
+.v0_9944 {
+  width: 100%;
+  height: 42px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 127px;
+  left: 0px;
+  overflow: hidden;
+}
+.v0_9945 {
+  width: 100%;
+  height: 42px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  border: none;
+  box-shadow: 0px 3px 3px rgba(0.95686274766922, 0.95686274766922, 0.95686274766922, 0.8008905053138733);
+}
+
+/* AI 헤어추천 */
+.AI {
+  width: 100%;
+  height: 350px;
+  background: rgba(255,255,255,1);
+  position: absolute;
+  top: 189px;
+  left: 0%;
+  overflow: hidden;
+}
+.AI_HairRec {
+  width: fit-content;
+  color: rgba(46,58,89,1);
+  margin-left: 5%;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  opacity: 1;
+  text-align: left;
+}
+.rec {
+  width: 90px;
+  height: 30px;
+  opacity: 1;
+  float: right;
+  margin-right: 3%;
+  overflow: hidden;
+  color: rgba(255,126,0,1);
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  opacity: 1;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  padding: 0px 0px;
+}
+.rec:hover{
+  background-color: #FF7E00;
+  color: #fff;
+  border-radius: 8px;
+}
+.recent_result{
+  width: fit-content;
+  margin: 5px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  opacity: 1;
+  text-align: left;
+}
+#emoji{
+  margin-left: 4%;
+}
+.bold_text{
+  color: #FF7E00;
+  font-weight: 500;
+}
+
+/* 베스트 디자인 - 가로 스크롤 */
+.wrap_ai{
+  display: inline-flex;
+  float: left;
+  width:94%;
+  height:275px;
+  margin-top: 7px;
+  margin-left: 3%;
+  padding: 0px 0px;
+  white-space:nowrap;
+  overflow-x:scroll;
+  overflow-y: hidden;
+  border-radius: 8px;
+}
+
+/* 디자인 */
+.hair_btn{
+  width: 160px;
+  height: 240px;
+  margin: 10px 10px;
+  padding: 0px 0px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px #C5CEE0;
+}
+.hair_btn:hover .hair{
+  box-shadow: 0px 4px 10px #010101cc;
+}
+.hair {
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,1);
+  box-shadow: 0px 4px 10px #C5CEE0;
+  border-radius: 8px;
+}
+.hair_photo {
+  display: inline-block;
+  width: 100%;
+  height: 170px;
+  border: 0px solid rgba(150,150,150,1);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.hair_photo img{
+  width: 100%;
+  height: 100%;
+  /* object-fit: scale-down; */
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.hair_name_div{
+  width: 100%;
+  margin-top: 5px;
+  padding: 0px 10px;
+}
+.hair_name {
+  display: inline-block;
+  width: 100%;
+  color: rgba(46,58,89,1);
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  text-align: left;
+}
+.hair_exp_div{
+  width: 100%;
+  padding: 0px 10px;
+}
+.hair_tags {
+  display: inline-block;
+  width: 100%;
+  color: rgba(143,155,179,1);
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  text-align: left;
+}
+
+/* 이미지 클릭시 모달창 생성 */
+.modal {
+	display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  text-align: center;
+	z-index: 500;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+.modal_inner{
+  display: inline-block;
+  width: fit-content;
+  height: 90%;
+}
+
+.modal button {
+  width: 100%;
+  height: 35px;
+  padding-right: 5%;
+	background: transparent;
+	border: 0;
+	color: #ffffff;
+	font-size: 30px;
+  text-align: right;
+}
+
+.modalBox {
+	display: inline-block;
+  text-align: center;
+  margin: 0px 5%;
+	background-color: #ffffff;
+	width: 80%;
+	height: fit-content;
+	text-align: center;
+  border-radius: 20px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.modal_hair_name{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  font-weight: 500;
+  font-size: 20px;
+  background-color: #f3f3f3;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.flex_div2{
+  display: inline-block;
+  width: 100%;
+  height: fit-content;
+  text-align: center;
+  padding: 10px 10px;
+  align-items: center;
+}
+.img_div{
+  display: inline-block;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0px;
+  margin-bottom: 10px;
+  white-space:nowrap;
+}
+.block_div{
+  display: inline-block;
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
+  padding: 10px;
+  align-items:center;
+}
+.exp_div{
+  width: fit-content;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0px;
+  padding: 10px;
+  /* text-align: left; */
+}
+.tag_div{
+  display: inline-block;
+  width: fit-content;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0px;
+  padding: 10px;
+}
+.modalBox img {
+  max-width: 300px;
+	width: 200px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.modal_hair_exp{
+  width: 50%;
+  text-align: center;
+  margin: 0px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  word-break: keep-all;
+}
+.modal_hair_tags{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  color: #385898;
+}
+@media screen and (min-width: 800px){
+  .flex_div2{
+    display: inline-flex;
+    width: fit-content;
+    padding: 20px 20px;
+  }
+  .exp_div{
+    display: block;
+    padding: 30px;
+    margin-bottom: 60px;
+    text-align: left;
+  }
+  .tag_div{
+    padding-top: 80px;
+    border-top: 1px solid #C5CEE0;
+  }
+  .modal_hair_tags{
+    font-size: 15px;
+  }
+  .modalBox img {
+    width: 300px;
+    height: auto;
+  }
+}
+
+/* 검색창 */
+.searchBox {
+  width: 90%;
+  height: 41px;
+  background: rgba(255,255,255,0.7);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 5%;
+  border: 1px solid rgba(239,239,239,1);
+  border-radius: 8px;
+  overflow: hidden;
+  color: rgba(197,206,224,1);
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  opacity: 1;
+  text-align: left;
+}
+.searchBox:focus{
+  outline: none;
+}
+
+/* 위치 설정 */
+.v0_9952 {
+  width: 272px;
+  height: 25px;
+  opacity: 1;
+  position: absolute;
+  top: 100px;
+  left: 15px;
+  overflow: hidden;
+  border: none;
+  background-color: transparent;
+  padding: 0px 0px;
+}
+.v0_9953 {
+  width: 253px;
+  color: rgba(46,58,89,1);
+  background-color: transparent;
+  position: absolute;
+  top: 0px;
+  left: 22px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  opacity: 1;
+  text-align: left;
+}
+#pin_icon {
+  height: 30px;
+  font-size: 20px;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  background-color: transparent;
+  color: #C5CEE0;
+  border: none;
+}
+.v0_9955 {
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  opacity: 1;
+  position: absolute;
+  top: 49px;
+  right: 5%;
+  overflow: hidden;
+  border: none;
+}
+#alert_icon {
+  font-size: 23px;
+  position: absolute;
+  top: 5px;
+  left: 4px;
+  color: #C5CEE0;
+}
+#alert_icon:hover{
+  font-size: 25px;
+  top: 4px;
+  left: 3px;
+  color: #b3b8c1;
+}
+.v0_9957 {
+  width: 13px;
+  height: 13px;
+  background: rgba(255,126,0,1);
+  opacity: 1;
+  position: absolute;
+  top: 1px;
+  left: 15px;
+  border-radius: 50px;
+}
+.alert_count {
+  width: 5px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 0px;
+  left: 19px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 700;
+  font-size: 8px;
+  opacity: 1;
+  text-align: left;
+}
+.v0_9959 {
+  width: fit-content;
+  position: absolute;
+  top: 49px;
+  left: 15px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  opacity: 1;
+  text-align: left;
+}
+.userName{
+  width: fit-content;
+  color: rgba(255,126,0,1);
+}

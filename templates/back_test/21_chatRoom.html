@@ -1,0 +1,286 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SMART CUT - AI 헤어 추천</title>
+        <link rel="shortcut icon" href="http://127.0.0.1:8000/static/img/favicon.png" type="image/x-icon" />
+        <link rel="icon" href="http://127.0.0.1:8000/static/img/favicon.png" type="image/x-icon" />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scaleable=no, maximum-scale=1 user-scalable=no">
+        <meta name="description" content="">
+        <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+        <meta name="generator" content="Hugo 0.79.0">
+    
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    
+        <!-- BootStrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/b6541407c0.js" crossorigin="anonymous"></script>
+
+         <!-- Loading Bar-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="{% static 'css/21_chatRoom.css' %}">
+    </head>
+    <body onload="scroll_event();">
+
+        <!-- 로딩 애니매이션 -->
+        <div id="loading" style="margin: 0px 0px;">
+            <img src="{% static 'img/loading_circle.gif' %}">
+            <p>loading...</p>
+        </div>
+
+        <div class="v135_5841">
+            
+            <!-- 상단 채팅방 이름 -->
+            <div class="v135_6022">
+                
+                <div class="v135_6023">
+                    
+                    <div class="v135_6025">
+                        <div class="v135_6028">
+                            <div class="v135_6029">
+                                <img class="thumbnail" alt="img" src="/media/{{designer.thumbnail}}">
+                            </div>
+                            <span class="v135_6030">{{designer.user_name}}</span>
+                        </div>
+                    </div>
+                    <button class="back_icon" onclick="location.href='{% url 'chatting' %}'">
+                        <i class="fa-solid fa-arrow-left-long"></i>
+                    </button>
+                    <button class="reserv" onclick="location.href='{% url 'reservation:add_reserv' chatRoom.designer_id userinfo.shop_id %}'">
+                        예약하기 <i class="fa-solid fa-calendar"></i>
+                    </button>
+                </div>
+            </div>
+
+
+            <!-- 채팅 내용 -->
+            <div class="v135_5842">
+                <div class="v135_5843">
+                    <ul id="chat-messages" style="list-style:none; float:right;">
+                        {% for m in chat_detail %}
+                            {% if m.writer == designer.user_name %}
+                                {% if m.chat_type == 1 %}
+                                    <li class="chatBubble">
+                                        <b class="{{m.writer}}"><img class="profile_photo" src="{{designer.thumbnail.url}}">     {{m.writer}} : </b><br>
+                                        {{m.message}}<br>
+                                    </li>
+                                {% else %}
+                                    <li class="chatBubble">
+                                        <b class="{{m.writer}}"><img class="profile_photo" src="{{designer.thumbnail.url}}">     {{m.writer}} : </b><br><br>
+                                        <img class="send_img" src="{{m.img}}"><br>
+                                    </li>
+                                {% endif %}
+
+                            {% else %}
+                                {% if m.chat_type == 1 %}
+                                    <li class="chatBubble_2" style="float: left;">
+                                        <b class="{{m.writer}}"><img class="profile_photo" src="/media/{{userinfo.photo}}">     {{m.writer}} : </b><br>
+                                        {{m.message}}<br>
+                                    </li>
+                                {% else %}
+                                    <li class="chatBubble_2" style="float: left;">
+                                        <b class="{{m.writer}}"><img class="profile_photo" src="/media/{{userinfo.photo}}">     {{m.writer}} : </b><br><br>
+                                        <img class="send_img" src="{{m.img}}"><br>
+                                    </li>
+                                {% endif %}
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+
+                    <!-- 모달 팝업 될 곳 -->
+                    <div class="modal">
+                        <button>&times;</button>
+                        <div class="modalBox">
+                            <img src="">
+                        </div>
+                    </div>
+
+                    <div class="chat-input filebox" style="display: flex;">
+                        <label for="chat-message-file" class="img_label"><i class="fa-solid fa-camera"></i></label>
+                        <input type="text" id="chat-message-input">
+                        <button type="button" id="chat-message-submit"><i class="fa-solid fa-paper-plane"></i></button>
+                        <input name='files' type="file" id="chat-message-file">
+                        
+                    </div> 
+                </div>
+                
+            </div>
+        </div>
+
+        {{ room_name|json_script:"room-name" }}
+        <script>
+            const roomName = JSON.parse(document.getElementById('room-name').textContent);
+            const userName = '{{userinfo.designer}}'
+            console.log(roomName);
+            console.log(userName);
+
+            const chatSocket = new WebSocket(
+                'ws://'
+                + window.location.host
+                + '/ws/chat/'
+                + roomName
+                + '/'
+            );
+
+            chatSocket.onmessage = function(e) {
+                const data = JSON.parse(e.data);
+                if (data.username == userName){
+                    if (data.message){
+                        console.log('<b>' + data.username + '</b> : ' + data.message + '<br>');
+                        let txt = '<li class="chatBubble"><b> <img class="profile_photo" src="/media/{{userinfo.photo}}">  ' + data.username + '</b><br>' + data.message + '<br></li>';
+                        if (data.message){
+                            document.querySelector('#chat-messages').innerHTML += txt;
+                            scroll_event();
+                        } else {
+                            console.log('message empty!');
+                        }
+                    } else {
+                        let txt = '<li class="chatBubble"><b> <img class="profile_photo" src="/media/{{userinfo.photo}}">  ' + data.username + '</b><br><br><img class="send_img" src="' + data.file + '"/></li>';
+                        
+                        if (data.file){
+                            document.querySelector('#chat-messages').innerHTML += txt;
+                            scroll_event();
+                        } else {
+                            console.log('message empty!');
+                        }
+                    }
+                    
+                }
+                else{
+                    if (data.message){
+                        console.log('<b>' + data.username + '</b> : ' + data.message + '<br>');
+                        let txt = '<li class="chatBubble_2" style="float: left;"><b> <img class="profile_photo" src="{{designer.thumbnail.url}}">  ' + data.username + '</b><br>' + data.message + '<br></li>';
+                        if (data.message){
+                            document.querySelector('#chat-messages').innerHTML += txt;
+                            scroll_event();
+                        } else {
+                            console.log('message empty!');
+                        }
+                    } else {
+                        let txt = '<li class="chatBubble_2" style="float: left;"><b> <img class="profile_photo" src="{{designer.thumbnail.url}}">  ' + data.username + '</b><br><br><img class="send_img" src="' + data.file + '"/></li>';
+                        
+                        if (data.file){
+                            document.querySelector('#chat-messages').innerHTML += txt;
+                            scroll_event();
+                        } else {
+                            console.log('message empty!');
+                        }
+                    }
+                    
+                }
+            };
+
+            chatSocket.onclose = function(e) {
+                console.log('Chat socket closed unexpectedly');
+            };
+
+            document.querySelector('#chat-message-input').focus();
+            document.querySelector('#chat-message-input').onkeyup = function(e) {
+                if (e.keyCode === 13) {  // enter, return
+                    document.querySelector('#chat-message-submit').click();
+                }
+            };
+
+            document.querySelector('#chat-message-submit').onclick = function(e) {
+                const messageInputDom = document.querySelector('#chat-message-input');
+                const message = messageInputDom.value;
+                chatSocket.send(JSON.stringify({
+                    'message': message,
+                    'username':userName,
+                    'room':roomName
+                }));
+                messageInputDom.value = '';
+            };
+
+            document.querySelector('#chat-message-file').onchange = function(e) {
+                const fileInputDom = document.querySelector('#chat-message-file');
+                const file = fileInputDom.files[0];
+                var reader = new FileReader();
+                reader.readAsDataURL(file);
+                reader.onload = function () {
+                    chatSocket.send(JSON.stringify({
+                        'base64File': reader.result,
+                        'username':userName,
+                        'room':roomName
+                    }));
+                    fileInputDom.value = '';
+                };
+
+                reader.onerror = function (error) {
+                    console.log('Error: ', error);
+                };
+            };
+
+        </script>
+    </body>
+</html>
+
+<!-- 이미지 클릭시 모달창 생성 event -->
+<script>
+    $(function(){
+    // 	이미지 클릭시 해당 이미지 모달
+        $(".send_img").click(function(){
+            $(".modal").show();
+            // 해당 이미지 가겨오기
+            var imgSrc = $(this).attr("src");
+            $(".modalBox img").attr("src", imgSrc);
+        });
+        
+        //.modal안에 button을 클릭하면 .modal닫기
+        $(".modal button").click(function(){
+            $(".modal").hide();
+        });
+        
+        //.modal밖에 클릭시 닫힘
+        $(".modal").click(function (e) {
+        if (e.target.className != "modal") {
+            return false;
+        } else {
+            $(".modal").hide();
+        }
+        });
+    });
+</script>
+
+<!-- 스크롤 맨 아래로 내리기 -->
+<script>
+    function scroll_event(){
+        window.scrollTo(0, document.querySelector('.v135_5841').scrollHeight);
+    }
+</script>
+
+<!-- 로딩창 애니메이션 -->
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#loading').show();
+    });
+
+    $( window ).on( "load", function() {
+        console.log( "window loaded" );
+        $('#loading').hide();
+        //return true;
+    });
+</script>
+
+
+<!-- <script>
+    const scroller = document.querySelector('.v135_5841');
+    const output = document.querySelector('#output');
+
+    scroller.addEventListener("scroll", event => {
+        console.log(scroller.scrollTop);
+        output.textContent = 'scrollTop : ${scroller.scrollTop}';
+    });
+</script> -->

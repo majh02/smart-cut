@@ -1,0 +1,247 @@
+<script src="https://unpkg.com/vue@next"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+<!-- Swal Alert -->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<script>
+    axios.defaults.xsrfCookieName = 'csrftoken';
+    axios.defaults.xsrfHeaderName = 'X-CSRFTOKEN';
+
+    const createUser = {
+    
+
+
+        data(){
+            
+            return{
+                
+                user_name:'',
+                user_pw: '',
+                email: '',
+                email_auth : false,
+                gender: [],
+                birth_year: '',
+                birth_month: '',
+                birth_day: '',
+                hp: '',
+                agree_all : '',
+                agree_must : '',
+                agree_select : '',
+                access_token : '',
+                error_msg : [false,false,false,false,false,false,false,false,false]
+
+            }
+        },
+
+        created(){
+
+        
+        },
+
+        methods :{
+
+            mailAuth(){
+     
+                //getUrl = 'http://127.0.0.1:8000/users/mail_auth/'
+                getUrl = 'http://' + window.location.host + '/users/mail_auth/'
+             
+                    
+                const emailRegex2 =
+                /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/i;
+                    
+                const emailValueCheck2 = emailRegex2.test(this.email);
+                
+                if (emailValueCheck2){
+                    this.error_msg[2] = false
+                    axios(
+                        {
+                        method: "POST",
+                        url: getUrl,
+                        data : {
+                        user_name: this.user_name,
+                        email: this.email,
+                        }
+                    }
+                    ).then(res => {
+                        console.log("FETCH MAIL AUTH RES", res);
+                        swal({
+                            title: "인증 이메일을 발송하였습니다.",
+                            text: "이메일 편지함에서 [인증하기] 버튼을 클릭 하세요.",
+                            icon: "success",
+                            button: "확인",
+                        });
+                    }).catch(err=>{
+                        console.log("FETCH MAIL AUTH RES", err);
+                    })
+            
+
+
+                }else{
+                    this.error_msg[2] = true
+                }
+               
+
+
+            },
+            
+            mailAccess(){
+                console.log('mail Access Permission')
+                const emailTokenEmpty = this.access_token > 0
+
+                if (emailTokenEmpty){
+                    axios({
+                        method: "POST",
+                        url: 'http://' + window.location.host + '/users/activate/',
+                        data : {
+                            access_token: this.access_token
+                        }
+                        }).then(res => {
+                            swal({
+                                title: "이메일 인증 완료!",
+                                text: "회원가입을 진행하세요",
+                                icon: "success",
+                                button: "확인",
+                            })
+                        }).catch(err=> {
+                            console.log("FETCH MAILACCESS ERR.RESPONSE", err.response);
+                        })
+                }else{
+                    console.log('빈칸을 채우세요')
+                    this.error_msg[7] = true
+                }
+  
+
+            },
+
+            allCheck(){
+
+                if(this.agree_must && this.agree_select){
+                  this.agree_must = false
+                  this.agree_select = false
+              
+        
+                }else{
+                  this.agree_must = true
+                  this.agree_select = true
+            
+
+          
+    
+                }
+              },
+            sendUserForm(){
+                
+             
+                // 정규식 체크
+                const emailRegex =
+                /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/i;
+                const passwordRegex =
+                /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&#]{8,}$/;
+                const phoneNumberRegex = 
+                /^01([0])-?([0-9]{4})-?([0-9]{4})$/;
+               
+
+                const emailValueCheck = emailRegex.test(this.email);
+                const passwordValueCheck = passwordRegex.test(this.user_pw);
+                //const phoneNumberValueCheck = phoneNumberRegex.test(this.hp);
+             
+                
+                
+                // 공란 체크
+                const nameEmpty = this.user_name.length > 0 && this.user_name.length < 16
+                const passwordEmpty = this.user_pw.length >=8 && this.user_pw.length <= 20
+                const genderEmpty = this.gender.length > 0
+                const agreeEmpty = this.agree_must
+                const yearEmpty = this.birth_year >= 1930 && this.birth_year <= 2018
+                const monthEmpty = this.birth_month.length > 0
+                const dayEmpty = this.birth_day.length > 0
+
+               
+                //이메일 본인인증 체크
+                this.email_auth = "{{email_auth}}"
+                console.log('e_mail:'+this.email_auth)
+
+                //유효성 체크
+                const isUserValid = (nameEmpty) && (passwordEmpty) && (genderEmpty) && 
+                                    (yearEmpty) && (monthEmpty) && (dayEmpty) &&
+                                    (agreeEmpty) && (emailValueCheck)
+                                    //&& (phoneNumberValueCheck);
+                
+                getUrl = 'http://' + window.location.host + '/users/join/'
+                
+                
+                if (!isUserValid) {
+ 
+
+                  
+                    this.error_msg = [
+                                 !nameEmpty, 
+                                 !passwordEmpty, 
+                                 !emailValueCheck, 
+                                 !genderEmpty,
+                                 !yearEmpty,
+                                 !monthEmpty,
+                                 !dayEmpty,
+                                 false,
+                                // !phoneNumberValueCheck, 
+                                 !agreeEmpty
+                                 ]
+                    
+               
+
+                }else{
+                    console.log('POST')
+                    
+                    axios(
+                        {
+                            method: "POST",
+                            url: getUrl,
+                            data : {
+                            user_name: this.user_name,
+                            user_pw: this.user_pw,
+                            email: this.email,
+                            gender: this.gender,
+                            birth_year: this.birth_year,
+                            birth_month: this.birth_month,
+                            birth_day: this.birth_day,
+                            agree_must : this.agree_must,
+                            agree_select : this.agree_select,
+                            access_token : this.access_token,
+                            }
+                        }
+                        )
+                        .then(res => {
+                            console.log("FETCH USER RES", res);
+                            
+                            
+                            // access_token 저장
+                            //localStorage.setItem('token', res.data.access_token);
+
+                            // swal을 이용하여 회원가입 완료 alert창 띄우기
+                            // user_id 값을 GET로 보내기
+                            swal({
+                                title: "회원가입 완료!",
+                                text: "회원가입을 축하합니다.",
+                                icon: "success",
+                                button: "확인",
+                            }).then((value) => {
+                                location.replace('/users/login');
+                            });    
+                            
+                        })
+                        .catch(err => {
+                            console.log("FETCH USER GET ERR.RESPONSE", err.response);
+                            alert(`${err.response.status} ${err.response.statusText}`);
+                        });
+                }
+     
+            }
+
+        }
+
+
+    }
+
+    Vue.createApp(createUser).mount('.v0_10046')
+</script>

@@ -1,0 +1,89 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SMART CUT - AI 헤어 추천</title>
+        <link rel="shortcut icon" href="http://127.0.0.1:8000/static/img/favicon.png" type="image/x-icon" />
+        <link rel="icon" href="http://127.0.0.1:8000/static/img/favicon.png" type="image/x-icon" />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scaleable=no, maximum-scale=1 user-scalable=no">
+        <meta name="description" content="">
+        <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+        <meta name="generator" content="Hugo 0.79.0">
+
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap"
+            rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+
+        <!-- BootStrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="{% static 'css/5_login.css' %}">
+    </head>
+
+    <body>
+        <!--상단 주황 배경-->
+        <div class="v0_10654"></div>
+        <!--로고 이미지 및 이름-->
+        <div class="logo_div">
+            <img src="{% static 'img/logo.png' %}">
+        </div>
+        <!--하얀색 둥근 배경-->
+        <div class="v0_10655"></div>
+        <!--중앙 입력 및 버튼-->
+        <div class="v0_10693">
+        
+        
+        <form method = "POST" action = ".">
+            {% csrf_token %}
+            {% for field in form %}
+            <div class="form-group">
+                <label for="{{field.id_for_label}}">{{field.label}}</label>
+                <input type="{{field.field.widget.input_type}}" class="form-control" id="{{field.id_for_label}}" placeholder="{{field.label}}" name="{{field.name}}">
+            </div>
+
+            <!-- 에러 메시지가 있을 경우 출력 -->
+            {% if field.errors %}
+                <span style="color:#FF7E00">{{field.errors}}</span>
+            {% endif %}
+            {% endfor %}
+
+            
+            <input class="v0_10684" type="submit" value="로그인" button type="submit"></button>
+            
+        </form>
+
+        <div class="v0_10657">
+            <button class="v0_10659" type="submit" onclick="location.href='{% url 'users:join' %}'">회원가입</button>
+            <button class="v0_10686" type="submit" onclick="location.href='{% url 'users:findPW' %}'">비밀번호 찾기</button>
+        </div>
+        </div>
+        
+        <!-- 하단 간편 로그인-->
+        <div class="v0_10660">
+            <div class="v0_10661">
+                <span class="v0_10662">간편 로그인</span>
+                <div class="v0_10663"></div>
+                <div class="v0_10664"></div>
+            </div>
+            
+            <div class="v0_10665">
+                <button class="v120_4264" type="submit" onclick="location.href='kakao/'" value=""></button>
+            </div>
+        </div>
+    </body>
+</html>

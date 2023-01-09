@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-size: 14px;
+  }
+  .v0_10517 {
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .v0_10518 {
+    width: 100%;
+    height: 284px;
+    background: rgba(255,126,0,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .v0_10519 {
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 13%;
+    left: 0px;
+    overflow: hidden;
+  }
+  .v0_10520 {
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border: 0px solid rgba(150,150,150,1);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    overflow: hidden;
+  }
+  .name {
+    color: #fff;
+  }
+  .v0_10641 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 44px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 65%;
+    left: 0%;
+  }
+
+  /* 확인 버튼 */
+  .v0_10642 {
+    width: 315px;
+    height: 44px;
+    background: rgba(255,126,0,1);
+    opacity: 1;
+    margin: auto;
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    color: rgba(255,255,255,1);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+  }
+  .v0_10642:hover{
+    font-weight: 500;
+    box-shadow: 0px 4px 10px #C5CEE0;
+  }
+
+  .v0_10644 {
+    width: 80%;
+    height: 55px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 36%;
+    left: 10%;
+    overflow: hidden;
+  }
+  .v0_10645 {
+    width: fit-content;
+    color: rgba(143,155,179,1);
+    position: absolute;
+    top: 0px;
+    left: 5%;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  #InputEmail {
+    width: 90%;
+    height: 25px;
+    color: rgba(46,58,89,1);
+    position: absolute;
+    border: none;
+    top: 25px;
+    left: 5%;
+    margin-top: 2px;
+    font-family: 'Abel';
+    font-weight: 'Re';
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+    padding: 0px 0px;
+  }
+  #InputEmail:focus{
+    box-shadow: none;
+    border-bottom: 2px solid #FF7E00;
+  }
+  .v0_10647 {
+    width: 315px;
+    height: 1px;
+    background: rgba(227,232,242,1);
+    opacity: 1;
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    border: 0px solid rgba(150,150,150,1);
+    overflow: hidden;
+  }
+  .v0_10648 {
+    width: 100%;
+    color: rgba(143,155,179,1);
+    position: absolute;
+    top: 25%;
+    left: 0px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    opacity: 1;
+    text-align: center;
+  }
+  .v0_10649 {
+    width: 100%;
+    color: rgba(46,58,89,1);
+    position: absolute;
+    top: 20%;
+    left: 0px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    opacity: 1;
+    text-align: center;
+  }
+
+  .swal-title{
+    font-size: 25px;
+  }
+
+  @media screen and (min-width: 800px){
+    .v0_10644{
+      width: 50%;
+      left: 25%;
+    }
+  }

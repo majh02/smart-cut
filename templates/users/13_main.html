@@ -1,0 +1,280 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SMART CUT - AI 헤어 추천</title>
+        <link rel="shortcut icon" href="http://127.0.0.1:8000/static/img/favicon.png" type="image/x-icon" />
+        <link rel="icon" href="http://127.0.0.1:8000/static/img/favicon.png" type="image/x-icon" />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scaleable=no, maximum-scale=1 user-scalable=no">
+        <meta name="description" content="">
+        <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+        <meta name="generator" content="Hugo 0.79.0">
+    
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    
+        <!-- BootStrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/b6541407c0.js" crossorigin="anonymous"></script>
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="{% static 'css/13_main.css' %}">
+    </head>
+    
+    <body onload="$('.modal').hide();">
+        <!-- menuBar -->
+        <div class="menuBar">
+            <div class="vI0_9961_0_8175"></div>
+
+            <!-- main -->
+            <button class="main" onclick="location.href='{% url 'users:main' %}'">
+                <i id="icon1" class="fa-solid fa-earth-asia"></i>
+                <span class="icon1_name">메인화면</span>
+            </button>
+            
+            <button class="ai" onclick="location.href='{% url 'users:AI_Photo' %}'">
+                <i id="icon2" class="fa-solid fa-robot"></i>
+                <span class="icon2_name">AI 헤어추천</span>
+            </button>
+            
+            <!-- reservation -->
+            <button class="reservation" onclick="location.href='{% url 'reservation:reservationHistory' %}'">
+                <i id='icon3' class="fa-solid fa-calendar"></i>
+                <span class="icon3_name">예약내역</span>
+            </button>
+            
+            <!-- chatting -->
+            <button class="chatting" onclick="location.href='{% url 'chatting' %}'">
+                <i id='icon4' class="fa-solid fa-comments"></i>
+                <span class="icon4_name">채팅</span>
+            </button>
+            
+            <!-- profile -->
+            <button class="profile" onclick="location.href='{% url 'users:profile' %}'">
+                <i id='icon5' class="fa-solid fa-user"></i>
+                <span class="icon5_name">프로필</span>
+            </button>
+        </div>
+
+        <div class="v0_9901">
+            <!-- 베스트 헤어샵 -->
+            <div class="best_hairshop">
+                <div class="wrap2">
+                    {% for salon in salon_list %}
+                        <button class="salon_div" onclick="location.href='{% url 'salon:salonDetail' salon.shop_id %}'">
+                            <div class="salon_box">
+                                <img class="salon_img" src="{{salon.shopfile.main_img.url}}">
+                                <div class="salon_box2">
+                                    <div class="div1"><span class="salon_name">{{salon.shop_name}} {{salon.sub_name}}</span></div>
+                                    <div style="display:flex;">
+                                        <div class="div2"><span class="salon_event_name">{{salon.event_name}}</span></div>
+                                        <div class="div3"><span class="salon_event_price">-{{salon.event_price}}</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                    {% endfor %}
+                </div>
+
+                <!-- <button class="view_all">모두 보기</button> -->
+                
+                <span class="v0_9921">베스트 헤어샵</span>
+            </div>
+
+            <!-- 베스트 디자이너 -->
+            <div class="best_designer">
+                <!-- <button class="view_all">모두 보기</button> -->
+                <span class="v0_9942">베스트 디자이너</span>
+                <ul class="wrap">
+                    {% for designer in designer_list %}
+                        <li>
+                            <button class="designer_div" onclick="location.href='{% url 'salon:salonDesigner' designer.shop.shop_id %}'">
+                                <div class="designer_box">
+                                    <div class="photo_div">
+                                        <img class="designer_photo" src="{{designer.photo.url}}">
+                                    </div>
+
+                                    <div class="desinger_name_div">
+                                        <span class="desinger_name">{{designer.designer}}</span>
+                                    </div>
+
+                                    <div class="desinger_shop_div">
+                                        <span class="designer_shop">{{designer.shop.shop_name}}</span>
+                                    </div>
+                                </div>
+                            </button>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <!-- AI 헤어분석 -->
+            <div class="AI">
+                <span class="AI_HairRec">AI 헤어 추천</span>
+                <button class="rec" onclick="location.href='{% url 'users:AI_Photo' %}'">추천 받기</button>
+                
+                {% if '형' in recent_result %}
+                <div id="emoji">
+                    <span class="recent_result">🔍
+                        <span class="bold_text">{{userinfo.user_name}}</span>
+                        님 얼굴형에 맞는 
+                        <span class="bold_text">{{recent_result}} </span>
+                        추천 헤어스타일입니다!
+                    </span>
+                </div>
+                {% else %}
+                <div class="flex_div" style="display:flex;">
+                    <div id="emoji" class="recent_result">
+                        <span>{{recent_result}}</span>
+                    </div>
+                    
+                    <div class="recent_result">
+                        <span class="bold_text">AI 헤어 추천</span>을 받아보세요!<br>
+                        <span class="bold_text">{{userinfo.user_name}}</span>
+                        님의 얼굴형에 딱 맞는 헤어스타일을 추천해드립니다!
+                    </div>
+                </div>
+                {% endif %}
+
+                <ul class="wrap_ai" style="list-style:none;">
+                    {% for hair in hair_list %}
+                    <li>
+                        <button class="hair_btn">
+                            <div class="hair">
+                            {% for key, value in hair.items %}
+                                {% if '0' == key %}
+                                <div class="hair_photo">
+                                    <img src="/static/{{value}}">
+                                </div>
+                                {% elif '1' == key %}
+                                <div class="hair_name_div">
+                                    <span class="hair_name">{{value}}</span>
+                                </div>
+
+                                <div class="hair_exp_div">
+                                {% elif '2' == key %}
+                                    <span class="hair_exp" style="display:none; overflow:hidden;text-overflow:ellipsis; white-space:nowrap;">{{value|linebreaksbr}}</span>
+                                {% elif '3' == key %}
+                                    <span class="hair_tags" style="overflow:hidden;text-overflow:ellipsis; white-space:nowrap;">{{value}}</span>
+                                </div>
+                                {% endif %}
+                            {% endfor %}
+                                
+                            </div>
+                        </button>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <!-- 모달 팝업 될 곳 -->
+            <div class="modal" style="display: none;">
+                <div class="modal_inner">
+                    <button>&times;</button>
+                    <div class="modalBox">
+                        <div>
+                            <span class="modal_hair_name"></span>
+                        </div>
+                        <div class="flex_div2">
+                            <div class="img_div"><img src=""></div>
+
+                            <div class="block_div">
+                                <div class="exp_div"><span class="modal_hair_exp"></span></div>
+                                <div class="tag_div"><span class="modal_hair_tags"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 상단고정 화면 -->
+            <div class="v0_9943">
+                <!-- 검색창 -->
+                <!-- <div class="v0_9944">
+                    <div class="v0_9945">
+                        <input id='search' class="searchBox" type="text" value="  헤어샵과 디자이너를 검색해보세요." onclick='vanish_text()'>
+                    </div>
+                </div> -->
+                
+                <!-- 위치 설정 -->
+                <button class="v0_9952">
+                    <span class="v0_9953">부산광역시 중구</span>
+                    <i id='pin_icon' class="fa-solid fa-location-dot"></i>
+                </button>
+                
+                <!-- 알림 아이콘 -->
+                <button class="v0_9955" onclick="alert('알림이 없습니다.')">
+                    <i id='alert_icon' class="fa-regular fa-bell"></i>
+                    <div class="v0_9957"></div>
+                    <span class="alert_count">0</span>
+                </button>
+                
+                <span class="v0_9959">안녕하세요 <span class="userName">{{userinfo.user_name}} 님,</span></span>
+            </div>
+        </div>
+    </body>
+</html>
+
+<script>
+    function vanish_text(){
+        input = document.getElementById('search');
+        if(input.value.length>0){
+            input.value=''
+            input.style.color='#2E3A59'
+        }
+        else{
+            input.value = "  헤어샵과 디자이너를 검색해보세요."
+            input.style.color='#C5CEE0'
+        }
+    }
+</script>
+
+<!-- 이미지 클릭시 모달창 생성 event -->
+<script>
+    $(function(){
+    // 	이미지 클릭시 해당 이미지 모달
+        $(".hair_btn").click(function(){
+            $(".modal").show();
+
+            // 해당 이미지 가겨오기
+            var imgSrc = $(this).find('img').attr("src");
+            $(".modalBox img").attr("src", imgSrc);
+
+            // 헤어스타일 이름 가져오기
+            var hair_name = $(this).find(".hair_name").text();
+            $(".modal_hair_name").html(hair_name);
+
+            // 헤어스타일 설명 가져오기
+            var hair_exp = $(this).find(".hair_exp").text();
+            hair_exp = hair_exp.replace('.', '.<br/>');
+            $(".modal_hair_exp").html(hair_exp);
+
+            //헤어스타일 태그 가져오기
+            var hair_tags = $(this).find(".hair_tags").text();
+            $(".modal_hair_tags").html(hair_tags);
+        });
+        
+        //.modal안에 button을 클릭하면 .modal닫기
+        $(".modal button").click(function(){
+            $(".modal").hide();
+        });
+        
+        //.modal밖에 클릭시 닫힘
+        $(".modal_inner").click(function (e) {
+        if (e.target.className != "modal_inner") {
+            return false;
+        }
+        else {
+            $(".modal").hide();
+        }
+        });
+    });
+</script>
