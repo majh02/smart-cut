@@ -19,7 +19,7 @@
   [카카오헤어샵, ‘첫방문 수수료 25%’ 네이버 플레이스보다 ‘10배 높아’](http://www.newsworker.co.kr/news/articleView.html?idxno=128771)
 
   * 미용실 예약 앱 시장조사 자료   
-  https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:5ed500c6-c1b2-373a-a8c6-e6336ebb1ab3
+  [미용실 예약 앱 시장조사 자료.pdf](https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:5ed500c6-c1b2-373a-a8c6-e6336ebb1ab3)
 
  ## 프로젝트 구성
   * 얼굴 분석 AI 서비스
